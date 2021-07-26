@@ -22,6 +22,7 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                .animation(Animation.easeOut.delay(0.1))
                 
                 
                 ZStack(alignment: .leading) {
@@ -33,6 +34,7 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                .animation(Animation.easeOut.delay(0.2))
                 
                 
                 ZStack(alignment: .leading) {
@@ -46,6 +48,7 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                .animation(Animation.easeOut.delay(0.3))
                 
             }
             
