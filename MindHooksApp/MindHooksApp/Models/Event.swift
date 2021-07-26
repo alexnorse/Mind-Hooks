@@ -10,4 +10,5 @@ import Foundation
 struct Event: Decodable {
     let event: String
     let imageURL: String
+    let wikiURL: String
 }

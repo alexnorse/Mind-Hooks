@@ -20,6 +20,8 @@
 		E64DA5B626AEB73300061284 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B526AEB73300061284 /* Quote.swift */; };
 		E64DA5B826AEB73D00061284 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B726AEB73D00061284 /* Event.swift */; };
 		E64DA5BB26AEB9B900061284 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BA26AEB9B900061284 /* ImageView.swift */; };
+		E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
+		E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		E64DA5B526AEB73300061284 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		E64DA5B726AEB73D00061284 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E64DA5BA26AEB9B900061284 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		E64DA5BC26AEBC7F00061284 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		E64DA5BE26AEBCC100061284 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				E64DA5B126AEAE9C00061284 /* Constants.swift */,
+				E64DA5BC26AEBC7F00061284 /* Errors.swift */,
+				E64DA5BE26AEBCC100061284 /* Alerts.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -326,8 +332,10 @@
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
 				E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */,
 				E64DA5AE26AEA71800061284 /* ViewShape.swift in Sources */,
+				E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */,
 				E64DA5BB26AEB9B900061284 /* ImageView.swift in Sources */,
 				E64DA5B626AEB73300061284 /* Quote.swift in Sources */,
+				E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */,
 				E64DA5B426AEB72000061284 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
