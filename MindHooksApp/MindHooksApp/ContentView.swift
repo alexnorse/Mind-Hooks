@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        
         NavigationView {
             VStack {
-        
+                
                 ZStack(alignment: .leading) {
                     ViewShape()
-                    VStack {
+                    VStack(alignment: .leading) {
                         CategoryText(text: CategoryHeads.word)
                         AccentText(text: "Hello world")
                         DescriptionText(text: "Hello world")
@@ -26,7 +26,7 @@ struct ContentView: View {
                 
                 ZStack(alignment: .leading) {
                     ViewShape()
-                    VStack {
+                    VStack(alignment: .leading) {
                         CategoryText(text: CategoryHeads.quote)
                         AccentText(text: "Hello world")
                         DescriptionText(text: "Hello world")
@@ -37,9 +37,9 @@ struct ContentView: View {
                 
                 ZStack(alignment: .leading) {
                     ViewShape()
-                    VStack {
+                    VStack(alignment: .leading) {
                         CategoryText(text: CategoryHeads.event)
-                        HStack {
+                        HStack(alignment: .center) {
                             ImageView(imageName: "placeholder")
                             DescriptionText(text: "Hello world")
                         }
@@ -58,6 +58,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+//            .preferredColorScheme(.dark)
     }
 }

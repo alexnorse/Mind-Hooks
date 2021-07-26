@@ -27,7 +27,6 @@ struct GreetingText: View {
         Text(text)
             .font(.largeTitle)
             .fontWeight(.bold)
-            .multilineTextAlignment(.center)
             .padding()
     }
 }
@@ -41,7 +40,6 @@ struct CategoryText: View {
             .foregroundColor(.gray)
             .font(.subheadline)
             .fontWeight(.light)
-            .multilineTextAlignment(.leading)
             .textCase(.uppercase)
             .padding()
     }
@@ -53,9 +51,8 @@ struct AccentText: View {
     
     var body: some View {
         Text(text)
-            .font(.body)
+            .font(.title3)
             .fontWeight(.semibold)
-            .multilineTextAlignment(.leading)
             .padding()
     }
 }
@@ -68,7 +65,6 @@ struct DescriptionText: View {
         Text(text)
             .font(.callout)
             .fontWeight(.regular)
-            .multilineTextAlignment(.trailing)
             .padding()
     }
 }
@@ -81,7 +77,6 @@ struct SmallerText: View {
         Text(text)
             .font(.body)
             .fontWeight(.regular)
-            .multilineTextAlignment(.leading)
             .padding()
     }
 }

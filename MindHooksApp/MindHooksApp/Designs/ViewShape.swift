@@ -13,14 +13,15 @@ struct ViewShape: View {
             
         }
         .frame(width: 375, height: 200)
-        .background(Color.white)
+        .background(Color("viewColor"))
         .cornerRadius(20)
-        .shadow(color: .black.opacity(0.5), radius: 10, x: 2, y: 2)
+        .shadow(color: .gray.opacity(0.5), radius: 10, x: 2, y: 2)
     }
 }
 
 struct ViewShape_Previews: PreviewProvider {
     static var previews: some View {
         ViewShape()
+//            .preferredColorScheme(.dark)
     }
 }

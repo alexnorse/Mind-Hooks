@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Event: Decodable {
+struct Event: Codable {
     let event: String
     let imageURL: String
-    let wikiURL: String
+    let articleURL: String
 }
