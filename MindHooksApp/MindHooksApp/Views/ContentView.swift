@@ -9,11 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var wordViewModel = WordViewModel()
+    @State private var word: Word?
+    
     var body: some View {
         NavigationView {
             VStack {
                 
-                WordView()
+                WordView(word: word ?? MockData.wordMock)
+                    .onAppear { wordViewModel.getWord() }
                     .padding()
                     .animation(Animation.easeOut.delay(0.1))
                 

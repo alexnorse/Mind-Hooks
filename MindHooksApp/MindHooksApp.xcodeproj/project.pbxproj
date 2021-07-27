@@ -16,6 +16,7 @@
 		E649AED726B0126F00905DE1 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED626B0126F00905DE1 /* WordView.swift */; };
 		E649AED926B0129900905DE1 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED826B0129900905DE1 /* QuoteView.swift */; };
 		E649AEDB26B012B900905DE1 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AEDA26B012B900905DE1 /* EventView.swift */; };
+		E649AEDD26B01A1B00905DE1 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AEDC26B01A1B00905DE1 /* MockData.swift */; };
 		E64DA5AE26AEA71800061284 /* ViewShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AD26AEA71800061284 /* ViewShape.swift */; };
 		E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AF26AEAACA00061284 /* TextViews.swift */; };
 		E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
@@ -62,6 +63,7 @@
 		E649AED626B0126F00905DE1 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		E649AED826B0129900905DE1 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		E649AEDA26B012B900905DE1 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		E649AEDC26B01A1B00905DE1 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		E64DA5AD26AEA71800061284 /* ViewShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewShape.swift; sourceTree = "<group>"; };
 		E64DA5AF26AEAACA00061284 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		E64DA5B126AEAE9C00061284 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -124,11 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */,
-				E64DA5A826AEA64A00061284 /* Views */,
-				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5A726AEA63900061284 /* Models */,
+				E64DA5A826AEA64A00061284 /* Views */,
 				E64DA5C226AEDEB300061284 /* View Models */,
 				E64DA5A926AEA65500061284 /* Network Managers */,
+				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5B926AEB78600061284 /* Helpers */,
 				E619CC3826AD5C1D00579CFD /* Assets.xcassets */,
 				E619CC3D26AD5C1D00579CFD /* Info.plist */,
@@ -169,6 +171,7 @@
 				E64DA5B326AEB72000061284 /* Word.swift */,
 				E64DA5B526AEB73300061284 /* Quote.swift */,
 				E64DA5B726AEB73D00061284 /* Event.swift */,
+				E649AEDC26B01A1B00905DE1 /* MockData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				E64DA5C426AEDED400061284 /* WordViewModel.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E64DA5B826AEB73D00061284 /* Event.swift in Sources */,
+				E649AEDD26B01A1B00905DE1 /* MockData.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
