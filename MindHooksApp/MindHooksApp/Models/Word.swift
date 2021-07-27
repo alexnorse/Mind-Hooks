@@ -9,5 +9,5 @@ import Foundation
 
 struct Word: Codable {
     let word: String
-    let description: String
+    let definition: String
 }

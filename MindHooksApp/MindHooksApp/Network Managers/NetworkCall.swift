@@ -9,7 +9,7 @@ import UIKit
 
 final class NetworkCall {
     static let shared = NetworkCall()
-    let baseURL = ""
+    let baseURL = "https://random-words-api.vercel.app/word"
     
     private init() {}
     

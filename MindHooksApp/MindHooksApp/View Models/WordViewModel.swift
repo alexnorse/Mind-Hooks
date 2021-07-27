@@ -9,12 +9,8 @@ import SwiftUI
 
 final class WordViewModel: ObservableObject {
     
-    @Published var word: Word
+    @Published var word: Word?
     @Published var alertItem: Alerts?
-    
-    internal init(word: Word) {
-        self.word = word
-    }
     
     func getWord() {
         NetworkCall.shared.getWord { result in
