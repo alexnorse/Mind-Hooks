@@ -9,12 +9,13 @@ import UIKit
 
 final class NetworkCall {
     static let shared = NetworkCall()
-    let baseURL = "https://random-words-api.vercel.app/word"
+    
+    let wordURL = "https://random-words-api.vercel.app/word"
     
     private init() {}
     
     func getWord(completion: @escaping (Result<Word, APErrors>) -> Void) {
-        guard let url = URL(string: baseURL) else {
+        guard let url = URL(string: wordURL) else {
             completion(.failure(.invalidURL))
             return
         }

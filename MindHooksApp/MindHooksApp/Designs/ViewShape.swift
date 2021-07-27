@@ -15,7 +15,8 @@ struct ViewShape: View {
         .frame(width: 375, height: 200)
         .background(Color("viewColor"))
         .cornerRadius(20)
-        .shadow(color: .gray.opacity(0.5), radius: 10, x: 2, y: 2)
+        .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
+        
     }
 }
 

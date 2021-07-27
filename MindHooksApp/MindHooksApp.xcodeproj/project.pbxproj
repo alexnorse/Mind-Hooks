@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */; };
-		E619CC3726AD5C1A00579CFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3626AD5C1A00579CFD /* ContentView.swift */; };
+		E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3626AD5C1A00579CFD /* MainView.swift */; };
 		E619CC3926AD5C1D00579CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
 		E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */; };
 		E619CC4726AD5C1E00579CFD /* MindHooksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */; };
@@ -28,6 +28,8 @@
 		E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
 		E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
 		E64DA5C426AEDED400061284 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C326AEDED400061284 /* WordViewModel.swift */; };
+		E6B0B0B126B048A5003C722F /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B0B0B026B048A5003C722F /* GreetingsView.swift */; };
+		E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,7 @@
 /* Begin PBXFileReference section */
 		E619CC3126AD5C1A00579CFD /* MindHooksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindHooksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppApp.swift; sourceTree = "<group>"; };
-		E619CC3626AD5C1A00579CFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E619CC3626AD5C1A00579CFD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E619CC3826AD5C1D00579CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E619CC3D26AD5C1D00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		E64DA5BE26AEBCC100061284 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		E64DA5C026AED48D00061284 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
 		E64DA5C326AEDED400061284 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
+		E6B0B0B026B048A5003C722F /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
+		E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */,
+				E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */,
 				E64DA5A726AEA63900061284 /* Models */,
 				E64DA5A826AEA64A00061284 /* Views */,
 				E64DA5C226AEDEB300061284 /* View Models */,
@@ -179,10 +184,9 @@
 		E64DA5A826AEA64A00061284 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E619CC3626AD5C1A00579CFD /* ContentView.swift */,
-				E649AED626B0126F00905DE1 /* WordView.swift */,
-				E649AED826B0129900905DE1 /* QuoteView.swift */,
-				E649AEDA26B012B900905DE1 /* EventView.swift */,
+				E6B0B0B026B048A5003C722F /* GreetingsView.swift */,
+				E619CC3626AD5C1A00579CFD /* MainView.swift */,
+				E6B0B0B226B048B1003C722F /* SubViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +225,16 @@
 				E64DA5C326AEDED400061284 /* WordViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E6B0B0B226B048B1003C722F /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E649AED626B0126F00905DE1 /* WordView.swift */,
+				E649AED826B0129900905DE1 /* QuoteView.swift */,
+				E649AEDA26B012B900905DE1 /* EventView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */,
 				E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */,
 				E619CC3926AD5C1D00579CFD /* Assets.xcassets in Resources */,
 			);
@@ -357,9 +372,10 @@
 				E64DA5B826AEB73D00061284 /* Event.swift in Sources */,
 				E649AEDD26B01A1B00905DE1 /* MockData.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
+				E6B0B0B126B048A5003C722F /* GreetingsView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
-				E619CC3726AD5C1A00579CFD /* ContentView.swift in Sources */,
+				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E649AEDB26B012B900905DE1 /* EventView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
 				E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */,
