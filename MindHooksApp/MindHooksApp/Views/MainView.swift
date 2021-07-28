@@ -12,29 +12,33 @@ struct MainView: View {
     @StateObject var wordViewModel = WordViewModel()
     @State private var word: Word?
     
+    @State private var today = Date()
+    
     var body: some View {
         NavigationView {
             VStack {
                 
                 WordView(word: word ?? MockData.wordMock)
                     .onAppear { wordViewModel.getWord() }
-                    .padding()
                     .animation(Animation.easeOut.delay(0.1))
+                    .padding()
                 
                 
                 QuoteView()
-                    .padding()
                     .animation(Animation.easeOut.delay(0.2))
+                    .padding()
                 
                 
                 EventView()
                     .onTapGesture { print("Lorem Ipsum") }
-                    .padding()
                     .animation(Animation.easeOut.delay(0.3))
+                    .padding()
                 
             }
-            .navigationTitle("XX of Month")
+            .navigationTitle("\(today.convertToday())")
         }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
