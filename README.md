@@ -3,7 +3,7 @@
 ### Description
 Stay inspired and motivated every day! Expand your intelligence with the all-times best thoughts. Get experience from history. Train your mind and practice English.
 
-### Key Features
+### User Experience
 * Your daily update: one quote, one event, one word - that matters!
 * Unstoppable self-growth and vocabulary driving
 * Personality development through the most influential quotes
