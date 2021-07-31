@@ -1,5 +1,7 @@
 ### Mind Hooks
 
+> Inspire your day. Drive your mind.
+
 ### Description
 Stay inspired and motivated every day! Expand your intelligence with the all-times best thoughts. Get experience from history. Train your mind and practice English.
 
