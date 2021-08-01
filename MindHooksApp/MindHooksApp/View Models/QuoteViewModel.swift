@@ -7,19 +7,24 @@
 
 import SwiftUI
 
-final class WordViewModel: ObservableObject {
+final class QuoteViewModel: ObservableObject {
     
-    @Published var word: Word?
+    @Published var quote: String = ""
+    @Published var author: String = ""
+    
     @Published var alertItem: Alerts?
     
-    func getWord() {
-        NetworkCall.shared.getWord { result in
+    init () { getQuote() }
+    
+    func getQuote() {
+        NetworkCall.shared.getQuote { result in
             
             DispatchQueue.main.sync {
                 switch result {
                 
-                case.success(let word):
-                    self.word = word
+                case.success(let quote):
+                    self.quote = quote.quote
+                    self.author = quote.author
                     
                 case.failure(let error):
                     switch error {

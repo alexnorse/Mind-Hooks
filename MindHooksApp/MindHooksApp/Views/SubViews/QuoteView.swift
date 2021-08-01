@@ -9,15 +9,18 @@ import SwiftUI
 
 struct QuoteView: View {
     
+    @StateObject var viewModel = QuoteViewModel()
+    
     var body: some View {
         
         ZStack(alignment: .leading) {
             ViewShape()
             VStack(alignment: .leading) {
                 CategoryText(text: CategoryHeads.quote)
-                AccentText(text: "Hello world")
-                DescriptionText(text: "Hello world")
+                AccentText(text: viewModel.quote)
+                DescriptionText(text: viewModel.author)
             }
+            .onAppear { viewModel.getQuote() }
         }
     }
 }

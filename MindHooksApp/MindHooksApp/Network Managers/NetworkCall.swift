@@ -10,12 +10,12 @@ import UIKit
 final class NetworkCall {
     static let shared = NetworkCall()
     
-    let wordURL = "https://random-words-api.vercel.app/word"
+    let quoteURL = "https://inspiration.goprogram.ai"
     
     private init() {}
     
-    func getWord(completion: @escaping (Result<Word, APErrors>) -> Void) {
-        guard let url = URL(string: wordURL) else {
+    func getQuote(completion: @escaping (Result<Quote, APErrors>) -> Void) {
+        guard let url = URL(string: quoteURL) else {
             completion(.failure(.invalidURL))
             return
         }
@@ -38,8 +38,8 @@ final class NetworkCall {
             
             do {
                 let decoder = JSONDecoder()
-                let word = try decoder.decode(Word.self, from: data)
-                completion(.success(word))
+                let quote = try decoder.decode(Quote.self, from: data)
+                completion(.success(quote))
             } catch {
                 completion(.failure(.invalidData))
             }
