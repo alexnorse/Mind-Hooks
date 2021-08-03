@@ -7,16 +7,15 @@
 
 import SwiftUI
 
-struct EventView: View {
+struct PhotoView: View {
     
     var body: some View {
         
         ZStack(alignment: .leading) {
-            ViewShape()
+            ImageView()
             VStack(alignment: .leading) {
-                CategoryText(text: CategoryHeads.event)
+                CategoryText(text: CategoryHeads.photo)
                 HStack(alignment: .center) {
-                    ImageView(imageName: "placeholder")
                     DescriptionText(text: "Hello world")
                 }
             }
@@ -26,6 +25,6 @@ struct EventView: View {
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView()
+        PhotoView()
     }
 }

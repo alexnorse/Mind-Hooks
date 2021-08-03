@@ -2,26 +2,25 @@
 //  ImageView.swift
 //  MindHooksApp
 //
-//  Created by Alexandr L. on 7/26/21.
+//  Created by Alexandr L. on 8/3/21.
 //
 
 import SwiftUI
 
 struct ImageView: View {
-    var imageName: String
-    
     var body: some View {
-        Image(imageName)
+        Image("")
             .resizable()
-            .frame(width: 100, height: 100, alignment: .center)
+            .scaledToFill()
+            .frame(width: 375, height: 230)
+            .background(Color("viewColor"))
             .cornerRadius(20)
-            .aspectRatio(contentMode: .fit)
-            .padding()
+            .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
     }
 }
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView(imageName: "placeholder")
+        ImageView()
     }
 }

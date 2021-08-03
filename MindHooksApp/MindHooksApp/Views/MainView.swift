@@ -17,18 +17,17 @@ struct MainView: View {
                 
                 WordView()
                     .animation(Animation.easeOut.delay(0.1))
-                    .padding()
+                    .padding(6)
                 
                 
                 QuoteView()
                     .animation(Animation.easeOut.delay(0.2))
-                    .padding()
+                    .padding(6)
                 
                 
-                EventView()
-                    .onTapGesture { print("Lorem Ipsum") }
+                PhotoView()
                     .animation(Animation.easeOut.delay(0.3))
-                    .padding()
+                    .padding(6)
                 
             }
             .navigationTitle("\(today.convertToday())")

@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Event: Codable {
-    let event: String
-    let imageURL: String
-    let articleURL: String
+struct Photo: Codable {
+    let id: String
+    let description: String
 }

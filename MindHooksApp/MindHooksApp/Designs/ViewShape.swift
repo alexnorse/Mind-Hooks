@@ -12,7 +12,7 @@ struct ViewShape: View {
         VStack {
             
         }
-        .frame(width: 375, height: 200)
+        .frame(width: 375, height: 230)
         .background(Color("viewColor"))
         .cornerRadius(20)
         .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
