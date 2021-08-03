@@ -22,6 +22,11 @@ struct QuoteView: View {
             }
             .onAppear { viewModel.getQuote() }
         }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+        }
     }
 }
 

@@ -8,10 +8,12 @@
 import UIKit
 
 final class NetworkCall {
+    
     static let shared = NetworkCall()
     
     let quoteURL    = "https://inspiration.goprogram.ai"
     let wordURL     = "https://random-words-api.vercel.app/word"
+
     
     private init() {}
     
@@ -82,6 +84,4 @@ final class NetworkCall {
         }
         task.resume()
     }
-    
-    
 }

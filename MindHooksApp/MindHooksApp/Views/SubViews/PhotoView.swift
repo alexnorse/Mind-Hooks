@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PhotoView: View {
     
+    @StateObject var viewModel = PhotoViewModel()
+    
     var body: some View {
         
         ZStack(alignment: .leading) {
@@ -16,9 +18,15 @@ struct PhotoView: View {
             VStack(alignment: .leading) {
                 CategoryText(text: CategoryHeads.photo)
                 HStack(alignment: .center) {
-                    DescriptionText(text: "Hello world")
+                    DescriptionText(text: viewModel.description)
                 }
             }
+        }
+        .onAppear { viewModel.getPhoto() }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }

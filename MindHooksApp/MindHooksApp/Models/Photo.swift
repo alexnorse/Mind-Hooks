@@ -7,7 +7,14 @@
 
 import Foundation
 
+
 struct Photo: Codable {
     let id: String
-    let description: String
+    let description: String?
+    let urls: PostURLs
+}
+
+
+struct PostURLs: Codable {
+    let regular: String
 }

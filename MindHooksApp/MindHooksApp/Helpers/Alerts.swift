@@ -5,24 +5,30 @@
 //  Created by Alexandr L. on 7/26/21.
 //
 
-import Foundation
+import SwiftUI
 
-struct Alerts {
-    let title: String
-    let message: String
+struct Alerts: Identifiable {
+    let id = UUID()
+    let title: Text
+    let message: Text
+    let dismissButton: Alert.Button
 }
 
 
 struct AlertContext {
-    static let invalidData          = Alerts(title: "Server Error ☹️",
-                                             message: "The data from the server is invalid")
+    static let invalidData          = Alerts(title: Text("Server Error ☹️"),
+                                             message: Text("The data from the server is invalid"),
+                                             dismissButton: .default (Text("Ok")))
     
-    static let invalidResponse      = Alerts(title: "Server Error ☹️",
-                                             message: "Invalid response from the server")
+    static let invalidResponse      = Alerts(title: Text("Response Error ☹️"),
+                                             message: Text("Invalid response from the server"),
+                                             dismissButton: .default (Text("Ok")))
     
-    static let invalidURL           = Alerts(title: "Server Error ☹️",
-                                             message: "Some troubles with URL...")
+    static let invalidURL           = Alerts(title: Text("URL Error ☹️"),
+                                             message: Text("Some troubles with URL..."),
+                                             dismissButton: .default (Text("Ok")))
     
-    static let unableToComplete     = Alerts(title: "Server Error ☹️",
-                                             message: "Check your internet connection")
+    static let unableToComplete     = Alerts(title: Text("Connection Error ☹️"),
+                                             message: Text("Check your internet connection"),
+                                             dismissButton: .default (Text("Ok")))
 }

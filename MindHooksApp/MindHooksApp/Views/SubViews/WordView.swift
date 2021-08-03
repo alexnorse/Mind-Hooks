@@ -20,6 +20,12 @@ struct WordView: View {
                 AccentText(text: viewModel.word)
                 DescriptionText(text: viewModel.definition)
             }
+            .onAppear { viewModel.getWord() }
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }
