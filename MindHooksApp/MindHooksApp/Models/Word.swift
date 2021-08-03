@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct WordResult: Codable {
-    let result: [Word]
-}
-
 struct Word: Codable {
     let word: String
     let definition: String

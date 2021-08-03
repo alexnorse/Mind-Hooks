@@ -50,7 +50,7 @@ final class NetworkCall {
     }
     
     
-    func getWord(completion: @escaping(Result<Word, APErrors>) -> Void) {
+    func getWord(completion: @escaping(Result<[Word], APErrors>) -> Void) {
         guard let url = URL(string: wordURL) else {
             completion(.failure(.invalidURL))
             return
@@ -74,7 +74,7 @@ final class NetworkCall {
             
             do {
                 let decoder = JSONDecoder()
-                let word = try decoder.decode(Word.self, from: data)
+                let word = try decoder.decode([Word].self, from: data)
                 completion(.success(word))
             } catch {
                 completion(.failure(.invalidData))

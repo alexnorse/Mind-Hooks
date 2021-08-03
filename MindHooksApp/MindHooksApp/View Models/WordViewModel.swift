@@ -23,8 +23,8 @@ final class WordViewModel: ObservableObject {
                 switch result {
                 
                 case.success(let word):
-                    self.word = word.word
-                    self.definition = word.definition
+                    self.word = word.first?.word ?? TernaryDescription.wordError
+                    self.definition = word.first?.definition ?? TernaryDescription.defError
                     
                 case.failure(let error):
                     switch error {

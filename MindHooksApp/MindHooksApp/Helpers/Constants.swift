@@ -12,3 +12,9 @@ enum CategoryHeads {
     static let quote    = "Quote of the day"
     static let event    = "This day in history"
 }
+
+
+enum TernaryDescription {
+    static let wordError = "No Word for today"
+    static let defError = "No Definition for today"
+}
