@@ -9,14 +9,16 @@ import SwiftUI
 
 struct WordView: View {
     
+    @StateObject var viewModel = WordViewModel()
+    
     var body: some View {
         
         ZStack(alignment: .leading) {
             ViewShape()
             VStack(alignment: .leading) {
                 CategoryText(text: CategoryHeads.word)
-                AccentText(text: "Word")
-                DescriptionText(text: "Definition")
+                AccentText(text: viewModel.word)
+                DescriptionText(text: viewModel.definition)
             }
         }
     }
