@@ -5,7 +5,7 @@
 //  Created by Alexandr L. on 7/26/21.
 //
 
-import Foundation
+import UIKit
 
 enum CategoryHeads {
     static let word     = "Word of the day"
@@ -27,4 +27,12 @@ enum URLs {
 
 enum Labels {
     
+}
+
+
+enum ViewsSizes {
+    static let viewWidth: CGFloat   = 375
+    static let viewHeight: CGFloat  = 250
+    
+    static let textWidth: CGFloat   = 305
 }

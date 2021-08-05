@@ -13,9 +13,9 @@ struct QuoteView: View {
     
     var body: some View {
         
-        ZStack(alignment: .leading) {
+        ZStack(alignment: .leading)  {
             ViewShape()
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading)  {
                 CategoryText(text: CategoryHeads.quote)
                 AccentText(text: viewModel.quote)
                 DescriptionText(text: viewModel.author)

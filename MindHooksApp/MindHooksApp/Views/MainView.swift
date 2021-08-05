@@ -13,16 +13,15 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 20) {
                 
                 WordView()
                     .animation(Animation.easeOut.delay(0.1))
-                    .padding(6)
-                
+                    .padding()
                 
                 QuoteView()
                     .animation(Animation.easeOut.delay(0.2))
-                    .padding(6)
+                    .padding()
                 
             }
             .navigationTitle("\(today.convertToday())")

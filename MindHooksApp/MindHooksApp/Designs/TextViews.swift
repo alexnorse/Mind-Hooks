@@ -14,7 +14,6 @@ struct TextViews: View {
             CategoryText(text: "Quote of the day")
             AccentText(text: "Lorem Ipsum")
             DescriptionText(text: "E. Hemingway")
-            SmallerText(text: "Veni, vidi, vici")
         }
     }
 }
@@ -40,6 +39,7 @@ struct CategoryText: View {
             .foregroundColor(.gray)
             .font(.subheadline)
             .fontWeight(.light)
+            .frame(maxWidth: ViewsSizes.textWidth)
             .textCase(.uppercase)
             .padding()
     }
@@ -51,8 +51,10 @@ struct AccentText: View {
     
     var body: some View {
         Text(text)
-            .font(.title3)
+            .font(.title2)
             .fontWeight(.semibold)
+            .frame(alignment: .leading)
+            .frame(maxWidth: ViewsSizes.textWidth)
             .padding()
     }
 }
@@ -63,20 +65,10 @@ struct DescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.callout)
+            .font(.headline)
             .fontWeight(.regular)
-            .padding()
-    }
-}
-
-
-struct SmallerText: View {
-    var text: String
-    
-    var body: some View {
-        Text(text)
-            .font(.body)
-            .fontWeight(.regular)
+            .frame(alignment: .trailing)
+            .frame(maxWidth: ViewsSizes.textWidth)
             .padding()
     }
 }
