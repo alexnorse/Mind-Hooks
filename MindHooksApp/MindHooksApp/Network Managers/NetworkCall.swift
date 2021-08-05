@@ -11,8 +11,8 @@ final class NetworkCall {
     
     static let shared = NetworkCall()
     
-    let quoteURL    = "https://inspiration.goprogram.ai"
-    let wordURL     = "https://random-words-api.vercel.app/word"
+    let quoteURL    = URLs.quoteAPI
+    let wordURL     = URLs.wordAPI
 
     
     private init() {}

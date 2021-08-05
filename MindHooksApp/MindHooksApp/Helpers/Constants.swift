@@ -17,3 +17,14 @@ enum TernaryDescription {
     static let wordError = "No Word for today"
     static let defError = "No Definition for today"
 }
+
+
+enum URLs {
+    static let wordAPI = "https://random-words-api.vercel.app/word"
+    static let quoteAPI = "https://inspiration.goprogram.ai"
+}
+
+
+enum Labels {
+    
+}
