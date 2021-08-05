@@ -24,11 +24,6 @@ struct MainView: View {
                     .animation(Animation.easeOut.delay(0.2))
                     .padding(6)
                 
-                
-                PhotoView()
-                    .animation(Animation.easeOut.delay(0.3))
-                    .padding(6)
-                
             }
             .navigationTitle("\(today.convertToday())")
         }
