@@ -31,8 +31,5 @@ enum Labels {
 
 
 enum ViewsSizes {
-    static let viewWidth: CGFloat   = 375
-    static let viewHeight: CGFloat  = 250
-    
-    static let textWidth: CGFloat   = 305
+    static let textWidth: CGFloat   = 320
 }

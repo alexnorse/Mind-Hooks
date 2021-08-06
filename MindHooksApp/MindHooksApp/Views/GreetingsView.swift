@@ -19,7 +19,7 @@ struct GreetingsView: View {
                     Color("viewColor")
                         .edgesIgnoringSafeArea(.all)
                     
-                    VStack {
+                    VStack(spacing: 30) {
                         Image(systemName: "cloud.sun.fill")
                             .renderingMode(.original)
                             .resizable()
@@ -27,7 +27,7 @@ struct GreetingsView: View {
                             .frame(width: 150, height: 150, alignment: .center)
                             .shadow(color: .blue.opacity(0.5), radius: 30, x: 10, y: 10)
                         
-                        GreetingText(text: "Good morning!")
+                        GreetingText(text: "Greetings!")
                     }
                     .scaleEffect(isVisible ? 1.05 : 0)
                     .padding()
@@ -38,9 +38,6 @@ struct GreetingsView: View {
                         }
                     }
                 }
-                NavigationLink(destination: MainView(),
-                               label: { Text("Tap to Start") })
-                    .padding(.bottom, 50)
             }
         }
     }

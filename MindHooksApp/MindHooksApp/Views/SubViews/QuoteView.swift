@@ -14,12 +14,14 @@ struct QuoteView: View {
     var body: some View {
         
         ZStack(alignment: .leading)  {
-            ViewShape()
             VStack(alignment: .leading)  {
                 CategoryText(text: CategoryHeads.quote)
                 AccentText(text: viewModel.quote)
                 DescriptionText(text: viewModel.author)
             }
+            .background(Color("viewColor"))
+            .cornerRadius(20)
+            .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
             .onAppear { viewModel.getQuote() }
         }
         .alert(item: $viewModel.alertItem) { alertItem in

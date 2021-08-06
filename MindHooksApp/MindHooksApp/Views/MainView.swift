@@ -13,16 +13,19 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                
-                WordView()
-                    .animation(Animation.easeOut.delay(0.1))
-                    .padding()
-                
-                QuoteView()
-                    .animation(Animation.easeOut.delay(0.2))
-                    .padding()
-                
+            VStack {
+                ScrollView {
+                    VStack(spacing: 15) {
+                        
+                        WordView()
+                            .animation(Animation.easeOut.delay(0.1))
+                            .padding()
+                        
+                        QuoteView()
+                            .animation(Animation.easeOut.delay(0.2))
+                            .padding()
+                    }
+                }
             }
             .navigationTitle("\(today.convertToday())")
         }
@@ -35,5 +38,8 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            
+            
+            
     }
 }
