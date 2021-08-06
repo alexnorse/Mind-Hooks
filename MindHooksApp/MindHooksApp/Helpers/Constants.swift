@@ -21,7 +21,7 @@ enum TernaryDescription {
 
 enum URLs {
     static let wordAPI = "https://random-words-api.vercel.app/word"
-    static let quoteAPI = "https://inspiration.goprogram.ai"
+    static let quoteAPI = "https://api.quotable.io/random"
 }
 
 

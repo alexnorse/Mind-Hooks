@@ -23,7 +23,7 @@ final class QuoteViewModel: ObservableObject {
                 switch result {
                 
                 case.success(let quote):
-                    self.quote = quote.quote
+                    self.quote = quote.content
                     self.author = quote.author
                     
                 case.failure(let error):

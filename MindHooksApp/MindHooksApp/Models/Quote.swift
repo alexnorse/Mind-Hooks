@@ -8,6 +8,6 @@
 import Foundation
 
 struct Quote: Codable {
-    let quote: String
+    let content: String
     let author: String
 }
