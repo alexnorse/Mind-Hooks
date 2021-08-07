@@ -1,30 +1,30 @@
 //
-//  WordViewModel.swift
+//  EventViewModel.swift
 //  MindHooksApp
 //
-//  Created by Alexandr L. on 8/3/21.
+//  Created by Alexandr L. on 8/7/21.
 //
 
 import Foundation
 
-final class WordViewModel: ObservableObject {
+final class EventViewModel: ObservableObject {
     
-    @Published var word: String = ""
-    @Published var definition: String = ""
+    @Published var year: String = ""
+    @Published var description: String = ""
     
     @Published var alertItem: Alerts?
     
-    init () { getWord() }
+    init () { getEvent() }
     
-    func getWord() {
-        NetworkCall.shared.getWord { result in
+    func getEvent() {
+        NetworkCall.shared.getEvent { result in
             
             DispatchQueue.main.sync {
                 switch result {
                 
-                case.success(let word):
-                    self.word = word.first?.word ?? TernaryDescription.todayError
-                    self.definition = word.first?.definition ?? TernaryDescription.todayError
+                case.success(let event):
+                    self.year = event.events.first?.year ?? TernaryDescription.todayError
+                    self.description = event.events.first?.description ?? TernaryDescription.todayError
                     
                 case.failure(let error):
                     switch error {

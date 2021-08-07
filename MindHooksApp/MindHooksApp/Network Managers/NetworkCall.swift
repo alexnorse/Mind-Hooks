@@ -13,6 +13,7 @@ final class NetworkCall {
     
     let quoteURL    = URLs.quoteAPI
     let wordURL     = URLs.wordAPI
+    let eventURL    = URLs.eventAPI
 
     
     private init() {}
@@ -78,6 +79,40 @@ final class NetworkCall {
                 let decoder = JSONDecoder()
                 let word = try decoder.decode([Word].self, from: data)
                 completion(.success(word))
+            } catch {
+                completion(.failure(.invalidData))
+            }
+        }
+        task.resume()
+    }
+    
+    
+    func getEvent(completion: @escaping(Result<Events, APErrors>) -> Void) {
+        guard let url = URL(string: eventURL) else {
+            completion(.failure(.invalidURL))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let _ = error {
+                completion(.failure(.unableToComplete))
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(.invalidData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let event = try decoder.decode(Events.self, from: data)
+                completion(.success(event))
             } catch {
                 completion(.failure(.invalidData))
             }

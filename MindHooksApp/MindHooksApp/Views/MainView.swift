@@ -15,7 +15,7 @@ struct MainView: View {
         NavigationView {
             VStack {
                 ScrollView {
-                    VStack(spacing: 15) {
+                    VStack(spacing: 5) {
                         
                         WordView()
                             .animation(Animation.easeOut.delay(0.1))
@@ -23,6 +23,10 @@ struct MainView: View {
                         
                         QuoteView()
                             .animation(Animation.easeOut.delay(0.2))
+                            .padding()
+                        
+                        EventView()
+                            .animation(Animation.easeOut.delay(0.3))
                             .padding()
                     }
                 }
