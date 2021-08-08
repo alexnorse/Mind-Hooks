@@ -19,9 +19,9 @@ struct QuoteView: View {
                 AccentText(text: viewModel.quote)
                 DescriptionText(text: viewModel.author)
             }
-            .background(Color.green)
+            .background(Color("green"))
             .cornerRadius(20)
-            .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
+            .shadow(color: .green.opacity(0.5), radius: 13, x: 2, y: 4)
             .onAppear { viewModel.getQuote() }
         }
         .alert(item: $viewModel.alertItem) { alertItem in

@@ -19,9 +19,9 @@ struct EventView: View {
                 AccentText(text: "In the \(viewModel.year)")
                 DescriptionText(text: viewModel.description)
             }
-            .background(Color.purple)
+            .background(Color("orange"))
             .cornerRadius(20)
-            .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
+            .shadow(color: .orange.opacity(0.5), radius: 13, x: 2, y: 4)
             .onAppear { viewModel.getEvent() }
         }
         .alert(item: $viewModel.alertItem) { alertItem in

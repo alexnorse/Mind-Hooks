@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct WordView: View {
     
@@ -19,9 +20,9 @@ struct WordView: View {
                 AccentText(text: viewModel.word)
                 DescriptionText(text: viewModel.definition)
             }
-            .background(Color.blue)
+            .background(Color("blue"))
             .cornerRadius(20)
-            .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
+            .shadow(color: .blue.opacity(0.5), radius: 13, x: 2, y: 4)
             .onAppear { viewModel.getWord() }
         }
         .alert(item: $viewModel.alertItem) { alertItem in
