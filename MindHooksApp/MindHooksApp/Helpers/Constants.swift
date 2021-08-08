@@ -31,5 +31,19 @@ enum URLs {
 
 
 enum ViewsSizes {
-    static let textWidth: CGFloat   = 330
+    static let textWidth: CGFloat = 330
+}
+
+
+enum UInumbers {
+    static let padding: CGFloat = 15
+    static let offsetY: CGFloat = -75
+}
+
+
+enum ShadowSettings {
+    static let opacity: Double  = 0.7
+    static let radius: CGFloat  = 10
+    static let x: CGFloat       = 1
+    static let y: CGFloat       = 7
 }

@@ -10,24 +10,30 @@ import SwiftUI
 struct MainView: View {
     
     @State private var today = Date()
+    @State private var currentTab = 0
     
     var body: some View {
         NavigationView {
             VStack {
-                ScrollView {
-                    VStack {
-                        
-                        WordView()
-                            .padding(15)
-                        
-                        QuoteView()
-                            .padding(15)
-                        
-                        EventView()
-                            .padding(15)
-                        
-                    }
-                }
+                TabView(selection: $currentTab,
+                        content:  {
+                                WordView()
+                                    .tag(0)
+                                    .offset(y: UInumbers.offsetY)
+                                    .padding(UInumbers.padding)
+                                
+                                QuoteView()
+                                    .tag(1)
+                                    .offset(y: UInumbers.offsetY)
+                                    .padding(UInumbers.padding)
+                                
+                                EventView()
+                                    .tag(2)
+                                    .offset(y: UInumbers.offsetY)
+                                    .padding(UInumbers.padding)
+                        })
+                    .tabViewStyle(PageTabViewStyle())
+                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             }
             .animation(.spring())
             .navigationTitle("\(today.convertToday())")
@@ -42,8 +48,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .previewDevice("iPhone 12 Pro Max")
-            
-            
-            
     }
 }

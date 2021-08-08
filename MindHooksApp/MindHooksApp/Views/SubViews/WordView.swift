@@ -18,13 +18,17 @@ struct WordView: View {
             
             VStack(alignment: .leading){
                 CategoryText(text: CategoryHeads.word)
+                
                 AccentText(text: viewModel.word)
+                    .shadow(color: .gray.opacity(ShadowSettings.opacity),
+                            radius: ShadowSettings.radius,
+                            x: ShadowSettings.x,
+                            y: ShadowSettings.y)
+                
                 DescriptionText(text: viewModel.definition)
             }
             .padding()
-            .background(Color("viewColor"))
-            .cornerRadius(20)
-            .shadow(color: .gray.opacity(0.7), radius: 10, x: 1, y: 7)
+          
         }
         .onAppear { viewModel.getWord() }
         .alert(item: $viewModel.alertItem) { alertItem in

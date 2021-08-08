@@ -23,12 +23,12 @@ struct CategoryText: View {
     
     var body: some View {
         Text(text)
-            .font(.subheadline)
+            .font(.headline)
             .fontWeight(.regular)
             .foregroundColor(.gray)
             .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
             .textCase(.uppercase)
-            .padding(15)
+            .padding(UInumbers.padding)
     }
 }
 
@@ -38,12 +38,12 @@ struct AccentText: View {
     
     var body: some View {
         Text(text)
-            .font(.title2)
+            .font(.title)
             .fontWeight(.semibold)
             .foregroundColor(Color("orange"))
             .frame(alignment: .leading)
             .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
-            .padding(15)
+            .padding(UInumbers.padding)
     }
 }
 
@@ -53,12 +53,11 @@ struct DescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.headline)
+            .font(.body)
             .fontWeight(.regular)
-            .italic()
             .frame(alignment: .trailing)
             .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
-            .padding(15)
+            .padding(UInumbers.padding)
     }
 }
 

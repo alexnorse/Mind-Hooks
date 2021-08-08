@@ -16,13 +16,17 @@ struct EventView: View {
         ZStack(alignment: .leading) {
             VStack(alignment: .leading) {
                 CategoryText(text: CategoryHeads.event)
-                AccentText(text: "In the \(viewModel.year)")
+                
+                AccentText(text: "Year \(viewModel.year)")
+                    .shadow(color: .gray.opacity(ShadowSettings.opacity),
+                            radius: ShadowSettings.radius,
+                            x: ShadowSettings.x,
+                            y: ShadowSettings.y)
+                
                 DescriptionText(text: viewModel.description)
             }
             .padding()
-            .background(Color("viewColor"))
-            .cornerRadius(20)
-            .shadow(color: .gray.opacity(0.7), radius: 10, x: 1, y: 7)
+            
         }
         .onAppear { viewModel.getEvent() }
         .alert(item: $viewModel.alertItem) { alertItem in
