@@ -28,7 +28,6 @@
 		E64DA5C426AEDED400061284 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C326AEDED400061284 /* QuoteViewModel.swift */; };
 		E6AC9C8426B16DA1000D1586 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Extensions.swift */; };
 		E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
-		E6B0B0B126B048A5003C722F /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B0B0B026B048A5003C722F /* GreetingsView.swift */; };
 		E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +76,6 @@
 		E64DA5C326AEDED400061284 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
 		E6AC9C8326B16DA1000D1586 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E6B02E1326B980F6006B45F7 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
-		E6B0B0B026B048A5003C722F /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
 		E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,7 +181,6 @@
 		E64DA5A826AEA64A00061284 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E6B0B0B026B048A5003C722F /* GreetingsView.swift */,
 				E619CC3626AD5C1A00579CFD /* MainView.swift */,
 				E6B0B0B226B048B1003C722F /* SubViews */,
 			);
@@ -373,7 +370,6 @@
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
-				E6B0B0B126B048A5003C722F /* GreetingsView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Extensions.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,

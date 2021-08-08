@@ -18,13 +18,13 @@ struct MainView: View {
                     VStack {
                         
                         WordView()
-                            .padding(5)
+                            .padding(10)
                         
                         QuoteView()
-                            .padding(5)
+                            .padding(10)
                         
                         EventView()
-                            .padding(5)
+                            .padding(10)
                         
                     }
                 }
