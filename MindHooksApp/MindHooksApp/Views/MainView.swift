@@ -41,6 +41,8 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .previewDevice("iPhone 12 Pro Max")
+            
             
             
     }
