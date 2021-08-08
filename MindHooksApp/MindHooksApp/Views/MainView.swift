@@ -18,13 +18,13 @@ struct MainView: View {
                     VStack {
                         
                         WordView()
-                            .padding(10)
+                            .padding(15)
                         
                         QuoteView()
-                            .padding(10)
+                            .padding(15)
                         
                         EventView()
-                            .padding(10)
+                            .padding(15)
                         
                     }
                 }
@@ -41,6 +41,7 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            
             
     }
 }

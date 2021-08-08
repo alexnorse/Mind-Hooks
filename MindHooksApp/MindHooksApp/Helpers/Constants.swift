@@ -31,5 +31,5 @@ enum URLs {
 
 
 enum ViewsSizes {
-    static let textWidth: CGFloat   = 350
+    static let textWidth: CGFloat   = 330
 }

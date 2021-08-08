@@ -15,16 +15,18 @@ struct WordView: View {
     var body: some View {
         
         ZStack(alignment: .leading) {
-            VStack(alignment: .leading) {
+            
+            VStack(alignment: .leading){
                 CategoryText(text: CategoryHeads.word)
                 AccentText(text: viewModel.word)
                 DescriptionText(text: viewModel.definition)
             }
-            .background(Color("view"))
+            .padding()
+            .background(Color("viewColor"))
             .cornerRadius(20)
-            .shadow(color: .gray, radius: 20, x: 20, y: 20)
-            .onAppear { viewModel.getWord() }
+            .shadow(color: .gray.opacity(0.7), radius: 10, x: 1, y: 7)
         }
+        .onAppear { viewModel.getWord() }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,

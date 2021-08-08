@@ -10,23 +10,10 @@ import SwiftUI
 struct TextViews: View {
     var body: some View {
         VStack {
-            GreetingText(text: "Greetings")
             CategoryText(text: "Quote of the day")
             AccentText(text: "Lorem Ipsum")
             DescriptionText(text: "E. Hemingway")
         }
-    }
-}
-
-
-struct GreetingText: View {
-    var text: String
-    
-    var body: some View {
-        Text(text)
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            .padding()
     }
 }
 
@@ -41,7 +28,7 @@ struct CategoryText: View {
             .foregroundColor(.gray)
             .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
             .textCase(.uppercase)
-            .padding(20)
+            .padding(15)
     }
 }
 
@@ -56,7 +43,7 @@ struct AccentText: View {
             .foregroundColor(Color("orange"))
             .frame(alignment: .leading)
             .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
-            .padding(20)
+            .padding(15)
     }
 }
 
@@ -71,7 +58,7 @@ struct DescriptionText: View {
             .italic()
             .frame(alignment: .trailing)
             .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
-            .padding(20)
+            .padding(15)
     }
 }
 
