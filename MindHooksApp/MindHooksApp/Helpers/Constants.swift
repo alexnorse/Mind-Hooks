@@ -7,6 +7,10 @@
 
 import UIKit
 
+struct Day {
+    static let today = Date()
+}
+
 enum CategoryHeads {
     static let word     = "Word of the day"
     static let quote    = "Quote of the day"
@@ -22,7 +26,7 @@ enum TernaryDescription {
 enum URLs {
     static let wordAPI  = "https://random-words-api.vercel.app/word"
     static let quoteAPI = "https://api.quotable.io/random"
-    static let eventAPI = "https://byabbe.se/on-this-day/7/8/events.json"
+    static let eventAPI = "https://byabbe.se/on-this-day/\(Day.today.convertForEventURL())/events.json"
 }
 
 
