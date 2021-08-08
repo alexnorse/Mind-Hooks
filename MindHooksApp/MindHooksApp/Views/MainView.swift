@@ -15,22 +15,21 @@ struct MainView: View {
         NavigationView {
             VStack {
                 ScrollView {
-                    VStack(spacing: 5) {
+                    VStack {
                         
                         WordView()
-                            .animation(Animation.easeOut.delay(0.1))
-                            .padding()
+                            .padding(5)
                         
                         QuoteView()
-                            .animation(Animation.easeOut.delay(0.2))
-                            .padding()
+                            .padding(5)
                         
                         EventView()
-                            .animation(Animation.easeOut.delay(0.3))
-                            .padding()
+                            .padding(5)
+                        
                     }
                 }
             }
+            .animation(.spring())
             .navigationTitle("\(today.convertToday())")
         }
         .navigationBarHidden(true)
@@ -42,8 +41,6 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-            
-            
-            
+            .preferredColorScheme(.light)
     }
 }

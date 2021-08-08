@@ -16,10 +16,10 @@ struct EventView: View {
         ZStack(alignment: .leading) {
             VStack(alignment: .leading) {
                 CategoryText(text: CategoryHeads.event)
-                AccentText(text: "\(viewModel.year) YEAR")
+                AccentText(text: "In the \(viewModel.year)")
                 DescriptionText(text: viewModel.description)
             }
-            .background(Color("viewColor"))
+            .background(Color.purple)
             .cornerRadius(20)
             .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
             .onAppear { viewModel.getEvent() }

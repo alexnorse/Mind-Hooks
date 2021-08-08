@@ -19,7 +19,7 @@ struct WordView: View {
                 AccentText(text: viewModel.word)
                 DescriptionText(text: viewModel.definition)
             }
-            .background(Color("viewColor"))
+            .background(Color.blue)
             .cornerRadius(20)
             .shadow(color: .gray.opacity(0.5), radius: 13, x: 2, y: 4)
             .onAppear { viewModel.getWord() }
