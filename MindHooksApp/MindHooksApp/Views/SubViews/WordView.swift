@@ -20,9 +20,9 @@ struct WordView: View {
                 AccentText(text: viewModel.word)
                 DescriptionText(text: viewModel.definition)
             }
-            .background(Color("blue"))
+            .background(Color("view"))
             .cornerRadius(20)
-            .shadow(color: .blue.opacity(0.5), radius: 13, x: 2, y: 4)
+            .shadow(color: .gray, radius: 20, x: 20, y: 20)
             .onAppear { viewModel.getWord() }
         }
         .alert(item: $viewModel.alertItem) { alertItem in
