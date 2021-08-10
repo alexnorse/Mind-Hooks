@@ -14,20 +14,26 @@ struct EventView: View {
     var body: some View {
         
         ZStack(alignment: .leading) {
+            
             VStack(alignment: .leading) {
+                
                 CategoryText(text: CategoryHeads.event)
                 
                 AccentText(text: "Year \(viewModel.year)")
+                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
                             y: ShadowSettings.y)
                 
                 DescriptionText(text: viewModel.description)
+                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
             }
+            .animation(.spring())
             .padding()
             
         }
+        .background(LogoView())
         .onAppear { viewModel.getEvent() }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

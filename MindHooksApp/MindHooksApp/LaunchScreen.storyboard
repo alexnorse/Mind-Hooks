@@ -35,6 +35,12 @@
                                     <constraint firstAttribute="width" constant="150" id="XXx-5C-cyG"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspire your day. Drive your mind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnw-eb-miQ">
+                                <rect key="frame" x="20" y="509.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" name="orange"/>
@@ -44,6 +50,10 @@
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Vnw-eb-miQ" secondAttribute="trailing" constant="20" id="YWo-FP-Zfj"/>
+                            <constraint firstItem="Vnw-eb-miQ" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="5" id="aqF-kr-lQ0"/>
+                            <constraint firstItem="Vnw-eb-miQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bCg-aa-5cM"/>
+                            <constraint firstItem="Vnw-eb-miQ" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" id="fgW-Yu-rmd"/>
                             <constraint firstItem="wcw-ig-l0Y" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="he4-lH-7Sa"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="35" id="v5d-yw-KA2"/>
                         </constraints>

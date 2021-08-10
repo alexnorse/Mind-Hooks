@@ -14,20 +14,26 @@ struct QuoteView: View {
     var body: some View {
         
         ZStack(alignment: .leading)  {
+
             VStack(alignment: .leading)  {
+                
                 CategoryText(text: CategoryHeads.quote)
                 
                 AccentText(text: viewModel.quote)
+                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
                             y: ShadowSettings.y)
                 
                 DescriptionText(text: viewModel.author)
+                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
             }
+            .animation(.spring())
             .padding()
     
         }
+        .background(LogoView())
         .onAppear { viewModel.getQuote() }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

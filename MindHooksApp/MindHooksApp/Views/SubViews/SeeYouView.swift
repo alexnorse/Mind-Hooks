@@ -1,16 +1,13 @@
 //
-//  WordView.swift
+//  SeeYouView.swift
 //  MindHooksApp
 //
-//  Created by Alexandr L. on 7/27/21.
+//  Created by Alexandr L. on 8/10/21.
 //
 
 import SwiftUI
-import UIKit
 
-struct WordView: View {
-    
-    @StateObject var viewModel = WordViewModel()
+struct SeeYouView: View {
     
     var body: some View {
         
@@ -18,16 +15,14 @@ struct WordView: View {
             
             VStack(alignment: .leading){
                 
-                CategoryText(text: CategoryHeads.word)
-                
-                AccentText(text: viewModel.word)
+                AccentText(text: Descriptions.allForToday)
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
                             y: ShadowSettings.y)
                 
-                DescriptionText(text: viewModel.definition)
+                DescriptionText(text: Descriptions.seeYouTomorrow)
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
             }
             .animation(.spring())
@@ -35,17 +30,11 @@ struct WordView: View {
             
         }
         .background(LogoView())
-        .onAppear { viewModel.getWord() }
-        .alert(item: $viewModel.alertItem) { alertItem in
-            Alert(title: alertItem.title,
-                  message: alertItem.message,
-                  dismissButton: alertItem.dismissButton)
-        }
     }
 }
 
-struct WordView_Previews: PreviewProvider {
+struct SeeYouView_Previews: PreviewProvider {
     static var previews: some View {
-        WordView()
+        SeeYouView()
     }
 }

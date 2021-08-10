@@ -29,6 +29,8 @@
 		E6AC9C8426B16DA1000D1586 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Extensions.swift */; };
 		E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
 		E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
+		E6D9580A26C2B11300A5491B /* SeeYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9580926C2B11300A5491B /* SeeYouView.swift */; };
+		E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9580B26C2C05A00A5491B /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		E6AC9C8326B16DA1000D1586 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E6B02E1326B980F6006B45F7 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6D9580926C2B11300A5491B /* SeeYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeYouView.swift; sourceTree = "<group>"; };
+		E6D9580B26C2C05A00A5491B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				E64DA5AF26AEAACA00061284 /* TextViews.swift */,
+				E6D9580B26C2C05A00A5491B /* LogoView.swift */,
 			);
 			path = Designs;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				E649AED626B0126F00905DE1 /* WordView.swift */,
 				E649AED826B0129900905DE1 /* QuoteView.swift */,
 				E640C50D26BEF584002C8438 /* EventView.swift */,
+				E6D9580926C2B11300A5491B /* SeeYouView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -371,11 +377,13 @@
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
+				E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Extensions.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
+				E6D9580A26C2B11300A5491B /* SeeYouView.swift in Sources */,
 				E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */,
 				E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */,
 				E64DA5B626AEB73300061284 /* Quote.swift in Sources */,
