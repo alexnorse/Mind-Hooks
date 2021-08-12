@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "LaunchScreen-dark.png",
+      "filename" : "PlaceholderOrange.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "LaunchScreen-dark-1.png",
+      "filename" : "PlaceholderOrange-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "LaunchScreen-dark-2.png",
+      "filename" : "PlaceholderOrange-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

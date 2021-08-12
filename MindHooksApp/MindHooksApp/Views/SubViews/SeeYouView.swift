@@ -21,15 +21,17 @@ struct SeeYouView: View {
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
                             y: ShadowSettings.y)
+                    .padding(UInumbers.padding)
                 
                 DescriptionText(text: Descriptions.seeYouTomorrow)
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
+                    .padding(UInumbers.padding)
             }
             .animation(.spring())
             .padding()
             
         }
-        .background(LogoView())
+        .background(LogoView().opacity(0.3))
     }
 }
 

@@ -18,6 +18,7 @@ struct EventView: View {
             VStack(alignment: .leading) {
                 
                 CategoryText(text: CategoryHeads.event)
+                    .padding(UInumbers.padding)
                 
                 AccentText(text: "Year \(viewModel.year)")
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
@@ -25,15 +26,17 @@ struct EventView: View {
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
                             y: ShadowSettings.y)
+                    .padding(UInumbers.padding)
                 
                 DescriptionText(text: viewModel.description)
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
+                    .padding(UInumbers.padding)
             }
             .animation(.spring())
             .padding()
             
         }
-        .background(LogoView())
+        .background(LogoView().opacity(0.3))
         .onAppear { viewModel.getEvent() }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

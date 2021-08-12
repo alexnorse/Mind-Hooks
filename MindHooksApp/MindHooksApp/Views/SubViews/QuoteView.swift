@@ -18,6 +18,7 @@ struct QuoteView: View {
             VStack(alignment: .leading)  {
                 
                 CategoryText(text: CategoryHeads.quote)
+                    .padding(UInumbers.padding)
                 
                 AccentText(text: viewModel.quote)
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
@@ -25,15 +26,17 @@ struct QuoteView: View {
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
                             y: ShadowSettings.y)
+                    .padding(UInumbers.padding)
                 
                 DescriptionText(text: viewModel.author)
                     .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
+                    .padding(UInumbers.padding)
             }
             .animation(.spring())
             .padding()
     
         }
-        .background(LogoView())
+        .background(LogoView().opacity(0.3))
         .onAppear { viewModel.getQuote() }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

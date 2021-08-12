@@ -12,11 +12,10 @@ struct LogoView: View {
     @State private var isVisible = false
     
     var body: some View {
-        Image("Logo")
+        Image("PlaceholderGray")
             .resizable()
             .scaledToFill()
-            .frame(width: 175, height: 175)
-            .opacity(0.15)
+            .frame(width: 200, height: 200)
             .scaleEffect(isVisible ? 1.2 : 0.9)
             .padding()
             .onAppear { withAnimation(.spring(response: AnimationSettings.duration,

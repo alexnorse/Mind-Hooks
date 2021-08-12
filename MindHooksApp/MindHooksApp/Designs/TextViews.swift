@@ -26,9 +26,8 @@ struct CategoryText: View {
             .font(.headline)
             .fontWeight(.regular)
             .foregroundColor(.gray)
-            .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
+            .frame(maxWidth: ViewsSizes.textWidth)
             .textCase(.uppercase)
-            .padding(UInumbers.padding)
     }
 }
 
@@ -41,9 +40,7 @@ struct AccentText: View {
             .font(.title)
             .fontWeight(.semibold)
             .foregroundColor(Color("orange"))
-            .frame(alignment: .leading)
-            .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
-            .padding(UInumbers.padding)
+            .frame(maxWidth: ViewsSizes.textWidth)
     }
 }
 
@@ -55,9 +52,7 @@ struct DescriptionText: View {
         Text(text)
             .font(.body)
             .fontWeight(.regular)
-            .frame(alignment: .trailing)
-            .frame(maxWidth: ViewsSizes.textWidth, alignment: .leading)
-            .padding(UInumbers.padding)
+            .frame(maxWidth: ViewsSizes.textWidth)
     }
 }
 
