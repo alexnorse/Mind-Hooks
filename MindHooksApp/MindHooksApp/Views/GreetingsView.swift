@@ -17,6 +17,7 @@ struct GreetingsView: View {
                     Circle()
                         .foregroundColor(.gray)
                         .opacity(0.1)
+                        .blur(radius: 5)
                         .frame(width: 350, height: 350)
                     
                     VStack(alignment: .center, spacing: 1) {
@@ -51,6 +52,7 @@ struct GreetingsView: View {
 struct GreetingsView_Previews: PreviewProvider {
     static var previews: some View {
         GreetingsView()
+            .preferredColorScheme(.light)
             
     }
 }

@@ -15,7 +15,7 @@ struct LogoView: View {
         Image("PlaceholderGray")
             .resizable()
             .scaledToFill()
-            .frame(width: 200, height: 200)
+            .frame(width: 230, height: 230)
             .scaleEffect(isVisible ? 1.2 : 0.9)
             .padding()
             .onAppear { withAnimation(.spring(response: AnimationSettings.duration,
