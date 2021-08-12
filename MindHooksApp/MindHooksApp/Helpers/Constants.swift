@@ -20,7 +20,7 @@ enum CategoryHeads {
 
 
 enum Descriptions {
-    static let greetings      = "Greetings!"
+    static let greetings      = "Greetings"
     static let startDay       = "It's time to get some inspiration"
     static let navlink        = "Start"
     static let allForToday    = "That's all for today!"
