@@ -22,7 +22,6 @@ struct WordView: View {
                     .padding(UInumbers.padding)
                 
                 AccentText(text: viewModel.word)
-                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
@@ -30,7 +29,6 @@ struct WordView: View {
                     .padding(UInumbers.padding)
                 
                 DescriptionText(text: viewModel.definition)
-                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
                     .padding(UInumbers.padding)
             }
             .animation(.spring())
@@ -39,6 +37,7 @@ struct WordView: View {
         }
         .background(LogoView().opacity(0.3))
         .onAppear { viewModel.getWord() }
+        
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,

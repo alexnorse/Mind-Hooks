@@ -16,7 +16,6 @@ struct SeeYouView: View {
             VStack(alignment: .leading){
                 
                 AccentText(text: Descriptions.allForToday)
-                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.firstDelay))
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
@@ -24,7 +23,6 @@ struct SeeYouView: View {
                     .padding(UInumbers.padding)
                 
                 DescriptionText(text: Descriptions.seeYouTomorrow)
-                    .animation(Animation.easeIn(duration: AnimationSettings.duration).delay(AnimationSettings.secondDelay))
                     .padding(UInumbers.padding)
             }
             .animation(.spring())

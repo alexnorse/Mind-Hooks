@@ -16,7 +16,7 @@ struct GreetingsView: View {
                 ZStack {
                     Circle()
                         .foregroundColor(.gray)
-                        .opacity(0.15)
+                        .opacity(0.1)
                         .frame(width: 350, height: 350)
                     
                     VStack(alignment: .center, spacing: 1) {
@@ -27,7 +27,7 @@ struct GreetingsView: View {
                         DescriptionText(text: Descriptions.startDay)
                             .offset(y: 25)
                     }.offset(y: UInumbers.offsetY)
-                }
+                }.frame(alignment: .center)
                 
                 NavigationLink(
                     destination: MainView(),
