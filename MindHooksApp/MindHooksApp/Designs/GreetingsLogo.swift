@@ -18,6 +18,12 @@ struct GreetingsLogo: View {
             .frame(width: ImageSize.width, height: ImageSize.height)
             .scaleEffect(isVisible ? AnimationSettings.scaleStart : AnimationSettings.scaleFinish)
             .padding()
+            
+            .onAppear { withAnimation(.spring(response: AnimationSettings.duration,
+                                              dampingFraction: 0.2,
+                                              blendDuration: 0)) {self.isVisible.toggle()}
+            }
+            
             .shadow(color: .gray.opacity(ShadowSettings.opacity),
                     radius: ShadowSettings.radius,
                     x: ShadowSettings.x,
