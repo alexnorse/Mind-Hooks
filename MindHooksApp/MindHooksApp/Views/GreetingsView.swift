@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GreetingsView: View {
     
+    @State private var isVisible = false
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
@@ -45,9 +47,8 @@ struct GreetingsView: View {
                                     y: ShadowSettings.y)
                     })
                     .offset(y: UInumbers.navlinkY)
-                    
-                    .navigationBarHidden(true)
             }
+            .navigationBarHidden(true)
         }
     }
 }

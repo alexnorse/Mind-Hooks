@@ -52,7 +52,7 @@ enum ShadowSettings {
 
 enum AnimationSettings {
     static let duration              = 0.5
-    static let scaleStart: CGFloat   = 1.2
+    static let scaleStart: CGFloat   = 1.3
     static let scaleFinish: CGFloat  = 0.9
 }
 
