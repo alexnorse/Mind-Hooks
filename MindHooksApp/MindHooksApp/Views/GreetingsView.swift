@@ -26,15 +26,13 @@ struct GreetingsView: View {
             
             VStack(alignment: .center, spacing: 1) {
                 GreetingsLogo()
-                    .offset(y: UInumbers.offsetY + 150)
+                    .offset(y: UInumbers.offsetY + 100)
                 
                 AccentText(text: Descriptions.greetings)
-                    .offset(y: UInumbers.offsetY + 120)
                 
                 DescriptionText(text: Descriptions.startDay)
-                    .offset(y: UInumbers.offsetY + 125)
             }
-            .offset(y: UInumbers.offsetY - 30)
+            .offset(y: UInumbers.offsetY + 30)
         }
     }
 }
