@@ -30,11 +30,6 @@ struct MainView: View {
                         .tag(2)
                         .offset(y: UInumbers.offsetY)
                         .padding(UInumbers.padding)
-                    
-                    SeeYouView()
-                        .tag(3)
-                        .offset(y: UInumbers.offsetY)
-                        .padding(UInumbers.padding)
                 })
                 .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))

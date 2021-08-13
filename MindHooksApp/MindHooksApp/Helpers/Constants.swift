@@ -18,8 +18,6 @@ enum Descriptions {
     static let greetings      = "Greetings"
     static let startDay       = "It's time to get inspiration"
     static let navlink        = "Start"
-    static let allForToday    = "That's all for today!"
-    static let seeYouTomorrow = "See you tomorrow 😉"
 }
 
     
