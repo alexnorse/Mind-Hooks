@@ -15,13 +15,15 @@ struct LogoView: View {
         Image("PlaceholderGray")
             .resizable()
             .scaledToFill()
-            .frame(width: 230, height: 230)
-            .scaleEffect(isVisible ? 1.2 : 0.9)
+            .frame(width: ImageSize.width, height: ImageSize.height)
+            .scaleEffect(isVisible ? AnimationSettings.scaleStart : AnimationSettings.scaleFinish)
             .padding()
+            
             .onAppear { withAnimation(.spring(response: AnimationSettings.duration,
                                               dampingFraction: 0.2,
-                                              blendDuration: 0)) {
-                                              self.isVisible.toggle()}}
+                                              blendDuration: 0)) {self.isVisible.toggle()}
+                
+            }
     }
 }
 

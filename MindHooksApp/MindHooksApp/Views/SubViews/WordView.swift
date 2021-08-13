@@ -13,11 +13,9 @@ struct WordView: View {
     @StateObject var viewModel = WordViewModel()
     
     var body: some View {
-        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading){
-                
                 CategoryText(text: CategoryHeads.word)
                     .padding(UInumbers.padding)
                 

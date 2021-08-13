@@ -7,11 +7,6 @@
 
 import UIKit
 
-struct Day {
-    static let today = Date()
-}
-
-
 enum CategoryHeads {
     static let word  = "Word of the day"
     static let quote = "Quote of the day"
@@ -21,7 +16,7 @@ enum CategoryHeads {
 
 enum Descriptions {
     static let greetings      = "Greetings"
-    static let startDay       = "It's time to get some inspiration"
+    static let startDay       = "It's time to get inspiration"
     static let navlink        = "Start"
     static let allForToday    = "That's all for today!"
     static let seeYouTomorrow = "See you tomorrow 😉"
@@ -37,11 +32,6 @@ enum URLs {
     static let wordAPI  = "https://random-words-api.vercel.app/word"
     static let quoteAPI = "https://api.quotable.io/random"
     static let eventAPI = "https://byabbe.se/on-this-day/\(Day.today.convertForEventURL())/events.json"
-}
-
-
-enum ViewsSizes {
-    static let textWidth: CGFloat = 330
 }
 
 
@@ -61,7 +51,13 @@ enum ShadowSettings {
 
 
 enum AnimationSettings {
-    static let duration     = 0.6
-    static let firstDelay   = 0.1
-    static let secondDelay   = 0.3
+    static let duration              = 0.5
+    static let scaleStart: CGFloat   = 1.2
+    static let scaleFinish: CGFloat  = 0.9
+}
+
+
+enum ImageSize {
+    static let width: CGFloat    = 230
+    static let height: CGFloat   = 230
 }

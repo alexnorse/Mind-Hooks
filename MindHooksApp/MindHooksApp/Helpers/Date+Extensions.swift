@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct Day {
+    static let today = Date()
+}
+
+
 extension Date {
     
     func convertToday() -> String {

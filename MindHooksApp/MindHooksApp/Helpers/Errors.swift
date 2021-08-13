@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum APErrors: Error {
+enum MHErrors: Error {
     case invalidURL
     case invalidResponse
     case invalidData

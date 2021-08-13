@@ -13,40 +13,33 @@ struct MainView: View {
     @State private var currentTab = 0
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
-                TabView(selection: $currentTab,
-                        content:  {
-                            WordView()
-                                .tag(0)
-                                .offset(y: UInumbers.offsetY)
-                                .padding(UInumbers.padding)
-                            
-                            QuoteView()
-                                .tag(1)
-                                .offset(y: UInumbers.offsetY)
-                                .padding(UInumbers.padding)
-                            
-                            EventView()
-                                .tag(2)
-                                .offset(y: UInumbers.offsetY)
-                                .padding(UInumbers.padding)
-                            
-                            SeeYouView()
-                                .tag(3)
-                                .offset(y: UInumbers.offsetY)
-                                .padding(UInumbers.padding)
-                            
-                        })
-                    .tabViewStyle(PageTabViewStyle())
-                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-                
+                TabView(selection: $currentTab, content: {
+                    QuoteView()
+                        .tag(0)
+                        .offset(y: UInumbers.offsetY)
+                        .padding(UInumbers.padding)
+                    
+                    WordView()
+                        .tag(1)
+                        .offset(y: UInumbers.offsetY)
+                        .padding(UInumbers.padding)
+                    
+                    EventView()
+                        .tag(2)
+                        .offset(y: UInumbers.offsetY)
+                        .padding(UInumbers.padding)
+                    
+                    SeeYouView()
+                        .tag(3)
+                        .offset(y: UInumbers.offsetY)
+                        .padding(UInumbers.padding)
+                })
+                .tabViewStyle(PageTabViewStyle())
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             }
             .navigationTitle("\(today.convertToday())")
-            
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)

@@ -10,11 +10,9 @@ import SwiftUI
 struct SeeYouView: View {
     
     var body: some View {
-        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading){
-                
                 AccentText(text: Descriptions.allForToday)
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,

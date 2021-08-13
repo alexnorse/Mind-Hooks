@@ -12,11 +12,9 @@ struct QuoteView: View {
     @StateObject var viewModel = QuoteViewModel()
     
     var body: some View {
-        
         ZStack(alignment: .leading)  {
-
+            
             VStack(alignment: .leading)  {
-                
                 CategoryText(text: CategoryHeads.quote)
                     .padding(UInumbers.padding)
                 
@@ -32,7 +30,7 @@ struct QuoteView: View {
             }
             .animation(.spring())
             .padding()
-    
+            
         }
         .background(LogoView().opacity(0.3))
         .onAppear { viewModel.getQuote() }

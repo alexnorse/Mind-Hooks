@@ -26,8 +26,8 @@ struct CategoryText: View {
             .font(.headline)
             .fontWeight(.regular)
             .foregroundColor(.gray)
-            .frame(alignment: .leading)
             .textCase(.uppercase)
+            .frame(alignment: .leading)
     }
 }
 

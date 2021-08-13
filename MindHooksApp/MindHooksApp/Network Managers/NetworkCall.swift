@@ -19,7 +19,7 @@ final class NetworkCall {
     private init() {}
     
     
-    func getQuote(completion: @escaping (Result<Quote, APErrors>) -> Void) {
+    func getQuote(completion: @escaping (Result<Quote, MHErrors>) -> Void) {
         guard let url = URL(string: quoteURL) else {
             completion(.failure(.invalidURL))
             return
@@ -53,7 +53,7 @@ final class NetworkCall {
     }
     
     
-    func getWord(completion: @escaping(Result<[Word], APErrors>) -> Void) {
+    func getWord(completion: @escaping(Result<[Word], MHErrors>) -> Void) {
         guard let url = URL(string: wordURL) else {
             completion(.failure(.invalidURL))
             return
@@ -87,7 +87,7 @@ final class NetworkCall {
     }
     
     
-    func getEvent(completion: @escaping(Result<Events, APErrors>) -> Void) {
+    func getEvent(completion: @escaping(Result<Events, MHErrors>) -> Void) {
         guard let url = URL(string: eventURL) else {
             completion(.failure(.invalidURL))
             return

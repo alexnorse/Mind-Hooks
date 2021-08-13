@@ -12,11 +12,9 @@ struct EventView: View {
     @StateObject var viewModel = EventViewModel()
     
     var body: some View {
-        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading) {
-                
                 CategoryText(text: CategoryHeads.event)
                     .padding(UInumbers.padding)
                 
