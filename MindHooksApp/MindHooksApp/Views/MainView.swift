@@ -36,8 +36,6 @@ struct MainView: View {
             }
             .navigationTitle("\(today.convertToday())")
         }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
     }
 }
 

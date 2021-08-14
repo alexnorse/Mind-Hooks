@@ -13,6 +13,7 @@
 		E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */; };
 		E619CC4726AD5C1E00579CFD /* MindHooksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */; };
 		E619CC5226AD5C1E00579CFD /* MindHooksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */; };
+		E61EF94D26C7B39E0057AD4D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EF94C26C7B39E0057AD4D /* ButtonView.swift */; };
 		E61FE4D426C50C5F00E01D25 /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61FE4D326C50C5F00E01D25 /* GreetingsView.swift */; };
 		E61FE4D626C50CD600E01D25 /* GreetingsLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */; };
 		E640C50A26BEF38D002C8438 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* Event.swift */; };
@@ -112,6 +113,7 @@
 		E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindHooksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppUITests.swift; sourceTree = "<group>"; };
 		E619CC5326AD5C1E00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61EF94C26C7B39E0057AD4D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		E61FE4D326C50C5F00E01D25 /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
 		E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsLogo.swift; sourceTree = "<group>"; };
 		E640C50926BEF38D002C8438 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				E64DA5AF26AEAACA00061284 /* TextViews.swift */,
 				E6D9580B26C2C05A00A5491B /* LogoView.swift */,
 				E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */,
+				E61EF94C26C7B39E0057AD4D /* ButtonView.swift */,
 			);
 			path = Designs;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				E64DA5C426AEDED400061284 /* QuoteViewModel.swift in Sources */,
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
+				E61EF94D26C7B39E0057AD4D /* ButtonView.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */,

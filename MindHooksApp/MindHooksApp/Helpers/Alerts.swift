@@ -25,10 +25,10 @@ struct AlertContext {
                                           dismissButton: .default (Text("Ok")))
     
     static let invalidURL        = Alerts(title: Text("URL Error ☹️"),
-                                          message: Text("Some troubles with URL..."),
+                                          message: Text("URL source Error"),
                                           dismissButton: .default (Text("Ok")))
     
     static let unableToComplete  = Alerts(title: Text("Connection Error ☹️"),
-                                          message: Text("Check your internet connection"),
+                                          message: Text("Please, check your internet connection"),
                                           dismissButton: .default (Text("Ok")))
 }
