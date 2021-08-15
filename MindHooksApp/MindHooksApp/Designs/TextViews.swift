@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextViews: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             CategoryText(text: "Quote of the day")
             AccentText(text: "Lorem Ipsum")
             DescriptionText(text: "E. Hemingway")
@@ -17,7 +17,11 @@ struct TextViews: View {
             GreetingsAccentText(text: "Greetings")
             GreetingsDescriptionText(text: "Time for inspiration")
             LinkText(text: "See more")
+            
+            WidgetCategoryText(text: "Quote of the day")
+            WidgetBodyText(text: "Lorem Ipsum")
         }
+        .padding()
     }
 }
 
@@ -139,8 +143,38 @@ struct LinkText: View {
 }
 
 
+struct WidgetCategoryText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.subheadline)
+            .fontWeight(.regular)
+            .foregroundColor(.white)
+            .textCase(.uppercase)
+            .padding()
+    }
+}
+
+
+struct WidgetBodyText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.footnote)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+            .padding()
+    }
+}
+
+
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
         TextViews()
+            .preferredColorScheme(.dark)
     }
 }
