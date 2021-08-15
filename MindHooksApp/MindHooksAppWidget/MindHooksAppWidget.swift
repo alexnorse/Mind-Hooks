@@ -34,13 +34,14 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    var quote: Quote
 }
 
 
 
 struct MindHooksAppWidgetEntryView : View {
     var entry: Provider.Entry
+    
+    @State private var viewModel = QuoteViewModel()
 
     var body: some View {
         ZStack {
@@ -52,10 +53,11 @@ struct MindHooksAppWidgetEntryView : View {
             
             VStack(alignment: .leading) {
                 WidgetCategoryText(text: CategoryHeads.quote)
-                WidgetBodyText(text: "Lorem Ipsum eustrandios foundtarious")
-                WidgetBodyText(text: "Author")
+                WidgetBodyText(text: viewModel.quote)
+                WidgetBodyText(text: viewModel.author)
             }
         }
+        .onAppear { viewModel.getQuote() }
     }
 }
 
