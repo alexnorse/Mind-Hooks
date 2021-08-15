@@ -59,6 +59,7 @@
 		E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */; };
 		E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
 		E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
+		E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
 		E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9580B26C2C05A00A5491B /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +141,7 @@
 		E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		E6B02E1326B980F6006B45F7 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		E6D9580B26C2C05A00A5491B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				E64DA5C026AED48D00061284 /* NetworkCall.swift */,
+				E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */,
 			);
 			path = "Network Managers";
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E61EF94D26C7B39E0057AD4D /* ButtonView.swift in Sources */,
+				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */,

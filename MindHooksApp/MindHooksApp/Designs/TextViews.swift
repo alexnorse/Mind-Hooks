@@ -16,6 +16,7 @@ struct TextViews: View {
             
             GreetingsAccentText(text: "Greetings")
             GreetingsDescriptionText(text: "Time for inspiration")
+            LinkText(text: "See more")
         }
     }
 }
@@ -51,7 +52,7 @@ struct AccentText: View {
         Text(text)
             .font(.title)
             .fontWeight(.semibold)
-            .foregroundColor(Color("orange"))
+            .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
         
             .opacity(show ? 1 : 0)
@@ -90,7 +91,7 @@ struct GreetingsAccentText: View {
         Text(text)
             .font(.title)
             .fontWeight(.semibold)
-            .foregroundColor(Color("orange"))
+            .foregroundColor(Color.accentColor)
         
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
@@ -110,6 +111,26 @@ struct GreetingsDescriptionText: View {
             .font(.body)
             .fontWeight(.regular)
         
+            .opacity(show ? 1 : 0)
+            .offset(y: show ? 0 : 20)
+            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
+            .onAppear { self.show.toggle() }
+    }
+}
+
+
+struct LinkText: View {
+    
+    var text: String
+    @State var show: Bool = false
+    
+    var body: some View {
+        Text(text)
+            .font(.body)
+            .fontWeight(.bold)
+            .foregroundColor(Color.accentColor)
+            .frame(maxWidth: 330, alignment: .leading)
+            
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))

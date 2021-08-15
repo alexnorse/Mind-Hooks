@@ -11,6 +11,7 @@ final class EventViewModel: ObservableObject {
     
     @Published var year: String = ""
     @Published var description: String = ""
+    @Published var link: String = ""
     
     @Published var alertItem: Alerts?
     
@@ -25,6 +26,7 @@ final class EventViewModel: ObservableObject {
                 case.success(let event):
                     self.year = event.events.first?.year ?? TernaryDescription.todayError
                     self.description = event.events.first?.description ?? TernaryDescription.todayError
+                    self.link = event.events.first?.wikipedia.first?.wikipedia ?? TernaryDescription.todayError
                     
                 case.failure(let error):
                     switch error {

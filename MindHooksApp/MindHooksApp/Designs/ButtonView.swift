@@ -10,14 +10,14 @@ import SwiftUI
 struct ButtonView: View {
     
     var body: some View {
-        GreetingsButton()
+        VStack(spacing: 20) {
+            GreetingsButton()
+        }
     }
 }
 
 
 struct GreetingsButton: View {
-    
-    @State private var isVisible = false
     
     var body: some View {
         Text("Start")
@@ -33,6 +33,7 @@ struct GreetingsButton: View {
                     y: ShadowSettings.y)
     }
 }
+
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {

@@ -18,6 +18,7 @@ enum Descriptions {
     static let greetings      = "Greetings"
     static let startDay       = "It's time to get inspiration"
     static let navlink        = "Start"
+    static let eventLink      = "See more"
 }
 
     
@@ -30,6 +31,7 @@ enum URLs {
     static let wordAPI  = "https://random-words-api.vercel.app/word"
     static let quoteAPI = "https://api.quotable.io/random"
     static let eventAPI = "https://byabbe.se/on-this-day/\(Day.today.convertForEventURL())/events.json"
+    static let wikiURL  = "https://www.wikipedia.org"
 }
 
 

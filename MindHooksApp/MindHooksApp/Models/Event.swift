@@ -8,10 +8,15 @@
 import Foundation
 
 struct Events: Codable {
-    let events: [Event]
+    let events: [Model]
 }
 
-struct Event: Codable {
+struct Model: Codable {
     let year: String
     let description: String
+    let wikipedia: [Wikipedia]
+}
+
+struct Wikipedia: Codable {
+    let wikipedia: String
 }

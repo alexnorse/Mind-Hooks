@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SafariServices
 
 struct EventView: View {
     
     @StateObject var viewModel = EventViewModel()
+    @State private var showSafari: Bool = false
+    @State var show: Bool = false
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -26,6 +29,13 @@ struct EventView: View {
                     .padding(UInumbers.padding)
                 
                 DescriptionText(text: viewModel.description)
+                    .padding(UInumbers.padding)
+                
+                LinkText(text: Descriptions.eventLink)
+                    .onTapGesture { showSafari.toggle() }
+                    .fullScreenCover(isPresented: $showSafari,
+                                     content: { SFSafariViewWrapper(
+                                        url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
                     .padding(UInumbers.padding)
             }
             .animation(.spring())
