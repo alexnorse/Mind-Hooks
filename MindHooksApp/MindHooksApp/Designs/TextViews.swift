@@ -151,12 +151,11 @@ struct WidgetCategoryText: View {
     
     var body: some View {
         Text(text)
-            .font(.footnote)
+            .font(.caption)
             .fontWeight(.regular)
             .foregroundColor(.white)
             .textCase(.uppercase)
             .multilineTextAlignment(.leading)
-            .padding()
     }
 }
 
@@ -167,11 +166,10 @@ struct WidgetBodyText: View {
     
     var body: some View {
         Text(text)
-            .font(.subheadline)
+            .font(.footnote)
             .fontWeight(.medium)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
-            .padding()
     }
 }
 
@@ -182,11 +180,10 @@ struct WidgetNoteText: View {
     
     var body: some View {
         Text(text)
-            .font(.footnote)
+            .font(.caption)
             .fontWeight(.regular)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
-            .padding()
     }
 }
 

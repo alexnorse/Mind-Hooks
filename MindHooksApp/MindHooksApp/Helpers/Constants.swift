@@ -37,9 +37,10 @@ enum URLs {
 
 
 enum UInumbers {
-    static let padding: CGFloat  = 15
-    static let offsetY: CGFloat  = -75
-    static let navlinkY: CGFloat = 150
+    static let padding: CGFloat       = 15
+    static let offsetY: CGFloat       = -75
+    static let navlinkY: CGFloat      = 150
+    static let widgetPadding: CGFloat = 3
 }
 
 
