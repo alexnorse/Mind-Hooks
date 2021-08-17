@@ -10,4 +10,7 @@ import Foundation
 struct Quote: Codable {
     let content: String
     let author: String
+    
+    static let placeholderQuote = Quote(content: "Non est ad astra mollis e terris via",
+                                        author: "Seneca")
 }

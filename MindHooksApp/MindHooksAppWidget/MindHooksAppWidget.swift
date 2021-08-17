@@ -8,56 +8,81 @@
 import WidgetKit
 import SwiftUI
 
+struct ModelEntry: TimelineEntry {
+    let date: Date
+    let quote: Quote
+}
+
+
 struct Provider: TimelineProvider {
     
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+    func placeholder(in context: Context) -> ModelEntry {
+        ModelEntry(date: Date(), quote: Quote.placeholderQuote)
     }
 
     
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+    func getSnapshot(in context: Context, completion: @escaping (ModelEntry) -> ()) {
+        let entry = ModelEntry(date: Date(), quote: Quote.placeholderQuote)
         completion(entry)
     }
 
     
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+    func getTimeline(in context: Context, completion: @escaping (Timeline<ModelEntry>) -> ()) {
+        getQuote { modelData in
+            let date = Date()
+            let data = ModelEntry(date: date, quote: modelData)
+            let nextUpdate = Calendar.current.date(byAdding: .hour, value: 24, to: date)
+            let timeline = Timeline(entries: [data], policy: .after(nextUpdate!))
+            completion(timeline)
+        }
     }
 }
 
 
-
-
-struct SimpleEntry: TimelineEntry {
-    let date: Date
+func getQuote(completion: @escaping (Quote) -> ()) {
+    let url = URL(string: URLs.quoteAPI)
+    
+    let task = URLSession.shared.dataTask(with: url!) { data, _, error in
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            let quote = try decoder.decode(Quote.self, from: data!)
+            completion(quote)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    task.resume()
 }
 
 
 
 struct MindHooksAppWidgetEntryView : View {
-    var entry: Provider.Entry
     
-    @State private var viewModel = QuoteViewModel()
-
+    var entry: ModelEntry
+    
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
             Color("Orange")
+            
             Image("PlaceholderGray")
                 .resizable()
                 .scaledToFit()
-                .opacity(0.2)
-            
+                .opacity(0.35)
+
             VStack(alignment: .leading) {
-                WidgetCategoryText(text: CategoryHeads.quote)
-                WidgetBodyText(text: viewModel.quote)
-                WidgetBodyText(text: viewModel.author)
+                WidgetCategoryText(text: CategoryHeads.widget)
+                
+                WidgetBodyText(text: entry.quote.content)
+                    .fixedSize(horizontal: false, vertical: true)
+                
+                WidgetNoteText(text: entry.quote.author)
             }
         }
-        .onAppear { viewModel.getQuote() }
     }
 }
 
@@ -73,7 +98,7 @@ struct MindHooksAppWidget: Widget {
         }
         .configurationDisplayName("Mind Hooks")
         .description("Add Quote of the Day as widget")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall])
     }
 }
 
@@ -82,11 +107,8 @@ struct MindHooksAppWidget: Widget {
 struct MindHooksAppWidget_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MindHooksAppWidgetEntryView(entry: SimpleEntry(date: Date()))
+            MindHooksAppWidgetEntryView(entry: ModelEntry(date: Date(), quote: Quote.placeholderQuote))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
-            
-            MindHooksAppWidgetEntryView(entry: SimpleEntry(date: Date()))
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
         }
     }
 }

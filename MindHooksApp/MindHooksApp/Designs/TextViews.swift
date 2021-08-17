@@ -20,6 +20,7 @@ struct TextViews: View {
             
             WidgetCategoryText(text: "Quote of the day")
             WidgetBodyText(text: "Lorem Ipsum")
+            WidgetNoteText(text: "Da Vinci")
         }
         .padding()
     }
@@ -38,6 +39,7 @@ struct CategoryText: View {
             .foregroundColor(.gray)
             .textCase(.uppercase)
             .frame(maxWidth: 330, alignment: .leading)
+            .multilineTextAlignment(.leading)
             
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
@@ -149,10 +151,11 @@ struct WidgetCategoryText: View {
     
     var body: some View {
         Text(text)
-            .font(.subheadline)
+            .font(.footnote)
             .fontWeight(.regular)
             .foregroundColor(.white)
             .textCase(.uppercase)
+            .multilineTextAlignment(.leading)
             .padding()
     }
 }
@@ -164,9 +167,25 @@ struct WidgetBodyText: View {
     
     var body: some View {
         Text(text)
-            .font(.footnote)
-            .fontWeight(.bold)
+            .font(.subheadline)
+            .fontWeight(.medium)
             .foregroundColor(.white)
+            .multilineTextAlignment(.leading)
+            .padding()
+    }
+}
+
+
+struct WidgetNoteText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.footnote)
+            .fontWeight(.regular)
+            .foregroundColor(.white)
+            .multilineTextAlignment(.leading)
             .padding()
     }
 }
