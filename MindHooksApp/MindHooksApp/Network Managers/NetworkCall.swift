@@ -14,6 +14,9 @@ final class NetworkCall {
     let quoteURL    = URLs.quoteAPI
     let wordURL     = URLs.wordAPI
     let eventURL    = URLs.eventAPI
+    
+    var lastCheck: Date?
+    
 
     
     private init() {}

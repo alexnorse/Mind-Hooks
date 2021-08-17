@@ -34,7 +34,6 @@ struct WordView: View {
             
         }
         .background(LogoView().opacity(0.3))
-        .onAppear { viewModel.getWord() }
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

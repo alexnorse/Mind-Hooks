@@ -33,7 +33,6 @@ struct QuoteView: View {
             
         }
         .background(LogoView().opacity(0.3))
-        .onAppear { viewModel.getQuote() }
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

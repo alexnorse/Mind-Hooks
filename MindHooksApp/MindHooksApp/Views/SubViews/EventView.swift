@@ -43,7 +43,6 @@ struct EventView: View {
             
         }
         .background(LogoView().opacity(0.3))
-        .onAppear { viewModel.getEvent() }
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
