@@ -18,7 +18,8 @@ final class EventViewModel: ObservableObject {
     init () { getEvent() }
     
     func getEvent() {
-        NetworkCall.shared.getEvent { result in
+        NetworkCall.shared.getEvent { [weak self] result in
+            guard let self = self else { return }
             
             DispatchQueue.main.sync {
                 switch result {

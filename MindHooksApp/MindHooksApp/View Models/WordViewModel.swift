@@ -17,7 +17,8 @@ final class WordViewModel: ObservableObject {
     init () { getWord() }
     
     func getWord() {
-        NetworkCall.shared.getWord { result in
+        NetworkCall.shared.getWord { [weak self] result in
+            guard let self = self else { return }
             
             DispatchQueue.main.sync {
                 switch result {

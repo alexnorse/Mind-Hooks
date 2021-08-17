@@ -15,10 +15,6 @@ final class NetworkCall {
     let wordURL     = URLs.wordAPI
     let eventURL    = URLs.eventAPI
     
-    var lastCheck: Date?
-    
-
-    
     private init() {}
     
     

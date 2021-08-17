@@ -17,7 +17,8 @@ final class QuoteViewModel: ObservableObject {
     init () { getQuote() }
     
     func getQuote() {
-        NetworkCall.shared.getQuote { result in
+        NetworkCall.shared.getQuote { [weak self] result in
+            guard let self = self else { return }
             
             DispatchQueue.main.sync {
                 switch result {
