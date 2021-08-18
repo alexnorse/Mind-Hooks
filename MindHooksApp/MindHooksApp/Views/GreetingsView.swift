@@ -25,32 +25,22 @@ struct GreetingsView: View {
                 .animation(Animation.easeOut(duration: 0.5).delay(0.2))
                 .onAppear { self.isVisible.toggle() }
             
-            VStack(alignment: .center, spacing: 5) {
+            VStack(alignment: .center) {
                 GreetingsLogo()
-                    .offset(y: UInumbers.offsetY + 100)
                 
                 GreetingsAccentText(text: Descriptions.greetings)
                 GreetingsDescriptionText(text: Descriptions.startDay)
                 
-                VStack {
-                    Button(action: { showMainView.toggle()},
-                           label: {GreetingsButton()})
-                }
-                .fullScreenCover(isPresented: $showMainView,
-                       content: {MainView()})
-                .offset(y: UInumbers.offsetY + 300)
+                Button(action: { showMainView.toggle()}, label: {GreetingsButton()})
+                    .fullScreenCover(isPresented: $showMainView, content: {MainView()})
             }
-            .offset(y: UInumbers.offsetY + 50)
         }
-        .offset(y: UInumbers.offsetY + 50)
     }
 }
 
 struct GreetingsView_Previews: PreviewProvider {
     static var previews: some View {
         GreetingsView()
-            
-            
-            
+            .previewDevice("iPhone 12 Pro Max")
     }
 }

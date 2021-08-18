@@ -16,7 +16,7 @@ extension Date {
     
     func convertToday() -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE, MMMM d"
+        formatter.dateFormat = "EEEE, MMM d"
         return formatter.string(from: self)
     }
     
