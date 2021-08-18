@@ -9,7 +9,7 @@ import UIKit
 
 enum CategoryHeads {
     static let word   = "Word of the day"
-    static let quote  = "Quote of the day"
+    static let quote  = "Random quote for your day"
     static let event  = "This day in history"
     static let widget = "Random quote"
 }

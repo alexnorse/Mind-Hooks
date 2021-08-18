@@ -17,9 +17,8 @@ struct GreetingsView: View {
             Button(action: { showMainView.toggle()}, label: {GreetingsLogo()})
                 .fullScreenCover(isPresented: $showMainView, content: {MainView()})
                 .background(Circle()
-                                .foregroundColor(.secondary)
-                                .opacity(0.1)
-                                .blur(radius: 2)
+                                .foregroundColor(.gray)
+                                .opacity(0.3)
                                 .frame(width: 300, height: 300)
                                 
                                 .opacity(isVisible ? 1 : 0)
