@@ -2,6 +2,8 @@
 
 > *Inspire your day. Drive your mind.*
 
+![Mind Hooks App](https://user-images.githubusercontent.com/68333583/129915076-77fee43a-4763-4856-a1a4-844f21f5ff41.png)
+
 ### Description
 Stay inspired and motivated every day! Expand your intelligence with the all-times best thoughts and get experience from history. 
 Also, grow your English vocabulary.
