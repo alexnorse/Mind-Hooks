@@ -16,8 +16,8 @@ enum CategoryHeads {
 
 
 enum Descriptions {
-    static let greetings = "Greetings"
-    static let startDay  = "Time for the inspiration"
+    static let greetings = "Inspire your day\nDrive your mind"
+    static let startDay  = "(tap logo to Start)"
     static let navlink   = "Start"
     static let eventLink = "See more"
 }

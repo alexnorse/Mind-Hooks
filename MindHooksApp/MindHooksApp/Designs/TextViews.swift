@@ -115,7 +115,8 @@ struct GreetingsDescriptionText: View {
     var body: some View {
         Text(text)
             .font(.subheadline)
-            .fontWeight(.semibold)
+            .fontWeight(.regular)
+            .foregroundColor(.gray)
         
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
