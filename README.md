@@ -6,7 +6,7 @@
 
 ### Description
 Stay inspired and motivated every day! Expand your intelligence with the all-times best thoughts and get experience from history. 
-Also, grow your English vocabulary.
+Also, grow your vocabulary.
 
 ### User Experience
 * Your daily update: quotes, words and history events - that matters!
