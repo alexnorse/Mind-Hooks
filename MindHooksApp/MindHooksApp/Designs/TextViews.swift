@@ -35,7 +35,7 @@ struct CategoryText: View {
     var body: some View {
         Text(text)
             .font(.headline)
-            .fontWeight(.regular)
+            .fontWeight(.light)
             .foregroundColor(.gray)
             .textCase(.uppercase)
             .frame(maxWidth: 330, alignment: .leading)
@@ -114,8 +114,8 @@ struct GreetingsDescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.body)
-            .fontWeight(.regular)
+            .font(.subheadline)
+            .fontWeight(.semibold)
         
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
@@ -152,7 +152,7 @@ struct WidgetCategoryText: View {
     var body: some View {
         Text(text)
             .font(.caption)
-            .fontWeight(.regular)
+            .fontWeight(.light)
             .foregroundColor(.white)
             .textCase(.uppercase)
             .multilineTextAlignment(.leading)

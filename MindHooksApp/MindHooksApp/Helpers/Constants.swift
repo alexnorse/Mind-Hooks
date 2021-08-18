@@ -16,10 +16,10 @@ enum CategoryHeads {
 
 
 enum Descriptions {
-    static let greetings      = "Greetings"
-    static let startDay       = "It's time to get inspiration"
-    static let navlink        = "Start"
-    static let eventLink      = "See more"
+    static let greetings = "Greetings"
+    static let startDay  = "Time for the inspiration"
+    static let navlink   = "Start"
+    static let eventLink = "See more"
 }
 
     
@@ -45,8 +45,8 @@ enum UInumbers {
 
 
 enum ShadowSettings {
-    static let opacity: Double  = 1.5
-    static let radius: CGFloat  = 13
+    static let opacity: Double  = 0.75
+    static let radius: CGFloat  = 9
     static let x: CGFloat       = 1
     static let y: CGFloat       = 7
 }

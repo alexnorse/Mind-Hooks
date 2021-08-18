@@ -15,7 +15,7 @@ struct GreetingsLogo: View {
         Image("PlaceholderOrange")
             .resizable()
             .scaledToFill()
-            .frame(width: ImageSize.width, height: ImageSize.height)
+            .frame(width: ImageSize.width - 50, height: ImageSize.height - 50)
             .scaleEffect(isVisible ? AnimationSettings.scaleStart : AnimationSettings.scaleFinish)
             .padding()
             

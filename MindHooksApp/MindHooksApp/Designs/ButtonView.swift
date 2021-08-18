@@ -23,6 +23,7 @@ struct GreetingsButton: View {
         Text("Start")
             .foregroundColor(.white)
             .font(.headline)
+            .fontWeight(.semibold)
             .frame(width: 150, height: 50)
             .background(Color.accentColor)
             .cornerRadius(30)

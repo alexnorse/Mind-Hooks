@@ -31,7 +31,7 @@ struct Provider: TimelineProvider {
         getQuote { modelData in
             let date = Date()
             let data = ModelEntry(date: date, quote: modelData)
-            let nextUpdate = Calendar.current.date(byAdding: .hour, value: 24, to: date)
+            let nextUpdate = Calendar.current.date(byAdding: .hour, value: 12, to: date)
             let timeline = Timeline(entries: [data], policy: .after(nextUpdate!))
             completion(timeline)
         }
@@ -86,7 +86,9 @@ struct MindHooksAppWidgetEntryView : View {
             Image("PlaceholderGray")
                 .resizable()
                 .scaledToFit()
-                .opacity(0.3)
+                .foregroundColor(.white)
+                .opacity(0.2)
+                .blur(radius: 0.2)
             
             VStack(alignment: .leading) {
                 WidgetCategoryText(text: CategoryHeads.widget)

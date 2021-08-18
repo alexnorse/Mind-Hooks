@@ -15,10 +15,10 @@ struct GreetingsView: View {
     var body: some View {
         ZStack {
             Circle()
-                .foregroundColor(.gray)
+                .foregroundColor(.secondary)
                 .opacity(0.1)
-                .blur(radius: 9)
-                .frame(width: 350, height: 350)
+                .blur(radius: 2)
+                .frame(width: 300, height: 300)
                 
                 .opacity(isVisible ? 1 : 0)
                 .offset(y: isVisible ? 0 : 20)
@@ -42,12 +42,15 @@ struct GreetingsView: View {
             }
             .offset(y: UInumbers.offsetY + 50)
         }
+        .offset(y: UInumbers.offsetY + 50)
     }
 }
 
 struct GreetingsView_Previews: PreviewProvider {
     static var previews: some View {
         GreetingsView()
-            .preferredColorScheme(.light)
+            
+            
+            
     }
 }
