@@ -29,10 +29,13 @@ enum TernaryDescription {
 
 
 enum URLs {
-    static let wordAPI  = "https://random-words-api.vercel.app/word"
-    static let quoteAPI = "https://api.quotable.io/random"
-    static let eventAPI = "https://byabbe.se/on-this-day/\(Day.today.convertForEventURL())/events.json"
-    static let wikiURL  = "https://www.wikipedia.org"
+    static let wordAPI    = "https://api.wordnik.com/v4/words.json/"
+    static let wordAPIKey = "o5sk37fr2vj4secdpon64ty4pvab7ndh8js0axjbqqqc9srjg"
+    
+    static let quoteAPI   = "https://api.quotable.io/random"
+
+    static let eventAPI   = "https://byabbe.se/on-this-day/\(Day.today.convertForEventURL())/events.json"
+    static let wikiURL    = "https://www.wikipedia.org"
 }
 
 

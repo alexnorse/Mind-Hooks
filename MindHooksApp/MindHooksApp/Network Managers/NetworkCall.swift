@@ -12,7 +12,7 @@ final class NetworkCall {
     static let shared = NetworkCall()
     
     let quoteURL    = URLs.quoteAPI
-    let wordURL     = URLs.wordAPI
+    let wordURL     = "\(URLs.wordAPI)wordOfTheDay?date=\(Day.today.yyyyMMdd())&api_key=\(URLs.wordAPIKey)"
     let eventURL    = URLs.eventAPI
     
     private init() {}
@@ -52,7 +52,7 @@ final class NetworkCall {
     }
     
     
-    func getWord(completion: @escaping(Result<[Word], MHErrors>) -> Void) {
+    func getWord(completion: @escaping(Result<Word, MHErrors>) -> Void) {
         guard let url = URL(string: wordURL) else {
             completion(.failure(.invalidURL))
             return
@@ -76,7 +76,7 @@ final class NetworkCall {
             
             do {
                 let decoder = JSONDecoder()
-                let word = try decoder.decode([Word].self, from: data)
+                let word = try decoder.decode(Word.self, from: data)
                 completion(.success(word))
             } catch {
                 completion(.failure(.invalidData))
