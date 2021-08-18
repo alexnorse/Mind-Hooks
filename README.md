@@ -9,7 +9,7 @@ Stay inspired and motivated every day! Expand your intelligence with the all-tim
 Also, grow your vocabulary.
 
 ### User Experience
-* Your daily update: quotes, words and history events - that matters!
+* Your daily update: quotes, words and historical events - that matters!
 * Unstoppable self-growth and erudition driving
 * Personality development through the most influential experience
 * Learn more from history - for a better future!
