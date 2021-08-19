@@ -19,14 +19,7 @@ extension Date {
         formatter.dateFormat = "MMMM, d"
         return formatter.string(from: self)
     }
-    
-    
-    func convertForEventURL() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "M/d"
-        return formatter.string(from: self)
-    }
-    
+
     
     func yyyyMMdd() -> String {
         let formatter = DateFormatter()

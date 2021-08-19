@@ -7,12 +7,17 @@
 
 import Foundation
 
-struct EventData: Codable {
+struct Event: Codable {
+    let date: String
     let url: String
-    let data: [Events]
+    let data: PartEv
 }
 
-struct Events: Codable {
+struct PartEv: Codable {
+    let Events: [TodayEvent]
+}
+
+struct TodayEvent: Codable {
     let year: String
     let text: String
 }

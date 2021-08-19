@@ -34,7 +34,7 @@ enum URLs {
     
     static let quoteAPI   = "https://api.quotable.io/random"
 
-    static let eventAPI   = "http://history.muffinlabs.com/date/\(Day.today.convertForEventURL())"
+    static let eventAPI   = "https://history.muffinlabs.com/date"
     static let wikiURL    = "https://www.wikipedia.org"
 }
 
