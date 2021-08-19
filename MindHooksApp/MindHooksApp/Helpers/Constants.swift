@@ -9,7 +9,7 @@ import UIKit
 
 enum CategoryHeads {
     static let word   = "Word of the day"
-    static let quote  = "Random quote for your day"
+    static let quote  = "Random quote"
     static let event  = "This day in history"
     static let widget = "Random quote"
 }
@@ -34,7 +34,7 @@ enum URLs {
     
     static let quoteAPI   = "https://api.quotable.io/random"
 
-    static let eventAPI   = "https://byabbe.se/on-this-day/\(Day.today.convertForEventURL())/events.json"
+    static let eventAPI   = "http://history.muffinlabs.com/date/\(Day.today.convertForEventURL())"
     static let wikiURL    = "https://www.wikipedia.org"
 }
 

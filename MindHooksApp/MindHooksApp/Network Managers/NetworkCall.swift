@@ -86,7 +86,7 @@ final class NetworkCall {
     }
     
     
-    func getEvent(completion: @escaping(Result<Events, MHErrors>) -> Void) {
+    func getEvent(completion: @escaping(Result<EventData, MHErrors>) -> Void) {
         guard let url = URL(string: eventURL) else {
             completion(.failure(.invalidURL))
             return
@@ -110,7 +110,7 @@ final class NetworkCall {
             
             do {
                 let decoder = JSONDecoder()
-                let event = try decoder.decode(Events.self, from: data)
+                let event = try decoder.decode(EventData.self, from: data)
                 completion(.success(event))
             } catch {
                 completion(.failure(.invalidData))

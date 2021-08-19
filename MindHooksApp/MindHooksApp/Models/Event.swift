@@ -7,16 +7,12 @@
 
 import Foundation
 
+struct EventData: Codable {
+    let url: String
+    let data: [Events]
+}
+
 struct Events: Codable {
-    let events: [Model]
-}
-
-struct Model: Codable {
     let year: String
-    let description: String
-    let wikipedia: [Wikipedia]
-}
-
-struct Wikipedia: Codable {
-    let wikipedia: String
+    let text: String
 }

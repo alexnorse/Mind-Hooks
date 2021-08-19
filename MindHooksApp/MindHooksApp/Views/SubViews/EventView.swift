@@ -21,7 +21,7 @@ struct EventView: View {
                 CategoryText(text: CategoryHeads.event)
                     .padding(UInumbers.padding)
                 
-                AccentText(text: "Year \(viewModel.year)")
+                AccentText(text: "\(viewModel.year)")
                     .shadow(color: .gray.opacity(ShadowSettings.opacity),
                             radius: ShadowSettings.radius,
                             x: ShadowSettings.x,
