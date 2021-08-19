@@ -24,4 +24,4 @@ Also, grow your vocabulary.
 * JSON data parsing
 * SwiftUI animating views
 
-## [AppStore link](apps.apple.com/ru/app/mind-hooks/id1581807075?l=en )
+## [AppStore link](https://apps.apple.com/ru/app/mind-hooks/id1581807075?l=en)
