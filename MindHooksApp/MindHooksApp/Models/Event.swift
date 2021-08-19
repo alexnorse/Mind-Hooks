@@ -9,7 +9,6 @@ import Foundation
 
 struct Event: Codable {
     let date: String
-    let url: String
     let data: PartEv
 }
 
@@ -20,4 +19,9 @@ struct PartEv: Codable {
 struct TodayEvent: Codable {
     let year: String
     let text: String
+    let links: [WikiLinks]
+}
+
+struct WikiLinks: Codable {
+    let link: String
 }

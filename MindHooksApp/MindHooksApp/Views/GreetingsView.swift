@@ -19,6 +19,7 @@ struct GreetingsView: View {
                 .background(Circle()
                                 .foregroundColor(.gray)
                                 .opacity(0.3)
+                                .blur(radius: 15)
                                 .frame(width: 300, height: 300)
                                 
                                 .opacity(isVisible ? 1 : 0)
@@ -38,6 +39,7 @@ struct GreetingsView: View {
 struct GreetingsView_Previews: PreviewProvider {
     static var previews: some View {
         GreetingsView()
+            .preferredColorScheme(.light)
             .previewDevice("iPhone 12 Pro Max")
     }
 }

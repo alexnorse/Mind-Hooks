@@ -27,7 +27,7 @@ final class EventViewModel: ObservableObject {
                 case.success(let event):
                     self.year = event.data.Events.first?.year ?? TernaryDescription.todayError
                     self.description = event.data.Events.first?.text ?? TernaryDescription.todayError
-                    self.link = event.url
+                    self.link = event.data.Events.first?.links.first?.link ?? TernaryDescription.todayError
                     
                 case.failure(let error):
                     switch error {
