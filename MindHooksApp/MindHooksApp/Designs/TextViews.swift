@@ -18,7 +18,6 @@ struct TextViews: View {
             GreetingsDescriptionText(text: "Time for inspiration")
             LinkText(text: "See more")
             
-            WidgetCategoryText(text: "Quote of the day")
             WidgetBodyText(text: "Lorem Ipsum")
             WidgetNoteText(text: "Da Vinci")
         }
@@ -146,21 +145,6 @@ struct LinkText: View {
 }
 
 
-struct WidgetCategoryText: View {
-    
-    var text: String
-    
-    var body: some View {
-        Text(text)
-            .font(.caption)
-            .fontWeight(.light)
-            .foregroundColor(.white)
-            .textCase(.uppercase)
-            .multilineTextAlignment(.leading)
-    }
-}
-
-
 struct WidgetBodyText: View {
     
     var text: String
@@ -171,6 +155,7 @@ struct WidgetBodyText: View {
             .fontWeight(.medium)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
+            .lineLimit(6)
     }
 }
 
@@ -185,13 +170,16 @@ struct WidgetNoteText: View {
             .fontWeight(.regular)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
+            .lineLimit(2)
     }
 }
 
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
-        TextViews()
-            .preferredColorScheme(.dark)
+        Group {
+            TextViews()
+                .preferredColorScheme(.dark)
+        }
     }
 }

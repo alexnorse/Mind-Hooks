@@ -11,7 +11,6 @@ enum CategoryHeads {
     static let word   = "Word of the day"
     static let quote  = "Random quote"
     static let event  = "This day in history"
-    static let widget = "Random quote"
 }
 
 
@@ -43,7 +42,6 @@ enum UInumbers {
     static let padding: CGFloat       = 15
     static let offsetY: CGFloat       = -75
     static let navlinkY: CGFloat      = 150
-    static let widgetPadding: CGFloat = 3
 }
 
 
