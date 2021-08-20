@@ -16,22 +16,15 @@ struct GreetingsView: View {
         VStack(alignment: .center) {
             Button(action: { showMainView.toggle()}, label: {GreetingsLogo()})
                 .fullScreenCover(isPresented: $showMainView, content: {MainView()})
-                .background(Circle()
-                                .foregroundColor(.gray)
-                                .opacity(0.3)
-                                .blur(radius: 15)
-                                .frame(width: 300, height: 300)
-                                
-                                .opacity(isVisible ? 1 : 0)
-                                .offset(y: isVisible ? 0 : 20)
-                                .animation(Animation.easeOut(duration: 0.5).delay(0.2))
-                                .onAppear { self.isVisible.toggle() })
+                .background(CircleView())
+            
             
             VStack {
                 GreetingsAccentText(text: Descriptions.greetings)
                     .padding(10)
                 GreetingsDescriptionText(text: Descriptions.startDay)
-            }.offset(y: UInumbers.offsetY + 150)
+            }
+            .offset(y: UInumbers.offsetY + 150)
         }
     }
 }

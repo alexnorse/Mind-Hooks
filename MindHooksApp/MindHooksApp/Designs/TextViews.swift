@@ -34,7 +34,7 @@ struct CategoryText: View {
     
     var body: some View {
         Text(text)
-            .font(.headline)
+            .font(.callout)
             .fontWeight(.light)
             .foregroundColor(.gray)
             .textCase(.uppercase)
@@ -57,7 +57,7 @@ struct AccentText: View {
     var body: some View {
         Text(text)
             .font(.title)
-            .fontWeight(.semibold)
+            .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
         
@@ -76,7 +76,7 @@ struct DescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.body)
+            .font(.callout)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
         
@@ -96,7 +96,7 @@ struct GreetingsAccentText: View {
     var body: some View {
         Text(text)
             .font(.title)
-            .fontWeight(.semibold)
+            .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
         
             .opacity(show ? 1 : 0)
@@ -114,7 +114,7 @@ struct GreetingsDescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.subheadline)
+            .font(.callout)
             .fontWeight(.regular)
             .foregroundColor(.gray)
         
