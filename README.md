@@ -1,8 +1,9 @@
 ### Mind Hooks
-
 > *Inspire your day. Drive your mind.*
 
-![Mind Hooks App](https://user-images.githubusercontent.com/68333583/129915076-77fee43a-4763-4856-a1a4-844f21f5ff41.png)
+![Mind Hooks](https://user-images.githubusercontent.com/68333583/130263787-ff7be804-982e-4a73-9624-0b49f8f15209.png)
+
+## [AppStore](https://apps.apple.com/ru/app/mind-hooks/id1581807075?l=en)
 
 ### Description
 Stay inspired and motivated every day! Expand your intelligence with the all-times best thoughts and get experience from history. 
@@ -23,5 +24,3 @@ Also, grow your vocabulary.
 * Free REST APIs
 * JSON data parsing
 * SwiftUI animating views
-
-## [AppStore link](https://apps.apple.com/ru/app/mind-hooks/id1581807075?l=en)
