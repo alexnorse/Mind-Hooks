@@ -17,7 +17,7 @@ struct LogoView: View {
             .scaledToFill()
             .frame(width: ImageSize.width + 50, height: ImageSize.height + 50)
             .scaleEffect(isVisible ? AnimationSettings.scaleStart : AnimationSettings.scaleFinish)
-            .opacity(0.6)
+            .opacity(1)
             .padding()
             
             .onAppear { withAnimation(.spring(response: AnimationSettings.duration,

@@ -78,25 +78,39 @@ func getQuote(completion: @escaping (Quote) -> ()) {
 struct MindHooksAppWidgetEntryView : View {
     
     var entry: ModelEntry
+    @Environment(\.widgetFamily) var widgetFamily
     
     var body: some View {
-        ZStack(alignment: .center) {
+        ZStack(alignment: .leading) {
             Color("Orange")
             
-            Image("PlaceholderGray")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200, alignment: .center)
-                .opacity(0.2)
-                .blur(radius: 0.2)
-            
-            VStack(alignment: .leading, spacing: 13) {
-                WidgetBodyText(text: entry.quote.content)
-                    .fixedSize(horizontal: false, vertical: true)
-                
-                WidgetNoteText(text: entry.quote.author)
+            if widgetFamily == .systemSmall {
+                Image("PlaceholderGray")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .opacity(0.8)
+                    .blur(radius: 0.2)
             }
-            .padding(.all, 25)
+            
+            HStack {
+                if widgetFamily == .systemMedium {
+                    Image("PlaceholderGray")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 200, alignment: .center)
+                        .opacity(0.8)
+                        .blur(radius: 0.2)
+                }
+                
+                VStack(alignment: .leading, spacing: 13) {
+                    WidgetBodyText(text: entry.quote.content)
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    WidgetNoteText(text: entry.quote.author)
+                }
+                .padding(.all, 25)
+            }
         }
     }
 }
