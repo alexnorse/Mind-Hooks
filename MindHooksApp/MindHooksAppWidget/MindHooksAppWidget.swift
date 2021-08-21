@@ -81,6 +81,8 @@ struct MindHooksAppWidgetEntryView : View {
     
     var body: some View {
         ZStack(alignment: .center) {
+            Color("Orange")
+            
             Image("PlaceholderGray")
                 .resizable()
                 .scaledToFit()
@@ -96,7 +98,6 @@ struct MindHooksAppWidgetEntryView : View {
             }
             .padding(.all, 25)
         }
-        .background(Color("Orange"))
     }
 }
 
@@ -112,7 +113,7 @@ struct MindHooksAppWidget: Widget {
         }
         .configurationDisplayName("Mind Hooks")
         .description("Random Quote widget")
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
@@ -123,6 +124,9 @@ struct MindHooksAppWidget_Previews: PreviewProvider {
         Group {
             MindHooksAppWidgetEntryView(entry: ModelEntry(date: Date(), quote: Quote.placeholderQuote))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
+            
+            MindHooksAppWidgetEntryView(entry: ModelEntry(date: Date(), quote: Quote.placeholderQuote))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
         }
     }
 }

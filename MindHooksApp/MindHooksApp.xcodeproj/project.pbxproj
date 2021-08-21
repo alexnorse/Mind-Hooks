@@ -14,8 +14,6 @@
 		E619CC4726AD5C1E00579CFD /* MindHooksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */; };
 		E619CC5226AD5C1E00579CFD /* MindHooksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */; };
 		E61EF94D26C7B39E0057AD4D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EF94C26C7B39E0057AD4D /* ButtonView.swift */; };
-		E61FE4D426C50C5F00E01D25 /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61FE4D326C50C5F00E01D25 /* GreetingsView.swift */; };
-		E61FE4D626C50CD600E01D25 /* GreetingsLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */; };
 		E640C50A26BEF38D002C8438 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* Event.swift */; };
 		E640C50C26BEF484002C8438 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50B26BEF484002C8438 /* EventViewModel.swift */; };
 		E640C50E26BEF584002C8438 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50D26BEF584002C8438 /* EventView.swift */; };
@@ -33,7 +31,6 @@
 		E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
 		E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
 		E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
-		E6B60B0426CFE08B00FB51C1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B60B0326CFE08B00FB51C1 /* CircleView.swift */; };
 		E6C8437126C96D7E0099B442 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E669D0D626C4003900234E4E /* WidgetKit.framework */; };
 		E6C8437226C96D7E0099B442 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E669D0D826C4003900234E4E /* SwiftUI.framework */; };
 		E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */; };
@@ -48,7 +45,6 @@
 		E6C8438526C96E090099B442 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
 		E6C8438626C96E090099B442 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
 		E6C8438726C96E090099B442 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* Event.swift */; };
-		E6C8438826C96E090099B442 /* GreetingsLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */; };
 		E6C8438926C96E090099B442 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9580B26C2C05A00A5491B /* LogoView.swift */; };
 		E6C8438A26C96E090099B442 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* Word.swift */; };
 		E6C8438B26C96E090099B442 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50B26BEF484002C8438 /* EventViewModel.swift */; };
@@ -114,8 +110,6 @@
 		E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppUITests.swift; sourceTree = "<group>"; };
 		E619CC5326AD5C1E00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E61EF94C26C7B39E0057AD4D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		E61FE4D326C50C5F00E01D25 /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
-		E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsLogo.swift; sourceTree = "<group>"; };
 		E640C50926BEF38D002C8438 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E640C50B26BEF484002C8438 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		E640C50D26BEF584002C8438 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
@@ -135,7 +129,6 @@
 		E6B02E1326B980F6006B45F7 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
-		E6B60B0326CFE08B00FB51C1 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E6C8437026C96D7E0099B442 /* MindHooksAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MindHooksAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppWidget.swift; sourceTree = "<group>"; };
 		E6C8437626C96D820099B442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -257,7 +250,6 @@
 		E64DA5A826AEA64A00061284 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E61FE4D326C50C5F00E01D25 /* GreetingsView.swift */,
 				E619CC3626AD5C1A00579CFD /* MainView.swift */,
 				E6B0B0B226B048B1003C722F /* SubViews */,
 			);
@@ -278,9 +270,7 @@
 			children = (
 				E64DA5AF26AEAACA00061284 /* TextViews.swift */,
 				E6D9580B26C2C05A00A5491B /* LogoView.swift */,
-				E61FE4D526C50CD600E01D25 /* GreetingsLogo.swift */,
 				E61EF94C26C7B39E0057AD4D /* ButtonView.swift */,
-				E6B60B0326CFE08B00FB51C1 /* CircleView.swift */,
 			);
 			path = Designs;
 			sourceTree = "<group>";
@@ -504,14 +494,11 @@
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E61EF94D26C7B39E0057AD4D /* ButtonView.swift in Sources */,
 				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
-				E6B60B0426CFE08B00FB51C1 /* CircleView.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */,
-				E61FE4D426C50C5F00E01D25 /* GreetingsView.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
-				E61FE4D626C50CD600E01D25 /* GreetingsLogo.swift in Sources */,
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
@@ -555,7 +542,6 @@
 				E6C8438A26C96E090099B442 /* Word.swift in Sources */,
 				E6C8438F26C96E090099B442 /* Date+Extensions.swift in Sources */,
 				E6C8437F26C96E090099B442 /* NetworkCall.swift in Sources */,
-				E6C8438826C96E090099B442 /* GreetingsLogo.swift in Sources */,
 				E6C8438526C96E090099B442 /* Constants.swift in Sources */,
 				E6C8438426C96E090099B442 /* Alerts.swift in Sources */,
 				E6C8438B26C96E090099B442 /* EventViewModel.swift in Sources */,

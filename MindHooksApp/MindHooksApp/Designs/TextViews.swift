@@ -14,8 +14,6 @@ struct TextViews: View {
             AccentText(text: "Lorem Ipsum")
             DescriptionText(text: "E. Hemingway")
             
-            GreetingsAccentText(text: "Greetings")
-            GreetingsDescriptionText(text: "Time for inspiration")
             LinkText(text: "See more")
             
             WidgetBodyText(text: "Lorem Ipsum")
@@ -78,44 +76,6 @@ struct DescriptionText: View {
             .font(.callout)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show.toggle() }
-    }
-}
-
-
-struct GreetingsAccentText: View {
-    
-    var text: String
-    @State var show: Bool = false
-    
-    var body: some View {
-        Text(text)
-            .font(.title)
-            .fontWeight(.bold)
-            .foregroundColor(Color.accentColor)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.3))
-            .onAppear { self.show.toggle() }
-    }
-}
-
-
-struct GreetingsDescriptionText: View {
-    
-    var text: String
-    @State var show: Bool = false
-    
-    var body: some View {
-        Text(text)
-            .font(.callout)
-            .fontWeight(.regular)
-            .foregroundColor(.gray)
         
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
