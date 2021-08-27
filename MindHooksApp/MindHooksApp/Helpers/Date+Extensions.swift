@@ -8,7 +8,7 @@
 import Foundation
 
 struct Day {
-    static let today = Date()
+    static var today: Date { Date() }
 }
 
 
@@ -17,6 +17,13 @@ extension Date {
     func convertToday() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM, d"
+        return formatter.string(from: self)
+    }
+    
+    
+    func dateForEvent() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "M/d"
         return formatter.string(from: self)
     }
 
