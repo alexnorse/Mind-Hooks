@@ -31,7 +31,7 @@ struct MainView: View {
                         .offset(y: UInumbers.offsetY)
                         .padding(UInumbers.padding)
                 })
-                .tabViewStyle(PageTabViewStyle())
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             }
             .navigationTitle("\(today.convertToday())")
