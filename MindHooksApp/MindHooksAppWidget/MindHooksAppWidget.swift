@@ -88,9 +88,8 @@ struct MindHooksAppWidgetEntryView : View {
                 Image("PlaceholderGray")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 200, height: 200, alignment: .center)
-                    .opacity(0.8)
-                    .blur(radius: 0.2)
+                    .frame(width: 100, height: 100)
+                    .offset(x: 0, y: -45)
             }
             
             HStack {
@@ -98,18 +97,14 @@ struct MindHooksAppWidgetEntryView : View {
                     Image("PlaceholderGray")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 170, height: 170, alignment: .center)
-                        .opacity(0.8)
-                        .blur(radius: 0.2)
+                        .frame(width: 130, height: 130)
                 }
                 
                 VStack(alignment: .leading, spacing: 13) {
                     WidgetBodyText(text: entry.quote.content)
-                        .fixedSize(horizontal: false, vertical: true)
-                    
                     WidgetNoteText(text: entry.quote.author)
                 }
-                .padding(.all, 30)
+                .padding(.all, 20)
             }
         }
     }
@@ -126,7 +121,7 @@ struct MindHooksAppWidget: Widget {
             MindHooksAppWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Mind Hooks")
-        .description("Random Quote widget")
+        .description("Mind Hooks random quote")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
