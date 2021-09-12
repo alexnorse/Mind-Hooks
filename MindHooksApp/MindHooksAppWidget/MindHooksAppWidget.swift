@@ -88,8 +88,8 @@ struct MindHooksAppWidgetEntryView : View {
                 Image("PlaceholderGray")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .offset(x: 0, y: -45)
+                    .opacity(0.6)
+                    .frame(width: 200, height: 200)
             }
             
             HStack {
@@ -97,14 +97,15 @@ struct MindHooksAppWidgetEntryView : View {
                     Image("PlaceholderGray")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 130, height: 130)
+                        .opacity(0.6)
+                        .frame(width: 150, height: 150)
                 }
                 
                 VStack(alignment: .leading, spacing: 13) {
                     WidgetBodyText(text: entry.quote.content)
                     WidgetNoteText(text: entry.quote.author)
                 }
-                .padding(.all, 20)
+                .padding(.all, 30)
             }
         }
     }
