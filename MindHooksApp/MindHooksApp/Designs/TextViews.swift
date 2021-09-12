@@ -73,7 +73,7 @@ struct DescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.callout)
+            .font(.headline)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
         

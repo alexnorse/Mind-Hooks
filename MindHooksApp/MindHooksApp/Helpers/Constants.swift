@@ -39,17 +39,11 @@ enum URLs {
 
 
 enum UInumbers {
-    static let padding: CGFloat       = 15
-    static let offsetY: CGFloat       = -75
-    static let navlinkY: CGFloat      = 150
-}
-
-
-enum ShadowSettings {
-    static let opacity: Double  = 0.75
-    static let radius: CGFloat  = 9
-    static let x: CGFloat       = 1
-    static let y: CGFloat       = 7
+    static let padding: CGFloat         = 15
+    static let spacing: CGFloat         = 25
+    static let offsetY: CGFloat         = -75
+    static let navlinkY: CGFloat        = 150
+    static let backLogoOpacity: Double  = 0.2
 }
 
 

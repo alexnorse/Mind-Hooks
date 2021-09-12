@@ -14,24 +14,17 @@ struct QuoteView: View {
     var body: some View {
         ZStack(alignment: .leading)  {
             
-                VStack(alignment: .leading)  {
+            VStack(alignment: .leading, spacing: UInumbers.spacing)  {
                     CategoryText(text: CategoryHeads.quote)
-                        .padding(UInumbers.padding)
                     
                     AccentText(text: viewModel.quote)
-                        .shadow(color: .gray.opacity(ShadowSettings.opacity),
-                                radius: ShadowSettings.radius,
-                                x: ShadowSettings.x,
-                                y: ShadowSettings.y)
-                        .padding(UInumbers.padding)
                     
                     DescriptionText(text: viewModel.author)
-                        .padding(UInumbers.padding)
                 }
                 .animation(.spring())
                 .padding()
         }
-        .background(LogoView().opacity(0.3))
+        .background(LogoView().opacity(UInumbers.backLogoOpacity))
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

@@ -17,32 +17,24 @@ struct EventView: View {
     var body: some View {
         ZStack(alignment: .leading) {
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: UInumbers.spacing) {
                 CategoryText(text: CategoryHeads.event)
-                    .padding(UInumbers.padding)
                 
                 AccentText(text: "\(viewModel.year)")
-                    .shadow(color: .gray.opacity(ShadowSettings.opacity),
-                            radius: ShadowSettings.radius,
-                            x: ShadowSettings.x,
-                            y: ShadowSettings.y)
-                    .padding(UInumbers.padding)
                 
                 DescriptionText(text: viewModel.description)
-                    .padding(UInumbers.padding)
                 
                 LinkText(text: Descriptions.eventLink)
                     .onTapGesture { showSafari.toggle() }
                     .fullScreenCover(isPresented: $showSafari,
                                      content: { SFSafariViewWrapper(
-                                        url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
-                    .padding(UInumbers.padding)
+                                     url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
             }
             .animation(.spring())
             .padding()
             
         }
-        .background(LogoView().opacity(0.3))
+        .background(LogoView().opacity(UInumbers.backLogoOpacity))
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

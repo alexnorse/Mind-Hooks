@@ -15,25 +15,18 @@ struct WordView: View {
     var body: some View {
         ZStack(alignment: .leading) {
             
-            VStack(alignment: .leading){
+            VStack(alignment: .leading, spacing: UInumbers.spacing) {
                 CategoryText(text: CategoryHeads.word)
-                    .padding(UInumbers.padding)
                 
                 AccentText(text: viewModel.word)
-                    .shadow(color: .gray.opacity(ShadowSettings.opacity),
-                            radius: ShadowSettings.radius,
-                            x: ShadowSettings.x,
-                            y: ShadowSettings.y)
-                    .padding(UInumbers.padding)
                 
                 DescriptionText(text: viewModel.definition)
-                    .padding(UInumbers.padding)
             }
             .animation(.spring())
             .padding()
             
         }
-        .background(LogoView().opacity(0.3))
+        .background(LogoView().opacity(UInumbers.backLogoOpacity))
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
