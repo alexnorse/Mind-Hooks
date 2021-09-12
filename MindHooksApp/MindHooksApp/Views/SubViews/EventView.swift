@@ -34,7 +34,7 @@ struct EventView: View {
             .padding()
             
         }
-        .background(LogoView().opacity(UInumbers.backLogoOpacity))
+        .background(GrayLogoView().opacity(UInumbers.backLogoOpacity))
         
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
