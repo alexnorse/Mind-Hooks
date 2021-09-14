@@ -13,3 +13,9 @@ struct Quote: Codable {
     
     static let placeholderQuote = Quote(content: "Non est ad astra mollis e terris via", author: "Seneca")
 }
+
+
+struct DailyQuote: Codable {
+    let quoteBody: String
+    let quoteAuthor: String
+}
