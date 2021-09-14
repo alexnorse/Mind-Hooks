@@ -85,20 +85,21 @@ struct MindHooksAppWidgetEntryView : View {
             Color("Orange")
             
             if widgetFamily == .systemSmall {
-                Image("PlaceholderGray")
+                Image("Launchscreen")
                     .resizable()
                     .scaledToFit()
-                    .opacity(0.6)
+                    .opacity(0.15)
                     .frame(width: 200, height: 200)
             }
             
             HStack {
                 if widgetFamily == .systemMedium {
-                    Image("PlaceholderGray")
+                    Image("Launchscreen")
                         .resizable()
                         .scaledToFit()
-                        .opacity(0.6)
-                        .frame(width: 150, height: 150)
+                        .opacity(0.8)
+                        .frame(width: 170, height: 170)
+                        .offset(x: 10)
                 }
                 
                 VStack(alignment: .leading, spacing: 13) {
