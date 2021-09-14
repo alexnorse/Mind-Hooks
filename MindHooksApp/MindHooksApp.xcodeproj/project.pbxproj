@@ -25,7 +25,6 @@
 		E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
 		E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
-		E64DA5C426AEDED400061284 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C326AEDED400061284 /* QuoteViewModel.swift */; };
 		E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */; };
@@ -38,7 +37,6 @@
 		E6C8437726C96D820099B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C8437626C96D820099B442 /* Assets.xcassets */; };
 		E6C8437B26C96D820099B442 /* MindHooksAppWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6C8437026C96D7E0099B442 /* MindHooksAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E6C8437F26C96E090099B442 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
-		E6C8438026C96E090099B442 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C326AEDED400061284 /* QuoteViewModel.swift */; };
 		E6C8438126C96E090099B442 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AF26AEAACA00061284 /* TextViews.swift */; };
 		E6C8438226C96E090099B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
 		E6C8438326C96E090099B442 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED826B0129900905DE1 /* QuoteView.swift */; };
@@ -121,7 +119,6 @@
 		E64DA5BC26AEBC7F00061284 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		E64DA5BE26AEBCC100061284 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		E64DA5C026AED48D00061284 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
-		E64DA5C326AEDED400061284 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
 		E669D0D626C4003900234E4E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E669D0D826C4003900234E4E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QotDViewModel.swift; sourceTree = "<group>"; };
@@ -288,10 +285,9 @@
 		E64DA5C226AEDEB300061284 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				E64DA5C326AEDED400061284 /* QuoteViewModel.swift */,
+				E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */,
 				E6B02E1326B980F6006B45F7 /* WordViewModel.swift */,
 				E640C50B26BEF484002C8438 /* EventViewModel.swift */,
-				E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -489,7 +485,6 @@
 			files = (
 				E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */,
 				E640C50C26BEF484002C8438 /* EventViewModel.swift in Sources */,
-				E64DA5C426AEDED400061284 /* QuoteViewModel.swift in Sources */,
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
@@ -530,7 +525,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C8438026C96E090099B442 /* QuoteViewModel.swift in Sources */,
 				E6C8438C26C96E090099B442 /* EventView.swift in Sources */,
 				E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */,
 				E6C8438726C96E090099B442 /* Event.swift in Sources */,
