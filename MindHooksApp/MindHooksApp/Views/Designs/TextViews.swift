@@ -57,7 +57,7 @@ struct AccentText: View {
             .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
-        
+            
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.3))
@@ -76,7 +76,7 @@ struct DescriptionText: View {
             .font(.callout)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
-        
+            
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))

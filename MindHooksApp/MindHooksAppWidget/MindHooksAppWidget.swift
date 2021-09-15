@@ -97,8 +97,7 @@ struct MindHooksAppWidgetEntryView : View {
                     Image("Launchscreen")
                         .resizable()
                         .scaledToFit()
-                        .opacity(0.8)
-                        .frame(width: 170, height: 170)
+                        .frame(width: 150, height: 150)
                         .offset(x: 10)
                 }
                 

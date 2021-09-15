@@ -15,27 +15,23 @@ struct EventView: View {
     @State var show: Bool = false
     
     var body: some View {
+        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading, spacing: UInumbers.spacing) {
                 CategoryText(text: CategoryHeads.event)
-                
                 AccentText(text: "\(viewModel.year)")
-                
                 DescriptionText(text: viewModel.description)
                 
                 LinkText(text: Descriptions.eventLink)
                     .onTapGesture { showSafari.toggle() }
                     .fullScreenCover(isPresented: $showSafari,
                                      content: { SFSafariViewWrapper(
-                                     url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
+                                        url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
             }
             .animation(.spring())
             .padding()
-            
         }
-        .background(GrayLogoView().opacity(UInumbers.backLogoOpacity))
-        
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,

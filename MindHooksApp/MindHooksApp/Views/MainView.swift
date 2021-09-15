@@ -13,7 +13,9 @@ struct MainView: View {
     @State private var currentTab = 0
     
     var body: some View {
+        
         NavigationView {
+            
             VStack {
                 TabView(selection: $currentTab, content: {
                     QuoteView()

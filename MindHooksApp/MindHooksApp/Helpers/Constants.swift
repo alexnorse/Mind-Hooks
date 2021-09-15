@@ -23,7 +23,7 @@ enum Descriptions {
 
     
 enum TernaryDescription {
-    static let todayError = "No Data for today"
+    static let todayError = "There's no data for today 😔"
 }
 
 
@@ -44,18 +44,4 @@ enum UInumbers {
     static let spacing: CGFloat         = 25
     static let offsetY: CGFloat         = -75
     static let navlinkY: CGFloat        = 150
-    static let backLogoOpacity: Double  = 0.5
-}
-
-
-enum AnimationSettings {
-    static let duration              = 0.5
-    static let scaleStart: CGFloat   = 1.3
-    static let scaleFinish: CGFloat  = 0.9
-}
-
-
-enum ImageSize {
-    static let width: CGFloat    = 230
-    static let height: CGFloat   = 230
 }

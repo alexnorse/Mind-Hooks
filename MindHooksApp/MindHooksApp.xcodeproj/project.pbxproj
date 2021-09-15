@@ -44,7 +44,6 @@
 		E6C8438526C96E090099B442 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
 		E6C8438626C96E090099B442 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
 		E6C8438726C96E090099B442 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* Event.swift */; };
-		E6C8438926C96E090099B442 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9580B26C2C05A00A5491B /* LogoView.swift */; };
 		E6C8438A26C96E090099B442 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* Word.swift */; };
 		E6C8438B26C96E090099B442 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50B26BEF484002C8438 /* EventViewModel.swift */; };
 		E6C8438C26C96E090099B442 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50D26BEF584002C8438 /* EventView.swift */; };
@@ -53,7 +52,6 @@
 		E6C8439026C96E090099B442 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED626B0126F00905DE1 /* WordView.swift */; };
 		E6C8439126C96E090099B442 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
-		E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9580B26C2C05A00A5491B /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,7 +128,6 @@
 		E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppWidget.swift; sourceTree = "<group>"; };
 		E6C8437626C96D820099B442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C8437826C96D820099B442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6D9580B26C2C05A00A5491B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +198,6 @@
 				E64DA5A826AEA64A00061284 /* Views */,
 				E64DA5C226AEDEB300061284 /* View Models */,
 				E64DA5A926AEA65500061284 /* Network Managers */,
-				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5B926AEB78600061284 /* Helpers */,
 				E619CC3A26AD5C1D00579CFD /* Preview Content */,
 			);
@@ -249,6 +245,7 @@
 			children = (
 				E619CC3626AD5C1A00579CFD /* MainView.swift */,
 				E6B0B0B226B048B1003C722F /* SubViews */,
+				E64DA5AA26AEA68300061284 /* Designs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				E64DA5AF26AEAACA00061284 /* TextViews.swift */,
-				E6D9580B26C2C05A00A5491B /* LogoView.swift */,
 			);
 			path = Designs;
 			sourceTree = "<group>";
@@ -490,7 +486,6 @@
 				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
-				E6D9580C26C2C05A00A5491B /* LogoView.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */,
 				E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
@@ -528,7 +523,6 @@
 				E6C8438C26C96E090099B442 /* EventView.swift in Sources */,
 				E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */,
 				E6C8438726C96E090099B442 /* Event.swift in Sources */,
-				E6C8438926C96E090099B442 /* LogoView.swift in Sources */,
 				E6C8438326C96E090099B442 /* QuoteView.swift in Sources */,
 				E6C8438126C96E090099B442 /* TextViews.swift in Sources */,
 				E6C8439126C96E090099B442 /* Errors.swift in Sources */,

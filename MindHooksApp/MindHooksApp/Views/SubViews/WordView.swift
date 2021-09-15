@@ -13,21 +13,17 @@ struct WordView: View {
     @StateObject var viewModel = WordViewModel()
     
     var body: some View {
+        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading, spacing: UInumbers.spacing) {
                 CategoryText(text: CategoryHeads.word)
-                
                 AccentText(text: viewModel.word)
-                
                 DescriptionText(text: viewModel.definition)
             }
             .animation(.spring())
             .padding()
-            
         }
-        .background(GrayLogoView().opacity(UInumbers.backLogoOpacity))
-        
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,
