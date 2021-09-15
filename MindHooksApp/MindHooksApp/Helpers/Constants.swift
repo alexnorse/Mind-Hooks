@@ -32,7 +32,7 @@ enum URLs {
     static let wordAPIKey    = "o5sk37fr2vj4secdpon64ty4pvab7ndh8js0axjbqqqc9srjg"
     
     static let dailyQuoteAPI = "https://www.quotepub.com/api/widget/?type=qotd_t"
-    static let quoteAPI      = "https://api.quotable.io/random?maxLength=124"
+    static let quoteAPI      = "https://api.quotable.io/random?maxLength=110"
 
     static let eventAPI      = "https://byabbe.se/on-this-day/\(Day.today.dateForEvent())/events.json"
     static let wikiURL       = "https://www.wikipedia.org"

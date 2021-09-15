@@ -81,32 +81,33 @@ struct MindHooksAppWidgetEntryView : View {
     @Environment(\.widgetFamily) var widgetFamily
     
     var body: some View {
+        
         ZStack(alignment: .leading) {
             Color("Orange")
             
-            if widgetFamily == .systemSmall {
-                Image("Launchscreen")
-                    .resizable()
-                    .scaledToFit()
-                    .opacity(0.15)
-                    .frame(width: 200, height: 200)
-            }
-            
-            HStack {
-                if widgetFamily == .systemMedium {
+            VStack(alignment: .leading) {
+                if widgetFamily == .systemSmall {
                     Image("Launchscreen")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 150, height: 150)
-                        .offset(x: 10)
+                        .frame(width: 30, height: 30)
                 }
                 
-                VStack(alignment: .leading, spacing: 13) {
-                    WidgetBodyText(text: entry.quote.content)
-                    WidgetNoteText(text: entry.quote.author)
+                HStack {
+                    if widgetFamily == .systemMedium {
+                        Image("Launchscreen")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 160, height: 160)
+                    }
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        WidgetBodyText(text: entry.quote.content)
+                        WidgetNoteText(text: entry.quote.author)
+                    }
                 }
-                .padding(.all, 30)
             }
+            .padding()
         }
     }
 }
