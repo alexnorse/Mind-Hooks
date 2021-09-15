@@ -85,26 +85,17 @@ struct MindHooksAppWidgetEntryView : View {
         ZStack(alignment: .leading) {
             Color("Orange")
             
-            VStack(alignment: .leading) {
-                if widgetFamily == .systemSmall {
+            HStack {
+                if widgetFamily == .systemMedium {
                     Image("Launchscreen")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 160, height: 160)
                 }
                 
-                HStack {
-                    if widgetFamily == .systemMedium {
-                        Image("Launchscreen")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 160, height: 160)
-                    }
-                    
-                    VStack(alignment: .leading, spacing: 10) {
-                        WidgetBodyText(text: entry.quote.content)
-                        WidgetNoteText(text: entry.quote.author)
-                    }
+                VStack(alignment: .leading, spacing: 10) {
+                    WidgetBodyText(text: entry.quote.content)
+                    WidgetNoteText(text: entry.quote.author)
                 }
             }
             .padding()
