@@ -44,7 +44,7 @@ enum UInumbers {
     static let spacing: CGFloat         = 25
     static let offsetY: CGFloat         = -75
     static let navlinkY: CGFloat        = 150
-    static let backLogoOpacity: Double  = 0.2
+    static let backLogoOpacity: Double  = 0.5
 }
 
 

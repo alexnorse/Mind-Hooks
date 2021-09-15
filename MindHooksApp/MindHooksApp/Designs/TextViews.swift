@@ -41,7 +41,7 @@ struct CategoryText: View {
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.2))
-            .onAppear { self.show.toggle() }
+            .onAppear { self.show = true }
     }
 }
 
@@ -53,7 +53,7 @@ struct AccentText: View {
     
     var body: some View {
         Text(text)
-            .font(.title)
+            .font(.title2)
             .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
@@ -61,7 +61,7 @@ struct AccentText: View {
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.3))
-            .onAppear { self.show.toggle() }
+            .onAppear { self.show = true }
     }
 }
 
@@ -73,14 +73,14 @@ struct DescriptionText: View {
     
     var body: some View {
         Text(text)
-            .font(.headline)
+            .font(.callout)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
         
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show.toggle() }
+            .onAppear { self.show = true }
     }
 }
 
@@ -92,15 +92,15 @@ struct LinkText: View {
     
     var body: some View {
         Text(text)
-            .font(.body)
-            .fontWeight(.bold)
+            .font(.callout)
+            .underline()
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
             
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show.toggle() }
+            .onAppear { self.show = true }
     }
 }
 

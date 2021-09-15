@@ -31,7 +31,7 @@ struct GrayLogoView: View {
             
             .onAppear { withAnimation(.spring(response: AnimationSettings.duration,
                                               dampingFraction: 0.2,
-                                              blendDuration: 0)) {self.isVisible.toggle()} }
+                                              blendDuration: 0)) { self.isVisible.toggle() } }
     }
 }
 
@@ -50,7 +50,7 @@ struct OrangeLogoView: View {
             
             .onAppear { withAnimation(.spring(response: AnimationSettings.duration,
                                               dampingFraction: 0.2,
-                                              blendDuration: 0)) {self.isVisible.toggle()} }
+                                              blendDuration: 0)) { self.isVisible.toggle() } }
     }
 }
 
