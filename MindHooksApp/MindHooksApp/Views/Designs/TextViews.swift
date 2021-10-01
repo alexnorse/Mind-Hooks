@@ -115,7 +115,7 @@ struct WidgetBodyText: View {
             .fontWeight(.medium)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
-            .lineLimit(6)
+            .lineLimit(5)
     }
 }
 

@@ -85,12 +85,12 @@ struct MindHooksAppWidgetEntryView : View {
         ZStack(alignment: .center) {
             Color("Orange")
             
-            VStack(alignment: .leading, spacing: 7) {
+            VStack(alignment: .leading, spacing: 5) {
                 if widgetFamily == .systemSmall {
                     Image("Launchscreen")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 40, height: 40)
                         .padding(-5)
                     Spacer()
                     WidgetBodyText(text: entry.quote.content)
@@ -107,7 +107,7 @@ struct MindHooksAppWidgetEntryView : View {
                         .scaledToFit()
                         .frame(width: 140, height: 140)
                     
-                    VStack(alignment: .leading, spacing: 7) {
+                    VStack(alignment: .leading, spacing: 5) {
                         WidgetBodyText(text: entry.quote.content)
                         WidgetNoteText(text: entry.quote.author)
                     }
