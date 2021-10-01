@@ -1,7 +1,7 @@
 ## Mind Hooks
 > *Inspire your day. Drive your mind.*
 
-![Mind Hooks](https://user-images.githubusercontent.com/68333583/130263787-ff7be804-982e-4a73-9624-0b49f8f15209.png)
+![Mind Hooks](https://user-images.githubusercontent.com/68333583/135613003-9bbefd97-0aa8-40e6-b4c0-d144408bbaa5.png)
 
 ### [AppStore](https://apps.apple.com/ru/app/mind-hooks/id1581807075?l=en)
 
@@ -15,12 +15,11 @@ Also, grow your vocabulary.
 * Personality development through the most influential experience
 * Learn more from history - for a better future!
 * Useful widgets for your Home Screen
-* Nice minimalistic design and smooth animation
+* Nice minimalistic design 
 
 ### Tech Stack
 * 100% SwiftUI
 * MVVM architecture
 * WidgetKit
-* Free REST APIs
+* REST APIs
 * JSON data parsing
-* SwiftUI animating views
