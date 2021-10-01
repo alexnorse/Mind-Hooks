@@ -82,23 +82,38 @@ struct MindHooksAppWidgetEntryView : View {
     
     var body: some View {
         
-        ZStack(alignment: .leading) {
+        ZStack(alignment: .center) {
             Color("Orange")
+            
+            VStack(alignment: .leading, spacing: 7) {
+                if widgetFamily == .systemSmall {
+                    Image("Launchscreen")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                        .padding(-5)
+                    Spacer()
+                    WidgetBodyText(text: entry.quote.content)
+                    WidgetNoteText(text: entry.quote.author)
+                }
+            }
+            .padding()
+            
             
             HStack {
                 if widgetFamily == .systemMedium {
                     Image("Launchscreen")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 160, height: 160)
-                }
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    WidgetBodyText(text: entry.quote.content)
-                    WidgetNoteText(text: entry.quote.author)
+                        .frame(width: 140, height: 140)
+                    
+                    VStack(alignment: .leading, spacing: 7) {
+                        WidgetBodyText(text: entry.quote.content)
+                        WidgetNoteText(text: entry.quote.author)
+                    }
                 }
             }
-            .padding()
+            .padding(.all)
         }
     }
 }
@@ -114,7 +129,7 @@ struct MindHooksAppWidget: Widget {
             MindHooksAppWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Mind Hooks")
-        .description("Mind Hooks random quote")
+        .description("Random quote")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
