@@ -31,8 +31,8 @@ struct CategoryText: View {
     
     var body: some View {
         Text(text)
-            .font(.callout)
-            .fontWeight(.light)
+            .font(.caption)
+            .fontWeight(.medium)
             .foregroundColor(.gray)
             .textCase(.uppercase)
             .frame(maxWidth: 330, alignment: .leading)
