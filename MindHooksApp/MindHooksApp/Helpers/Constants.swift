@@ -8,9 +8,9 @@
 import UIKit
 
 enum CategoryHeads {
-    static let word   = "Word of the day"
-    static let quote  = "Thought of the day"
-    static let event  = "This day in history"
+    static let word  = "Word of the day"
+    static let quote = "Thought of the day"
+    static let event = "This day in history"
 }
 
 
@@ -32,7 +32,7 @@ enum URLs {
     static let wordAPIKey    = "o5sk37fr2vj4secdpon64ty4pvab7ndh8js0axjbqqqc9srjg"
     
     static let dailyQuoteAPI = "https://www.quotepub.com/api/widget/?type=qotd_t"
-    static let quoteAPI      = "https://api.quotable.io/random?maxLength=105"
+    static let quoteAPI      = "https://api.quotable.io/random?maxLength=100"
 
     static let eventAPI      = "https://byabbe.se/on-this-day/\(Day.today.dateForEvent())/events.json"
     static let wikiURL       = "https://www.wikipedia.org"
@@ -40,8 +40,8 @@ enum URLs {
 
 
 enum UInumbers {
-    static let padding: CGFloat         = 15
-    static let spacing: CGFloat         = 25
-    static let offsetY: CGFloat         = -75
-    static let navlinkY: CGFloat        = 150
+    static let padding: CGFloat  = 15
+    static let spacing: CGFloat  = 25
+    static let offsetY: CGFloat  = -75
+    static let navlinkY: CGFloat = 150
 }

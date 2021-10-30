@@ -87,7 +87,7 @@ struct MindHooksAppWidgetEntryView : View {
             
             VStack(alignment: .leading, spacing: 5) {
                 if widgetFamily == .systemSmall {
-                    Image("Launchscreen")
+                    Image("hooksWhite")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40, height: 40)
@@ -102,7 +102,7 @@ struct MindHooksAppWidgetEntryView : View {
             
             HStack {
                 if widgetFamily == .systemMedium {
-                    Image("Launchscreen")
+                    Image("hooksWhite")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 140, height: 140)

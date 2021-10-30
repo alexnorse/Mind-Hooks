@@ -25,6 +25,8 @@
 		E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
 		E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
+		E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F87272D853D0058AE70 /* CollectionCell.swift */; };
+		E6615F8A272D854F0058AE70 /* CollectionQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */; };
 		E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */; };
@@ -118,6 +120,8 @@
 		E64DA5BC26AEBC7F00061284 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		E64DA5BE26AEBCC100061284 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		E64DA5C026AED48D00061284 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		E6615F87272D853D0058AE70 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionQuoteCell.swift; sourceTree = "<group>"; };
 		E669D0D626C4003900234E4E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E669D0D826C4003900234E4E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QotDViewModel.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				E64DA5AF26AEAACA00061284 /* TextViews.swift */,
+				E6615F87272D853D0058AE70 /* CollectionCell.swift */,
+				E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */,
 			);
 			path = Designs;
 			sourceTree = "<group>";
@@ -495,7 +501,9 @@
 				E640C50C26BEF484002C8438 /* EventViewModel.swift in Sources */,
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
+				E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */,
 				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
+				E6615F8A272D854F0058AE70 /* CollectionQuoteCell.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */,

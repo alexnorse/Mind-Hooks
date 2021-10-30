@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct TextViews: View {
+    
     var body: some View {
+        
         VStack(spacing: 20) {
             CategoryText(text: "Quote of the day")
             AccentText(text: "Lorem Ipsum")
             DescriptionText(text: "E. Hemingway")
+            DescriptionBold(text: "E. Hemingway")
             
             LinkText(text: "See more")
             
@@ -20,6 +23,7 @@ struct TextViews: View {
             WidgetNoteText(text: "Da Vinci")
         }
         .padding()
+        
     }
 }
 
@@ -85,6 +89,25 @@ struct DescriptionText: View {
 }
 
 
+struct DescriptionBold: View {
+    
+    var text: String
+    @State var show: Bool = false
+    
+    var body: some View {
+        Text(text)
+            .font(.callout)
+            .fontWeight(.bold)
+            .frame(maxWidth: 330, alignment: .trailing)
+            
+            .opacity(show ? 1 : 0)
+            .offset(y: show ? 0 : 20)
+            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
+            .onAppear { self.show = true }
+    }
+}
+
+
 struct LinkText: View {
     
     var text: String
@@ -111,7 +134,7 @@ struct WidgetBodyText: View {
     
     var body: some View {
         Text(text)
-            .font(.caption2)
+            .font(.caption)
             .fontWeight(.medium)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
@@ -126,7 +149,7 @@ struct WidgetNoteText: View {
     
     var body: some View {
         Text(text)
-            .font(.caption2)
+            .font(.caption)
             .fontWeight(.regular)
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
