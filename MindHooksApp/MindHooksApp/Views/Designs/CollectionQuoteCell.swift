@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CollectionQuoteCell: View {
     
+    @State var show: Bool = false
+    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 10) {
@@ -17,6 +19,11 @@ struct CollectionQuoteCell: View {
                 .scaledToFit()
                 .frame(width: 40, height: 40)
                 .padding(-5)
+            
+                .opacity(show ? 1 : 0)
+                .offset(y: show ? 0 : 20)
+                .animation(Animation.easeOut(duration: 0.5).delay(0.4))
+                .onAppear { self.show = true }
             
             DescriptionText(text: "Friends, Romans, countrymen, lend me your ears; I come to bury Caesar, not to praise him")
             DescriptionBold(text: "Julius Caesar")

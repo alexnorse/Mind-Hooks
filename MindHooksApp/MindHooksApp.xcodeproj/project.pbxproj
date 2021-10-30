@@ -27,6 +27,8 @@
 		E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
 		E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F87272D853D0058AE70 /* CollectionCell.swift */; };
 		E6615F8A272D854F0058AE70 /* CollectionQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */; };
+		E6615F8C272D90AF0058AE70 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F8B272D90AF0058AE70 /* Collection.swift */; };
+		E6615F8E272D91D80058AE70 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F8D272D91D80058AE70 /* CollectionViewModel.swift */; };
 		E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */; };
@@ -122,6 +124,8 @@
 		E64DA5C026AED48D00061284 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
 		E6615F87272D853D0058AE70 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionQuoteCell.swift; sourceTree = "<group>"; };
+		E6615F8B272D90AF0058AE70 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		E6615F8D272D91D80058AE70 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		E669D0D626C4003900234E4E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E669D0D826C4003900234E4E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QotDViewModel.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 				E64DA5B326AEB72000061284 /* Word.swift */,
 				E64DA5B526AEB73300061284 /* Quote.swift */,
 				E640C50926BEF38D002C8438 /* Event.swift */,
+				E6615F8B272D90AF0058AE70 /* Collection.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */,
 				E6B02E1326B980F6006B45F7 /* WordViewModel.swift */,
 				E640C50B26BEF484002C8438 /* EventViewModel.swift */,
+				E6615F8D272D91D80058AE70 /* CollectionViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -509,11 +515,13 @@
 				E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */,
 				E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */,
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
+				E6615F8C272D90AF0058AE70 /* Collection.swift in Sources */,
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
 				E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */,
 				E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */,
+				E6615F8E272D91D80058AE70 /* CollectionViewModel.swift in Sources */,
 				E64DA5B626AEB73300061284 /* Quote.swift in Sources */,
 				E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */,
 				E64DA5B426AEB72000061284 /* Word.swift in Sources */,

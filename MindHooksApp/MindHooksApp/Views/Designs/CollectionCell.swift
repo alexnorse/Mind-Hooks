@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CollectionCell: View {
     
+    @State var show: Bool = false
+    
     var body: some View {
         
         HStack {
@@ -16,6 +18,11 @@ struct CollectionCell: View {
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
                 .scaledToFill()
+            
+                .opacity(show ? 1 : 0)
+                .offset(y: show ? 0 : 20)
+                .animation(Animation.easeOut(duration: 0.5).delay(0.4))
+                .onAppear { self.show = true }
             
             VStack(spacing: 3) {
                 AccentText(text: "Marcus Aurelius")
