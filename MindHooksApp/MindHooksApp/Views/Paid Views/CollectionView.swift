@@ -9,11 +9,21 @@ import SwiftUI
 
 struct CollectionView: View {
     
+    @StateObject var viewModel = CollectionViewModel()
+    
     var body: some View {
         
-        NavigationView {
-            Text("Collection")
+        ZStack {
+            NavigationView {
+                
+                List(viewModel.categories) { category in
+                    CollectionCell(collection: category)
+                }
+                .listStyle(.plain)
+                .listRowInsets(.none)
                 .navigationTitle("Collection")
+            }
+            .onAppear { viewModel.getCollection() }
         }
     }
 }

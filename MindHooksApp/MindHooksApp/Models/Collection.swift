@@ -20,3 +20,12 @@ struct CollectionQuote: Codable, Identifiable {
     let quote: String
     let source: String
 }
+
+
+struct MockCollection {
+    static let sample = Category(category: "Sample category",
+                                 artwork: "",
+                                 description: "Lorem ipsum",
+                                 quotes: [CollectionQuote(quote: "Non est ad astra mollis e terris via",
+                                                          source: "Seneca")])
+}

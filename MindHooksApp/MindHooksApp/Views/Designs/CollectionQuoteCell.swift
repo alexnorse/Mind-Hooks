@@ -10,6 +10,7 @@ import SwiftUI
 struct CollectionQuoteCell: View {
     
     @State var show: Bool = false
+    let collection: Category
     
     var body: some View {
         
@@ -25,8 +26,8 @@ struct CollectionQuoteCell: View {
                 .animation(Animation.easeOut(duration: 0.5).delay(0.4))
                 .onAppear { self.show = true }
             
-            DescriptionText(text: "Friends, Romans, countrymen, lend me your ears; I come to bury Caesar, not to praise him")
-            DescriptionBold(text: "Julius Caesar")
+            DescriptionText(text: collection.quotes.first!.quote)
+            DescriptionBold(text: collection.quotes.last!.source)
         }
         .padding()
         
@@ -36,6 +37,6 @@ struct CollectionQuoteCell: View {
 
 struct CollectionQuoteCell_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionQuoteCell()
+        CollectionQuoteCell(collection: MockCollection.sample)
     }
 }

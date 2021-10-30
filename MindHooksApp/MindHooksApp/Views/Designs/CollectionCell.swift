@@ -10,11 +10,12 @@ import SwiftUI
 struct CollectionCell: View {
     
     @State var show: Bool = false
+    let collection: Category
     
     var body: some View {
         
         HStack {
-            Image(systemName: "circle.fill")
+            Image(collection.artwork)
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
                 .scaledToFill()
@@ -25,8 +26,8 @@ struct CollectionCell: View {
                 .onAppear { self.show = true }
             
             VStack(spacing: 3) {
-                AccentText(text: "Marcus Aurelius")
-                DescriptionText(text: "Thoughts one of the most intelligent Roman emperor")
+                AccentText(text: collection.category)
+                DescriptionText(text: collection.description)
             }
             .padding()
         }
@@ -37,6 +38,6 @@ struct CollectionCell: View {
 
 struct CollectionCell_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionCell()
+        CollectionCell(collection: MockCollection.sample)
     }
 }
