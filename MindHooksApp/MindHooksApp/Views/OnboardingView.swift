@@ -9,60 +9,89 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    @State var show: Bool = false
+    
     var body: some View {
         
-        VStack(alignment: .center, spacing: 5) {
+        VStack(alignment: .center, spacing: 30) {
             
-            AccentText(text: "Welcome!")
+            OnboardingHeadline(text: "Welcome!")
+                .padding()
             
-            HStack(spacing: 20) {
-                Image(systemName: "cloud.sun.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .foregroundColor(.accentColor)
+            VStack(spacing: -20) {
+                HStack(spacing: 20) {
+                    Image(systemName: "cloud.sun.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .foregroundColor(.accentColor)
+                    
+                        .opacity(show ? 1 : 0)
+                        .offset(y: show ? 0 : 20)
+                        .animation(Animation.easeOut(duration: 0.5).delay(0.2))
+                        .onAppear { self.show = true }
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                        OnboardingBold(text: "Inspire your day")
+                        DescriptionText(text: "Get the daily updates: quotes, words, and historical events")
+                    }
+                    .padding()
+                }
+                .padding()
                 
-                VStack(alignment: .leading, spacing: 3) {
-                    AccentText(text: "Inspire your day")
-                    DescriptionText(text: "Get daily update: quotes, words, and historical events")
+                
+                HStack(spacing: 20) {
+                    Image(systemName: "bolt.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .foregroundColor(.accentColor)
+                    
+                        .opacity(show ? 1 : 0)
+                        .offset(y: show ? 0 : 20)
+                        .animation(Animation.easeOut(duration: 0.5).delay(0.2))
+                        .onAppear { self.show = true }
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                        OnboardingBold(text: "Drive your mind")
+                        DescriptionText(text: "Personality development through the most influential experience")
+                    }
+                    .padding()
+                }
+                .padding()
+                
+                
+                HStack(spacing: 20) {
+                    Image(systemName: "quote.closing")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .foregroundColor(.accentColor)
+                    
+                        .opacity(show ? 1 : 0)
+                        .offset(y: show ? 0 : 20)
+                        .animation(Animation.easeOut(duration: 0.5).delay(0.2))
+                        .onAppear { self.show = true }
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                        OnboardingBold(text: "Experience that matter")
+                        DescriptionText(text: "Learn more from the greatest minds in the world!")
+                    }
+                    .padding()
                 }
                 .padding()
             }
-            .padding()
             
             
-            HStack(spacing: 20) {
-                Image(systemName: "bolt.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .foregroundColor(.accentColor)
+            Button {
                 
-                VStack(alignment: .leading, spacing: 3) {
-                    AccentText(text: "Drive your mind")
-                    DescriptionText(text: "Personality development through the most influential experience")
-                }
-                .padding()
-            }
-            .padding()
-            
-            
-            HStack(spacing: 20) {
-                Image(systemName: "quote.closing")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .foregroundColor(.accentColor)
-                
-                VStack(alignment: .leading, spacing: 3) {
-                    AccentText(text: "Experience that matter")
-                    DescriptionText(text: "Learn more from the greatest minds in the world!")
-                }
-                .padding()
+            } label: {
+                OnboardingButton(label: "Get started")
             }
             .padding()
             
         }
+        .padding()
     }
 }
 

@@ -215,6 +215,7 @@
 				E619CC3826AD5C1D00579CFD /* Assets.xcassets */,
 				E619CC3D26AD5C1D00579CFD /* Info.plist */,
 				E64DA5A726AEA63900061284 /* Models */,
+				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5A826AEA64A00061284 /* Views */,
 				E64DA5C226AEDEB300061284 /* View Models */,
 				E64DA5A926AEA65500061284 /* Network Managers */,
@@ -269,7 +270,6 @@
 				E619CC3626AD5C1A00579CFD /* MainView.swift */,
 				E6B0B0B226B048B1003C722F /* Free */,
 				E6615F91272D94540058AE70 /* Paid */,
-				E64DA5AA26AEA68300061284 /* Designs */,
 			);
 			path = Views;
 			sourceTree = "<group>";

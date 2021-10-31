@@ -12,7 +12,7 @@ struct Buttons: View {
     var body: some View {
         
         VStack {
-            OnboardingButton(label: "Start")
+            OnboardingButton(label: "Get started")
         }
         
     }
@@ -22,15 +22,22 @@ struct Buttons: View {
 struct OnboardingButton: View {
     
     var label: String
+    @State var show: Bool = false
     
     var body: some View {
         
         Text(label)
             .font(.callout)
             .fontWeight(.bold)
-            .background(Color(red: 0, green: 0, blue: 0.5))
-            .foregroundColor(.accentColor)
-            .frame(width: 150, height: 50, alignment: .center)
+            .frame(width: 200, height: 50)
+            .foregroundColor(.white)
+            .background(Color.accentColor)
+            .clipShape(Capsule())
+        
+            .opacity(show ? 1 : 0)
+            .offset(y: show ? 0 : 20)
+            .animation(Animation.easeOut(duration: 0.5).delay(0.2))
+            .onAppear { self.show = true }
     }
 }
 
