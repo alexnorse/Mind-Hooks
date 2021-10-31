@@ -57,10 +57,8 @@
 		E6C8438726C96E090099B442 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* Event.swift */; };
 		E6C8438A26C96E090099B442 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* Word.swift */; };
 		E6C8438B26C96E090099B442 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50B26BEF484002C8438 /* EventViewModel.swift */; };
-		E6C8438C26C96E090099B442 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50D26BEF584002C8438 /* EventView.swift */; };
 		E6C8438D26C96E090099B442 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B526AEB73300061284 /* Quote.swift */; };
 		E6C8438F26C96E090099B442 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */; };
-		E6C8439026C96E090099B442 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED626B0126F00905DE1 /* WordView.swift */; };
 		E6C8439126C96E090099B442 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
 		E6D0E0AB271C62D500C99CA6 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D0E0AA271C62D500C99CA6 /* content.json */; };
@@ -592,7 +590,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C8438C26C96E090099B442 /* EventView.swift in Sources */,
 				E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */,
 				E6C8438726C96E090099B442 /* Event.swift in Sources */,
 				E6C8438326C96E090099B442 /* QuoteView.swift in Sources */,
@@ -605,7 +602,6 @@
 				E6C8438426C96E090099B442 /* Alerts.swift in Sources */,
 				E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */,
 				E6C8438B26C96E090099B442 /* EventViewModel.swift in Sources */,
-				E6C8439026C96E090099B442 /* WordView.swift in Sources */,
 				E6C8438626C96E090099B442 /* WordViewModel.swift in Sources */,
 				E6C8438D26C96E090099B442 /* Quote.swift in Sources */,
 				E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */,

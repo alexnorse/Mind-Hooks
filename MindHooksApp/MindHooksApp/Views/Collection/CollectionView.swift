@@ -24,7 +24,7 @@ struct CollectionView: View {
                 .navigationTitle("Collection")
             }
         }
-        .animation(.spring())
+        .onAppear { viewModel.getCollection() }
         
     }
 }
