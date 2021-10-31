@@ -33,6 +33,9 @@
 		E6615F93272D948A0058AE70 /* QuoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F92272D948A0058AE70 /* QuoteList.swift */; };
 		E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
+		E6A54A37272E89E00007F225 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A36272E89DF0007F225 /* OnboardingView.swift */; };
+		E6A54A39272E89F70007F225 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A38272E89F70007F225 /* PurchaseView.swift */; };
+		E6A54A3B272E8F650007F225 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A3A272E8F650007F225 /* Buttons.swift */; };
 		E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */; };
 		E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
 		E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
@@ -133,6 +136,9 @@
 		E669D0D626C4003900234E4E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E669D0D826C4003900234E4E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QotDViewModel.swift; sourceTree = "<group>"; };
+		E6A54A36272E89DF0007F225 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E6A54A38272E89F70007F225 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		E6A54A3A272E8F650007F225 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		E6AC9C8326B16DA1000D1586 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		E6B02E1326B980F6006B45F7 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -259,9 +265,10 @@
 		E64DA5A826AEA64A00061284 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6A54A36272E89DF0007F225 /* OnboardingView.swift */,
 				E619CC3626AD5C1A00579CFD /* MainView.swift */,
-				E6B0B0B226B048B1003C722F /* Free Views */,
-				E6615F91272D94540058AE70 /* Paid Views */,
+				E6B0B0B226B048B1003C722F /* Free */,
+				E6615F91272D94540058AE70 /* Paid */,
 				E64DA5AA26AEA68300061284 /* Designs */,
 			);
 			path = Views;
@@ -282,6 +289,7 @@
 				E64DA5AF26AEAACA00061284 /* TextViews.swift */,
 				E6615F87272D853D0058AE70 /* CollectionCell.swift */,
 				E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */,
+				E6A54A3A272E8F650007F225 /* Buttons.swift */,
 			);
 			path = Designs;
 			sourceTree = "<group>";
@@ -308,13 +316,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		E6615F91272D94540058AE70 /* Paid Views */ = {
+		E6615F91272D94540058AE70 /* Paid */ = {
 			isa = PBXGroup;
 			children = (
 				E6615F8F272D941E0058AE70 /* CollectionView.swift */,
 				E6615F92272D948A0058AE70 /* QuoteList.swift */,
+				E6A54A38272E89F70007F225 /* PurchaseView.swift */,
 			);
-			path = "Paid Views";
+			path = Paid;
 			sourceTree = "<group>";
 		};
 		E669D0D526C4003900234E4E /* Frameworks */ = {
@@ -326,14 +335,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6B0B0B226B048B1003C722F /* Free Views */ = {
+		E6B0B0B226B048B1003C722F /* Free */ = {
 			isa = PBXGroup;
 			children = (
 				E649AED826B0129900905DE1 /* QuoteView.swift */,
 				E649AED626B0126F00905DE1 /* WordView.swift */,
 				E640C50D26BEF584002C8438 /* EventView.swift */,
 			);
-			path = "Free Views";
+			path = Free;
 			sourceTree = "<group>";
 		};
 		E6C8437326C96D7E0099B442 /* MindHooksAppWidget */ = {
@@ -517,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A54A3B272E8F650007F225 /* Buttons.swift in Sources */,
 				E6B02E1426B980F6006B45F7 /* WordViewModel.swift in Sources */,
 				E640C50C26BEF484002C8438 /* EventViewModel.swift in Sources */,
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
@@ -526,6 +536,7 @@
 				E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */,
 				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
 				E6615F8A272D854F0058AE70 /* CollectionQuoteCell.swift in Sources */,
+				E6A54A39272E89F70007F225 /* PurchaseView.swift in Sources */,
 				E649AED726B0126F00905DE1 /* WordView.swift in Sources */,
 				E64DA5B226AEAE9C00061284 /* Constants.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Date+Extensions.swift in Sources */,
@@ -535,6 +546,7 @@
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
+				E6A54A37272E89E00007F225 /* OnboardingView.swift in Sources */,
 				E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */,
 				E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */,
 				E6615F8E272D91D80058AE70 /* CollectionViewModel.swift in Sources */,
