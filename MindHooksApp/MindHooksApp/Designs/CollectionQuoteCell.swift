@@ -18,7 +18,7 @@ struct CollectionQuoteCell: View {
             Image("hooksOrange")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 40, height: 40)
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding)
                 .padding(-5)
             
                 .opacity(show ? 1 : 0)

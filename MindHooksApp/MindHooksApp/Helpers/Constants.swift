@@ -14,11 +14,36 @@ enum CategoryHeads {
 }
 
 
+enum OnboardingHeads {
+    static let first  = "Inspire your day"
+    static let second = "Drive your mind"
+    static let third  = "Experience that matter"
+}
+
+
+enum OnboardingDescriptions {
+    static let first  = "Get the daily updates: quotes, words, and historical events"
+    static let second = "Personality development through the most influential experience"
+    static let third  = "Learn more from the greatest minds in the world!"
+}
+
+
+enum PurchaseHeads {
+    static let first  = "What collections are the?"
+    static let second = "What I get for my payment?"
+}
+
+
+enum PurchaseDescriptions {
+    static let first  = "Brilliant thoughts of the wisest and most outstanding people and cultures"
+    static let second = "Inspiration and enlightenment! You can unlock a particular one or all collections in App."
+}
+
+
 enum Descriptions {
-    static let greetings = "Inspire your day\nDrive your mind"
-    static let startDay  = "(tap logo to Start)"
-    static let navlink   = "Start"
-    static let eventLink = "See more"
+    static let eventLink      = "See more"
+    static let restore        = "Already a member? Restore purchase here"
+    static let paymentDetails = "It's a one-time payment - you keep purchased items forever."
 }
 
     
@@ -40,8 +65,13 @@ enum URLs {
 
 
 enum UInumbers {
-    static let padding: CGFloat  = 15
-    static let spacing: CGFloat  = 25
-    static let offsetY: CGFloat  = -75
-    static let navlinkY: CGFloat = 150
+    static let padding: CGFloat = 15
+    static let spacing: CGFloat = 25
+    static let offsetY: CGFloat = -75
+}
+
+
+enum ImageSizes {
+    static let onboarding: CGFloat = 40
+    static let collection: CGFloat = 90
 }

@@ -17,7 +17,7 @@ struct CollectionCell: View {
         HStack {
             Image(collection.artwork)
                 .resizable()
-                .frame(width: 100, height: 100, alignment: .center)
+                .frame(width: ImageSizes.collection, height: ImageSizes.collection, alignment: .center)
                 .scaledToFill()
             
                 .opacity(show ? 1 : 0)

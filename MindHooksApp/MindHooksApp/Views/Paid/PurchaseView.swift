@@ -18,12 +18,12 @@ struct PurchaseView: View {
             OnboardingHeadline(text: "Unlock Collections")
                 .padding()
             
-            VStack(spacing: -20) {
-                HStack(spacing: 20) {
+            VStack(spacing: -UInumbers.spacing) {
+                HStack(spacing: UInumbers.spacing) {
                     Image(systemName: "books.vertical.fill")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40, alignment: .center)
+                        .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
                         .foregroundColor(.accentColor)
                     
                         .opacity(show ? 1 : 0)
@@ -32,19 +32,19 @@ struct PurchaseView: View {
                         .onAppear { self.show = true }
                     
                     VStack(alignment: .leading, spacing: 3) {
-                        OnboardingBold(text: "What collections are the?")
-                        DescriptionText(text: "Brilliant thoughts of the wisest and most outstanding people and cultures")
+                        OnboardingBold(text: PurchaseHeads.first)
+                        DescriptionText(text: PurchaseDescriptions.first)
                     }
                     .padding()
                 }
                 .padding()
                 
                 
-                HStack(spacing: 20) {
+                HStack(spacing: UInumbers.spacing) {
                     Image(systemName: "book.fill")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40, alignment: .center)
+                        .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
                         .foregroundColor(.accentColor)
                     
                         .opacity(show ? 1 : 0)
@@ -53,8 +53,8 @@ struct PurchaseView: View {
                         .onAppear { self.show = true }
                     
                     VStack(alignment: .leading, spacing: 3) {
-                        OnboardingBold(text: "What I get for my payment?")
-                        DescriptionText(text: "Inspiration and enlightenment! You can unlock a particular one or all collections in App.")
+                        OnboardingBold(text: PurchaseHeads.second)
+                        DescriptionText(text: PurchaseDescriptions.second)
                     }
                     .padding()
                 }
@@ -79,12 +79,12 @@ struct PurchaseView: View {
             Button {
                 
             } label: {
-                LinkText(text: "Already a member? Restore purchase here")
+                LinkText(text: Descriptions.restore)
             }
             .padding()
             
             
-            WidgetNoteText(text: "It's a one-time payment - you keep purchased items forever.")
+            WidgetNoteText(text: Descriptions.paymentDetails)
                 .padding()
             
         }

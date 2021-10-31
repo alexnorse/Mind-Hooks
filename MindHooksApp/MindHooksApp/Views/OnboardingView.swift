@@ -13,17 +13,17 @@ struct OnboardingView: View {
     
     var body: some View {
         
-        VStack(alignment: .center, spacing: 30) {
+        VStack(alignment: .center, spacing: UInumbers.spacing) {
             
             OnboardingHeadline(text: "Welcome!")
                 .padding()
             
-            VStack(spacing: -20) {
-                HStack(spacing: 20) {
+            VStack(spacing: -UInumbers.spacing) {
+                HStack(spacing: UInumbers.spacing) {
                     Image(systemName: "cloud.sun.fill")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40, alignment: .center)
+                        .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
                         .foregroundColor(.accentColor)
                     
                         .opacity(show ? 1 : 0)
@@ -32,19 +32,19 @@ struct OnboardingView: View {
                         .onAppear { self.show = true }
                     
                     VStack(alignment: .leading, spacing: 3) {
-                        OnboardingBold(text: "Inspire your day")
-                        DescriptionText(text: "Get the daily updates: quotes, words, and historical events")
+                        OnboardingBold(text: OnboardingHeads.first)
+                        DescriptionText(text: OnboardingDescriptions.first)
                     }
                     .padding()
                 }
                 .padding()
                 
                 
-                HStack(spacing: 20) {
+                HStack(spacing: UInumbers.spacing) {
                     Image(systemName: "bolt.fill")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40, alignment: .center)
+                        .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
                         .foregroundColor(.accentColor)
                     
                         .opacity(show ? 1 : 0)
@@ -53,19 +53,19 @@ struct OnboardingView: View {
                         .onAppear { self.show = true }
                     
                     VStack(alignment: .leading, spacing: 3) {
-                        OnboardingBold(text: "Drive your mind")
-                        DescriptionText(text: "Personality development through the most influential experience")
+                        OnboardingBold(text: OnboardingHeads.second)
+                        DescriptionText(text: OnboardingDescriptions.second)
                     }
                     .padding()
                 }
                 .padding()
                 
                 
-                HStack(spacing: 20) {
+                HStack(spacing: UInumbers.spacing) {
                     Image(systemName: "quote.closing")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40, height: 40, alignment: .center)
+                        .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
                         .foregroundColor(.accentColor)
                     
                         .opacity(show ? 1 : 0)
@@ -74,8 +74,8 @@ struct OnboardingView: View {
                         .onAppear { self.show = true }
                     
                     VStack(alignment: .leading, spacing: 3) {
-                        OnboardingBold(text: "Experience that matter")
-                        DescriptionText(text: "Learn more from the greatest minds in the world!")
+                        OnboardingBold(text: OnboardingHeads.third)
+                        DescriptionText(text: OnboardingDescriptions.third)
                     }
                     .padding()
                 }

@@ -16,12 +16,9 @@ struct TextViews: View {
             AccentText(text: "Lorem Ipsum")
             DescriptionText(text: "E. Hemingway")
             DescriptionBold(text: "E. Hemingway")
-            
             OnboardingHeadline(text: "Welcome")
             OnboardingBold(text: "Drive your mind")
-            
             LinkText(text: "See more")
-            
             WidgetBodyText(text: "Lorem Ipsum")
             WidgetNoteText(text: "Da Vinci")
         }
