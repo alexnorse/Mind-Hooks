@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CollectionCell: View {
     
-    @State var show: Bool = false
     let collection: Category
     
     var body: some View {
@@ -23,12 +22,6 @@ struct CollectionCell: View {
             }
             .padding()
         }
-        .opacity(show ? 1 : 0)
-        .offset(y: show ? 0 : 20)
-        .animation(Animation.easeOut(duration: 0.5).delay(0.3))
-        .onAppear { self.show = true }
-        .padding()
-        
     }
 }
 

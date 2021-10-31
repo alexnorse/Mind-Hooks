@@ -12,7 +12,6 @@ struct EventView: View {
     
     @StateObject var viewModel = EventViewModel()
     @State private var showSafari: Bool = false
-    @State var show: Bool = false
     
     var body: some View {
         

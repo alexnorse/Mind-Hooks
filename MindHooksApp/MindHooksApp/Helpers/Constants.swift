@@ -36,14 +36,14 @@ enum PurchaseHeads {
 
 enum PurchaseDescriptions {
     static let first  = "Brilliant thoughts of the wisest and most outstanding people and cultures"
-    static let second = "Inspiration and enlightenment! You can unlock a particular one or all collections in App."
+    static let second = "Inspiration and enlightenment! You can unlock a particular one or all collections (including future updates)"
 }
 
 
 enum Descriptions {
     static let eventLink      = "See more"
-    static let restore        = "Restore purchases here"
-    static let paymentDetails = "It's a one-time payment.\nYou keep purchased items forever."
+    static let restore        = "Restore purchases"
+    static let paymentDetails = "It's a one-time payment.\nYou keep all purchased items forever"
 }
 
     

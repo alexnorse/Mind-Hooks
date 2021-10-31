@@ -16,6 +16,7 @@ struct ImageViews: View {
 struct CollectionImage: View {
     
     var name: String
+    @State var show: Bool = false
     
     var body: some View {
         Image(name)
@@ -23,6 +24,11 @@ struct CollectionImage: View {
             .scaledToFit()
             .frame(width: ImageSizes.collection, height: ImageSizes.collection)
             .padding(-5)
+        
+            .opacity(show ? 1 : 0)
+            .offset(y: show ? 0 : 20)
+            .animation(Animation.easeOut(duration: 0.5).delay(0.2))
+            .onAppear { self.show = true }
     }
 }
 
