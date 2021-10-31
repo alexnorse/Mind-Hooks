@@ -22,6 +22,7 @@ struct CollectionCell: View {
             }
             .padding()
         }
+        
     }
 }
 

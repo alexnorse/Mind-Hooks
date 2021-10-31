@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct Buttons: View {
+    
     var body: some View {
-        OnboardingButton(label: "Get started")
+        
+        VStack {
+            OnboardingButton(label: "Get started")
+            LinkText(text: "See more")
+            CenteredLink(text: "See more")
+        }
+        
     }
 }
 
@@ -27,6 +34,40 @@ struct OnboardingButton: View {
             .foregroundColor(.white)
             .background(Color.accentColor)
             .clipShape(Capsule())
+    }
+}
+
+
+struct LinkText: View {
+    
+    var text: String
+    @State var show: Bool = false
+    
+    var body: some View {
+        Text(text)
+            .font(.callout)
+            .underline()
+            .foregroundColor(Color.accentColor)
+            .frame(maxWidth: 330, alignment: .leading)
+        
+            .opacity(show ? 1 : 0)
+            .offset(y: show ? 0 : 20)
+            .animation(Animation.easeOut(duration: 0.5).delay(0.2))
+            .onAppear { self.show = true }
+    }
+}
+
+
+struct CenteredLink: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.callout)
+            .underline()
+            .foregroundColor(Color.accentColor)
+            .frame(maxWidth: 330, alignment: .center)
     }
 }
 

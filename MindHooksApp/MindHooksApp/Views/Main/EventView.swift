@@ -22,6 +22,7 @@ struct EventView: View {
                 AccentText(text: "\(viewModel.year)")
                 DescriptionText(text: viewModel.description)
                 
+                
                 LinkText(text: Descriptions.eventLink)
                     .onTapGesture { showSafari.toggle() }
                     .fullScreenCover(isPresented: $showSafari,

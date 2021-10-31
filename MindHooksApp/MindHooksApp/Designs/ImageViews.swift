@@ -8,29 +8,62 @@
 import SwiftUI
 
 struct ImageViews: View {
+    
     var body: some View {
-        CollectionImage(name: "hooksOrange")
+        
+        VStack {
+            CollectionImage(name: "hooksOrange")
+            OnboardingImage(name: "swift")
+            LogoSmall(name: "hooksOrange")
+        }
+        
     }
 }
 
 struct CollectionImage: View {
     
     var name: String
-    @State var show: Bool = false
     
     var body: some View {
+        
         Image(name)
             .resizable()
             .scaledToFit()
             .frame(width: ImageSizes.collection, height: ImageSizes.collection)
             .padding(-5)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.2))
-            .onAppear { self.show = true }
     }
 }
+
+
+struct OnboardingImage: View {
+    
+    var name: String
+    
+    var body: some View {
+        
+        Image(systemName: name)
+            .resizable()
+            .scaledToFit()
+            .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding)
+            .foregroundColor(.accentColor)
+    }
+}
+
+
+struct LogoSmall: View {
+    
+    var name: String
+    
+    var body: some View {
+        
+        Image(name)
+            .resizable()
+            .scaledToFit()
+            .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding)
+            .foregroundColor(.accentColor)
+    }
+}
+
 
 struct ImageViews_Previews: PreviewProvider {
     static var previews: some View {

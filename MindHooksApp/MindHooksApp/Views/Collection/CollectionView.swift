@@ -23,8 +23,9 @@ struct CollectionView: View {
                 .listRowInsets(.none)
                 .navigationTitle("Collection")
             }
-            .onAppear { viewModel.getCollection() }
         }
+        .animation(.spring())
+        
     }
 }
 

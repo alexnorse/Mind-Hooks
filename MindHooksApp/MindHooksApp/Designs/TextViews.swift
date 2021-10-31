@@ -18,8 +18,6 @@ struct TextViews: View {
             DescriptionBold(text: "E. Hemingway")
             OnboardingHeadline(text: "Welcome")
             OnboardingBold(text: "Drive your mind")
-            LinkText(text: "See more")
-            CenteredLink(text: "See more")
             NoteText(text: "Note line")
             WidgetBodyText(text: "Lorem Ipsum")
         }
@@ -139,46 +137,6 @@ struct OnboardingBold: View {
             .font(.callout)
             .fontWeight(.bold)
             .frame(maxWidth: 330, alignment: .leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show = true }
-    }
-}
-
-
-struct LinkText: View {
-    
-    var text: String
-    @State var show: Bool = false
-    
-    var body: some View {
-        Text(text)
-            .font(.callout)
-            .underline()
-            .foregroundColor(Color.accentColor)
-            .frame(maxWidth: 330, alignment: .leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show = true }
-    }
-}
-
-
-struct CenteredLink: View {
-    
-    var text: String
-    @State var show: Bool = false
-    
-    var body: some View {
-        Text(text)
-            .font(.callout)
-            .underline()
-            .foregroundColor(Color.accentColor)
-            .frame(maxWidth: 330, alignment: .center)
         
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)

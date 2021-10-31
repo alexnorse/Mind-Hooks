@@ -24,11 +24,7 @@ struct OnboardingFirst: View {
     var body: some View {
         
         HStack(spacing: UInumbers.spacing) {
-            Image(systemName: "cloud.sun.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
-                .foregroundColor(.accentColor)
+            OnboardingImage(name: "cloud.sun.fill")
             
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: OnboardingHeads.first)
@@ -46,11 +42,7 @@ struct OnboardingSecond: View {
     var body: some View {
         
         HStack(spacing: UInumbers.spacing) {
-            Image(systemName: "bolt.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
-                .foregroundColor(.accentColor)
+            OnboardingImage(name: "bolt.fill")
             
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: OnboardingHeads.second)
@@ -68,11 +60,7 @@ struct OnboardingThird: View {
     var body: some View {
         
         HStack(spacing: UInumbers.spacing) {
-            Image(systemName: "quote.closing")
-                .resizable()
-                .scaledToFit()
-                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
-                .foregroundColor(.accentColor)
+            OnboardingImage(name: "quote.closing")
             
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: OnboardingHeads.third)
@@ -90,11 +78,7 @@ struct PurchaseFirst: View {
     var body: some View {
         
         HStack(spacing: UInumbers.spacing) {
-            Image(systemName: "books.vertical.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
-                .foregroundColor(.accentColor)
+            OnboardingImage(name: "books.vertical.fill")
             
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: PurchaseHeads.first)
@@ -112,11 +96,7 @@ struct PurchaseSecond: View {
     var body: some View {
         
         HStack(spacing: UInumbers.spacing) {
-            Image(systemName: "book.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
-                .foregroundColor(.accentColor)
+            OnboardingImage(name: "book.fill")
             
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: PurchaseHeads.second)
