@@ -19,8 +19,9 @@ struct TextViews: View {
             OnboardingHeadline(text: "Welcome")
             OnboardingBold(text: "Drive your mind")
             LinkText(text: "See more")
+            CenteredLink(text: "See more")
+            NoteText(text: "Note line")
             WidgetBodyText(text: "Lorem Ipsum")
-            WidgetNoteText(text: "Da Vinci")
         }
         .padding()
         
@@ -41,7 +42,7 @@ struct CategoryText: View {
             .textCase(.uppercase)
             .frame(maxWidth: 330, alignment: .leading)
             .multilineTextAlignment(.leading)
-            
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.2))
@@ -61,7 +62,7 @@ struct AccentText: View {
             .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
-            
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.3))
@@ -80,7 +81,7 @@ struct DescriptionText: View {
             .font(.callout)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
-            
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))
@@ -99,7 +100,7 @@ struct DescriptionBold: View {
             .font(.callout)
             .fontWeight(.bold)
             .frame(maxWidth: 330, alignment: .trailing)
-            
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))
@@ -119,7 +120,7 @@ struct OnboardingHeadline: View {
             .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .center)
-            
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.3))
@@ -138,7 +139,7 @@ struct OnboardingBold: View {
             .font(.callout)
             .fontWeight(.bold)
             .frame(maxWidth: 330, alignment: .leading)
-            
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))
@@ -158,7 +159,27 @@ struct LinkText: View {
             .underline()
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
-            
+        
+            .opacity(show ? 1 : 0)
+            .offset(y: show ? 0 : 20)
+            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
+            .onAppear { self.show = true }
+    }
+}
+
+
+struct CenteredLink: View {
+    
+    var text: String
+    @State var show: Bool = false
+    
+    var body: some View {
+        Text(text)
+            .font(.callout)
+            .underline()
+            .foregroundColor(Color.accentColor)
+            .frame(maxWidth: 330, alignment: .center)
+        
             .opacity(show ? 1 : 0)
             .offset(y: show ? 0 : 20)
             .animation(Animation.easeOut(duration: 0.5).delay(0.4))
@@ -178,6 +199,21 @@ struct WidgetBodyText: View {
             .foregroundColor(.white)
             .multilineTextAlignment(.leading)
             .lineLimit(5)
+    }
+}
+
+
+struct NoteText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.caption)
+            .fontWeight(.regular)
+            .foregroundColor(.gray)
+            .multilineTextAlignment(.center)
+            .lineLimit(2)
     }
 }
 

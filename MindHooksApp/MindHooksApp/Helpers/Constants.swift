@@ -42,8 +42,8 @@ enum PurchaseDescriptions {
 
 enum Descriptions {
     static let eventLink      = "See more"
-    static let restore        = "Already a member? Restore purchase here"
-    static let paymentDetails = "It's a one-time payment - you keep purchased items forever."
+    static let restore        = "Restore purchases here"
+    static let paymentDetails = "It's a one-time payment.\nYou keep purchased items forever."
 }
 
     

@@ -18,17 +18,16 @@ struct CollectionQuoteCell: View {
             Image("hooksOrange")
                 .resizable()
                 .scaledToFit()
-                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding)
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
                 .padding(-5)
-            
-                .opacity(show ? 1 : 0)
-                .offset(y: show ? 0 : 20)
-                .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-                .onAppear { self.show = true }
             
             DescriptionText(text: collection.quotes.first!.quote)
             DescriptionBold(text: collection.quotes.last!.source)
         }
+        .opacity(show ? 1 : 0)
+        .offset(y: show ? 0 : 20)
+        .animation(Animation.easeOut(duration: 0.5).delay(0.3))
+        .onAppear { self.show = true }
         .padding()
         
     }

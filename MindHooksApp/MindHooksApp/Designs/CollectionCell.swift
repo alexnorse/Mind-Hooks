@@ -15,15 +15,7 @@ struct CollectionCell: View {
     var body: some View {
         
         HStack {
-            Image(collection.artwork)
-                .resizable()
-                .frame(width: ImageSizes.collection, height: ImageSizes.collection, alignment: .center)
-                .scaledToFill()
-            
-                .opacity(show ? 1 : 0)
-                .offset(y: show ? 0 : 20)
-                .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-                .onAppear { self.show = true }
+            CollectionImage(name: collection.artwork)
             
             VStack(spacing: 3) {
                 AccentText(text: collection.category)
@@ -31,6 +23,10 @@ struct CollectionCell: View {
             }
             .padding()
         }
+        .opacity(show ? 1 : 0)
+        .offset(y: show ? 0 : 20)
+        .animation(Animation.easeOut(duration: 0.5).delay(0.3))
+        .onAppear { self.show = true }
         .padding()
         
     }

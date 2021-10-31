@@ -1,0 +1,136 @@
+//
+//  OnboardSubViews.swift
+//  MindHooksApp
+//
+//  Created by Alexandr L. on 10/31/21.
+//
+
+import SwiftUI
+
+struct OnboardSubViews: View {
+    var body: some View {
+        VStack {
+            OnboardingFirst()
+            OnboardingSecond()
+            OnboardingThird()
+            PurchaseFirst()
+            PurchaseSecond()
+        }
+    }
+}
+
+
+struct OnboardingFirst: View {
+    var body: some View {
+        
+        HStack(spacing: UInumbers.spacing) {
+            Image(systemName: "cloud.sun.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
+                .foregroundColor(.accentColor)
+            
+            VStack(alignment: .leading, spacing: 3) {
+                OnboardingBold(text: OnboardingHeads.first)
+                DescriptionText(text: OnboardingDescriptions.first)
+            }
+            .padding()
+        }
+        .padding()
+        
+    }
+}
+
+
+struct OnboardingSecond: View {
+    var body: some View {
+        
+        HStack(spacing: UInumbers.spacing) {
+            Image(systemName: "bolt.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
+                .foregroundColor(.accentColor)
+            
+            VStack(alignment: .leading, spacing: 3) {
+                OnboardingBold(text: OnboardingHeads.second)
+                DescriptionText(text: OnboardingDescriptions.second)
+            }
+            .padding()
+        }
+        .padding()
+        
+    }
+}
+
+
+struct OnboardingThird: View {
+    var body: some View {
+        
+        HStack(spacing: UInumbers.spacing) {
+            Image(systemName: "quote.closing")
+                .resizable()
+                .scaledToFit()
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
+                .foregroundColor(.accentColor)
+            
+            VStack(alignment: .leading, spacing: 3) {
+                OnboardingBold(text: OnboardingHeads.third)
+                DescriptionText(text: OnboardingDescriptions.third)
+            }
+            .padding()
+        }
+        .padding()
+        
+    }
+}
+
+
+struct PurchaseFirst: View {
+    var body: some View {
+        
+        HStack(spacing: UInumbers.spacing) {
+            Image(systemName: "books.vertical.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
+                .foregroundColor(.accentColor)
+            
+            VStack(alignment: .leading, spacing: 3) {
+                OnboardingBold(text: PurchaseHeads.first)
+                DescriptionText(text: PurchaseDescriptions.first)
+            }
+            .padding()
+        }
+        .padding()
+        
+    }
+}
+
+
+struct PurchaseSecond: View {
+    var body: some View {
+        
+        HStack(spacing: UInumbers.spacing) {
+            Image(systemName: "book.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding, alignment: .center)
+                .foregroundColor(.accentColor)
+            
+            VStack(alignment: .leading, spacing: 3) {
+                OnboardingBold(text: PurchaseHeads.second)
+                DescriptionText(text: PurchaseDescriptions.second)
+            }
+            .padding()
+        }
+        .padding()
+        
+    }
+}
+
+struct OnboardSubViews_Previews: PreviewProvider {
+    static var previews: some View {
+        OnboardSubViews()
+    }
+}

@@ -8,13 +8,8 @@
 import SwiftUI
 
 struct Buttons: View {
-    
     var body: some View {
-        
-        VStack {
-            OnboardingButton(label: "Get started")
-        }
-        
+        OnboardingButton(label: "Get started")
     }
 }
 
@@ -22,7 +17,6 @@ struct Buttons: View {
 struct OnboardingButton: View {
     
     var label: String
-    @State var show: Bool = false
     
     var body: some View {
         
@@ -33,11 +27,6 @@ struct OnboardingButton: View {
             .foregroundColor(.white)
             .background(Color.accentColor)
             .clipShape(Capsule())
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.2))
-            .onAppear { self.show = true }
     }
 }
 
