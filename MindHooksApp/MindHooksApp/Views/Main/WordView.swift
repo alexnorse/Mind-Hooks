@@ -23,6 +23,7 @@ struct WordView: View {
             }
             .animation(.spring())
             .padding()
+            
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,
@@ -31,6 +32,7 @@ struct WordView: View {
         }
     }
 }
+
 
 struct WordView_Previews: PreviewProvider {
     static var previews: some View {

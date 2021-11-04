@@ -18,10 +18,10 @@ struct EventView: View {
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading, spacing: UInumbers.spacing) {
+                
                 CategoryText(text: CategoryHeads.event)
                 AccentText(text: "\(viewModel.year)")
                 DescriptionText(text: viewModel.description)
-                
                 
                 LinkText(text: Descriptions.eventLink)
                     .onTapGesture { showSafari.toggle() }
@@ -39,6 +39,7 @@ struct EventView: View {
         }
     }
 }
+
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {

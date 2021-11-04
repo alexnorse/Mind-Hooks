@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct OnboardSubViews: View {
+    
     var body: some View {
+        
         VStack {
             OnboardingFirst()
             OnboardingSecond()
@@ -16,6 +18,7 @@ struct OnboardSubViews: View {
             PurchaseFirst()
             PurchaseSecond()
         }
+        
     }
 }
 
@@ -108,6 +111,7 @@ struct PurchaseSecond: View {
         
     }
 }
+
 
 struct OnboardSubViews_Previews: PreviewProvider {
     static var previews: some View {

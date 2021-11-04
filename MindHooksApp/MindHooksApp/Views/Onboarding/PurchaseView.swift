@@ -58,6 +58,7 @@ struct PurchaseView: View {
     }
 }
 
+
 struct PurchaseView_Previews: PreviewProvider {
     static var previews: some View {
         PurchaseView()

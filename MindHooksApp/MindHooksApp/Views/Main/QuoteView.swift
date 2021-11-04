@@ -22,6 +22,7 @@ struct QuoteView: View {
             }
             .animation(.spring())
             .padding()
+            
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title,

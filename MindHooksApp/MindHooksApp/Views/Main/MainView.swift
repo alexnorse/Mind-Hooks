@@ -34,6 +34,7 @@ struct MainView: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 .padding()
+            
                 .tabItem {
                     Image(systemName: "calendar.circle.fill")
                     Text("Today") }

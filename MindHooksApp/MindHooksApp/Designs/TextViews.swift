@@ -20,6 +20,7 @@ struct TextViews: View {
             OnboardingBold(text: "Drive your mind")
             NoteText(text: "Note line")
             WidgetBodyText(text: "Lorem Ipsum")
+            WidgetNoteText(text: "Da Vinci")
         }
         .padding()
         
@@ -146,21 +147,6 @@ struct OnboardingBold: View {
 }
 
 
-struct WidgetBodyText: View {
-    
-    var text: String
-    
-    var body: some View {
-        Text(text)
-            .font(.caption)
-            .fontWeight(.medium)
-            .foregroundColor(.white)
-            .multilineTextAlignment(.leading)
-            .lineLimit(5)
-    }
-}
-
-
 struct NoteText: View {
     
     var text: String
@@ -172,6 +158,21 @@ struct NoteText: View {
             .foregroundColor(.gray)
             .multilineTextAlignment(.center)
             .lineLimit(2)
+    }
+}
+
+
+struct WidgetBodyText: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.caption)
+            .fontWeight(.medium)
+            .foregroundColor(.white)
+            .multilineTextAlignment(.leading)
+            .lineLimit(5)
     }
 }
 
