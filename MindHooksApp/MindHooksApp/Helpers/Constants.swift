@@ -17,7 +17,7 @@ enum CategoryHeads {
 enum OnboardingHeads {
     static let first  = "Inspire your day"
     static let second = "Drive your mind"
-    static let third  = "Experience that matter"
+    static let third  = "Experience that matters"
 }
 
 
