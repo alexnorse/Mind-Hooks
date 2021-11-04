@@ -13,8 +13,9 @@ struct CollectionCell: View {
     
     var body: some View {
         
-        HStack {
+        HStack(spacing: 7) {
             CollectionImage(name: collection.artwork)
+                .padding()
             
             VStack(spacing: 3) {
                 AccentText(text: collection.category)
@@ -22,6 +23,10 @@ struct CollectionCell: View {
             }
             .padding()
         }
+        .frame(width: 350, height: 140)
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .shadow(color: .gray, radius: 15, x: 5, y: 5)
         
     }
 }

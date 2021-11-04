@@ -10,18 +10,25 @@ import SwiftUI
 struct CollectionView: View {
     
     @StateObject var viewModel = CollectionViewModel()
+    let columns: [GridItem] = [GridItem(.flexible())]
     
     var body: some View {
         
         ZStack {
             NavigationView {
-                
-                List(viewModel.categories) { category in
-                    CollectionCell(collection: category)
+                ScrollView {
+                    
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(viewModel.categories) { category in
+                            CollectionCell(collection: category)
+                        }
+                        .listStyle(.plain)
+                        .listRowInsets(.none)
+                        .navigationTitle("Collection")
+                    }
+                    .padding()
+                    
                 }
-                .listStyle(.plain)
-                .listRowInsets(.none)
-                .navigationTitle("Collection")
             }
         }
         .onAppear { viewModel.getCollection() }

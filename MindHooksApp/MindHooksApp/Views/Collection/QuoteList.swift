@@ -9,9 +9,20 @@ import SwiftUI
 
 struct QuoteList: View {
    
+    @StateObject var viewModel = CollectionViewModel()
+    
     var body: some View {
         
-        Text("Hello, World!")
+        ZStack {
+            
+            List(viewModel.categories) { category in
+                CollectionQuoteCell(collection: category)
+            }
+            .listStyle(.plain)
+            .listRowInsets(.none)
+            .navigationTitle("Collection")
+        }
+        .onAppear { viewModel.getCollection() }
     
     }
 }
