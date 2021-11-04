@@ -9,8 +9,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
     @State var show: Bool = false
-    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         
@@ -25,7 +25,7 @@ struct OnboardingView: View {
                 OnboardingThird()
             }
             
-            Button { self.presentationMode.wrappedValue.dismiss() }
+            Button { isOnboarding = false }
             label: { OnboardingButton(label: "Get started") }
             .padding()
             

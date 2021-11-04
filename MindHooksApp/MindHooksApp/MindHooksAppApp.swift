@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct MindHooksAppApp: App {
+
+    @AppStorage("isOnboarding") var isOnboarding = true
+    
     var body: some Scene {
         WindowGroup {
-            LaunchView().environmentObject(Router())
+            if isOnboarding {
+                OnboardingView()
+            } else {
+                MainView()
+            }
         }
     }
 }

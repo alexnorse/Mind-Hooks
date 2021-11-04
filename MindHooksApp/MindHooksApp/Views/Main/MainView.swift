@@ -46,6 +46,7 @@ struct MainView: View {
                     Text("Collection") }
             
         }
+
     }
 }
 

@@ -62,8 +62,6 @@
 		E6C8439126C96E090099B442 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
 		E6D0E0AB271C62D500C99CA6 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D0E0AA271C62D500C99CA6 /* content.json */; };
-		E6D19A6E2733E94F00E8D192 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D19A6D2733E94F00E8D192 /* Router.swift */; };
-		E6D19A702733EA0200E8D192 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D19A6F2733EA0200E8D192 /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,8 +150,6 @@
 		E6C8437626C96D820099B442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C8437826C96D820099B442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6D0E0AA271C62D500C99CA6 /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
-		E6D19A6D2733E94F00E8D192 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		E6D19A6F2733EA0200E8D192 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +220,7 @@
 				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5A826AEA64A00061284 /* Views */,
 				E64DA5C226AEDEB300061284 /* View Models */,
-				E64DA5A926AEA65500061284 /* Managers and Routers */,
+				E64DA5A926AEA65500061284 /* Data Managers */,
 				E64DA5B926AEB78600061284 /* Helpers */,
 				E6D0E0A9271C62BB00C99CA6 /* Data */,
 				E619CC3A26AD5C1D00579CFD /* Preview Content */,
@@ -272,7 +268,6 @@
 		E64DA5A826AEA64A00061284 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E6D19A6F2733EA0200E8D192 /* LaunchView.swift */,
 				E6C1CE3B272EDE2C00808529 /* Onboarding */,
 				E6B0B0B226B048B1003C722F /* Main */,
 				E6615F91272D94540058AE70 /* Collection */,
@@ -280,14 +275,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E64DA5A926AEA65500061284 /* Managers and Routers */ = {
+		E64DA5A926AEA65500061284 /* Data Managers */ = {
 			isa = PBXGroup;
 			children = (
 				E64DA5C026AED48D00061284 /* NetworkCall.swift */,
 				E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */,
-				E6D19A6D2733E94F00E8D192 /* Router.swift */,
 			);
-			path = "Managers and Routers";
+			path = "Data Managers";
 			sourceTree = "<group>";
 		};
 		E64DA5AA26AEA68300061284 /* Designs */ = {
@@ -550,7 +544,6 @@
 				E640C50E26BEF584002C8438 /* EventView.swift in Sources */,
 				E6C1CE3A272ED90700808529 /* ImageViews.swift in Sources */,
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
-				E6D19A702733EA0200E8D192 /* LaunchView.swift in Sources */,
 				E6615F93272D948A0058AE70 /* QuoteList.swift in Sources */,
 				E6615F90272D941E0058AE70 /* CollectionView.swift in Sources */,
 				E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */,
@@ -567,7 +560,6 @@
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
-				E6D19A6E2733E94F00E8D192 /* Router.swift in Sources */,
 				E6A54A37272E89E00007F225 /* OnboardingView.swift in Sources */,
 				E619CC3526AD5C1A00579CFD /* MindHooksAppApp.swift in Sources */,
 				E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */,
