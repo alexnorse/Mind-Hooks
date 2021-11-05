@@ -31,7 +31,6 @@ struct TextViews: View {
 struct CategoryText: View {
     
     var text: String
-    @State var show: Bool = false
     
     var body: some View {
         Text(text)
@@ -41,11 +40,6 @@ struct CategoryText: View {
             .textCase(.uppercase)
             .frame(maxWidth: 330, alignment: .leading)
             .multilineTextAlignment(.leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.2))
-            .onAppear { self.show = true }
     }
 }
 
@@ -53,19 +47,13 @@ struct CategoryText: View {
 struct AccentText: View {
     
     var text: String
-    @State var show: Bool = false
     
     var body: some View {
         Text(text)
-            .font(.title2)
+            .font(.title3)
             .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.3))
-            .onAppear { self.show = true }
     }
 }
 
@@ -73,18 +61,12 @@ struct AccentText: View {
 struct DescriptionText: View {
     
     var text: String
-    @State var show: Bool = false
     
     var body: some View {
         Text(text)
             .font(.callout)
             .fontWeight(.regular)
             .frame(maxWidth: 330, alignment: .leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show = true }
     }
 }
 
@@ -92,18 +74,12 @@ struct DescriptionText: View {
 struct DescriptionBold: View {
     
     var text: String
-    @State var show: Bool = false
     
     var body: some View {
         Text(text)
             .font(.callout)
             .fontWeight(.bold)
             .frame(maxWidth: 330, alignment: .trailing)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show = true }
     }
 }
 
@@ -111,7 +87,6 @@ struct DescriptionBold: View {
 struct OnboardingHeadline: View {
     
     var text: String
-    @State var show: Bool = false
     
     var body: some View {
         Text(text)
@@ -119,11 +94,6 @@ struct OnboardingHeadline: View {
             .fontWeight(.bold)
             .foregroundColor(Color.accentColor)
             .frame(maxWidth: 330, alignment: .center)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.3))
-            .onAppear { self.show = true }
     }
 }
 
@@ -131,18 +101,12 @@ struct OnboardingHeadline: View {
 struct OnboardingBold: View {
     
     var text: String
-    @State var show: Bool = false
     
     var body: some View {
         Text(text)
             .font(.callout)
             .fontWeight(.bold)
             .frame(maxWidth: 330, alignment: .leading)
-        
-            .opacity(show ? 1 : 0)
-            .offset(y: show ? 0 : 20)
-            .animation(Animation.easeOut(duration: 0.5).delay(0.4))
-            .onAppear { self.show = true }
     }
 }
 

@@ -14,7 +14,7 @@ struct OnboardingView: View {
     
     var body: some View {
         
-        VStack(alignment: .center, spacing: UInumbers.spacing - 5) {
+        VStack(alignment: .center, spacing: UInumbers.spacing - 10) {
             
             OnboardingHeadline(text: "Welcome!")
                 .padding()
@@ -28,7 +28,7 @@ struct OnboardingView: View {
             Button { isOnboarding = false }
             label: { OnboardingButton(label: "Get started") }
             .padding()
-            
+
         }
         .opacity(show ? 1 : 0)
         .offset(y: show ? 0 : 20)

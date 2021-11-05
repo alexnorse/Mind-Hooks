@@ -23,10 +23,10 @@ struct CollectionCell: View {
             }
             .padding()
         }
-        .frame(width: 350, height: 140)
+        .frame(width: 370, height: 140)
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 20))
-        .shadow(color: .gray, radius: 15, x: 5, y: 5)
+        .shadow(color: .gray, radius: 7, x: 5, y: 5)
         
     }
 }
