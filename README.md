@@ -1,7 +1,7 @@
 ## Mind Hooks
 > *Inspire your day. Drive your mind.*
 
-![Mind Hooks](https://user-images.githubusercontent.com/68333583/140519787-ba881bd6-a6db-4503-abcf-68d403e4a995.png)
+![Mind Hooks](https://user-images.githubusercontent.com/68333583/140558795-d6a59035-5490-4b13-aff7-106a12fe9b04.png)
 
 ### [AppStore](https://apps.apple.com/ru/app/mind-hooks/id1581807075?l=en)
 
