@@ -15,6 +15,7 @@ struct CollectionCell: View {
         
         HStack(spacing: 7) {
             CollectionImage(name: collection.artwork)
+                .shadow(color: .gray, radius: 10, x: 5, y: 5)
                 .padding()
             
             VStack(spacing: 3) {
@@ -23,10 +24,8 @@ struct CollectionCell: View {
             }
             .padding()
         }
-        .frame(width: 370, height: 140)
-        .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
-        .shadow(color: .gray, radius: 7, x: 5, y: 5)
+        .frame(width: 365, height: 100)
+        .foregroundColor(Color.primary)
         
     }
 }

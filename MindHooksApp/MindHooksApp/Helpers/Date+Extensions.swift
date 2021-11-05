@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Day {
     static var today: Date { Date() }
