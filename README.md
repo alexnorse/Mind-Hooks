@@ -6,16 +6,16 @@
 ### [AppStore](https://apps.apple.com/ru/app/mind-hooks/id1581807075?l=en)
 
 ### Description
-Stay inspired and motivated every day! Expand your intelligence with the all-times best thoughts and get experience from history. 
-Also, grow your vocabulary.
+Stay inspired and motivated every day! Develop your intelligence with the all-times best thoughts and get experience from history.
 
 ### User Experience
-* Your daily update: quotes, words and historical events - that matters!
+* Your daily update: quotes, words, and historical events - that matter!
+* Most advanced minds' thoughts collections
 * Unstoppable self-growth and erudition driving
 * Personality development through the most influential experience
 * Learn more from history - for a better future!
 * Useful widgets for your Home Screen
-* Nice minimalistic design 
+* Nice and minimalistic design - see the essence, not the shell
 
 ### Tech Stack
 * 100% SwiftUI
