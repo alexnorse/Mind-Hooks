@@ -9,26 +9,24 @@ import SwiftUI
 
 struct QuoteList: View {
    
-    @StateObject var viewModel = CollectionViewModel()
+    let collection: Category
     
     var body: some View {
         
         ZStack {
             
-            List(viewModel.categories) { category in
-                CollectionQuoteCell(collection: category)
+            List(collection.quotes) { category in
+                CollectionQuoteCell(collection: collection)
             }
             .listStyle(.plain)
             .listRowInsets(.none)
-            .navigationTitle("Collection")
         }
-        .onAppear { viewModel.getCollection() }
     
     }
 }
 
 struct QuoteList_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteList()
+        QuoteList(collection: MockCollection.sample)
     }
 }

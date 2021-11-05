@@ -14,9 +14,9 @@ struct OnboardingView: View {
     
     var body: some View {
         
-        VStack(alignment: .center, spacing: UInumbers.spacing) {
+        VStack(alignment: .center, spacing: UInumbers.spacing - 5) {
             
-            OnboardingHeadline(text: "Welcome")
+            OnboardingHeadline(text: "Welcome!")
                 .padding()
             
             VStack(spacing: -UInumbers.spacing) {

@@ -33,6 +33,7 @@
 		E6615F93272D948A0058AE70 /* QuoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F92272D948A0058AE70 /* QuoteList.swift */; };
 		E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
+		E69E4DDD273532BC00BE83F9 /* CollectionGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E4DDC273532BC00BE83F9 /* CollectionGridViewModel.swift */; };
 		E6A54A37272E89E00007F225 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A36272E89DF0007F225 /* OnboardingView.swift */; };
 		E6A54A39272E89F70007F225 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A38272E89F70007F225 /* PurchaseView.swift */; };
 		E6A54A3B272E8F650007F225 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A3A272E8F650007F225 /* Buttons.swift */; };
@@ -136,6 +137,7 @@
 		E669D0D626C4003900234E4E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E669D0D826C4003900234E4E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QotDViewModel.swift; sourceTree = "<group>"; };
+		E69E4DDC273532BC00BE83F9 /* CollectionGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGridViewModel.swift; sourceTree = "<group>"; };
 		E6A54A36272E89DF0007F225 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		E6A54A38272E89F70007F225 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
 		E6A54A3A272E8F650007F225 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				E6B02E1326B980F6006B45F7 /* WordViewModel.swift */,
 				E640C50B26BEF484002C8438 /* EventViewModel.swift */,
 				E6615F8D272D91D80058AE70 /* CollectionViewModel.swift */,
+				E69E4DDC273532BC00BE83F9 /* CollectionGridViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
 				E6615F8C272D90AF0058AE70 /* Collection.swift in Sources */,
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
+				E69E4DDD273532BC00BE83F9 /* CollectionGridViewModel.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
 				E6A54A37272E89E00007F225 /* OnboardingView.swift in Sources */,
