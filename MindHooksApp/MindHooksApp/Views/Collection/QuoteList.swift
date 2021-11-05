@@ -16,7 +16,7 @@ struct QuoteList: View {
         ZStack {
             
             List(collection.quotes) { category in
-                CollectionQuoteCell(collection: collection)
+                CollectionQuoteCell(collection: category)
             }
             .listStyle(.plain)
             .listRowInsets(.none)
