@@ -7,10 +7,12 @@
 
 import UIKit
 
+var date = Date()
+
 enum CategoryHeads {
-    static let word  = "Word of the day"
-    static let quote = "Thought of the day"
-    static let event = "This day in history"
+    static let word  = "\(date.convertToday())\nWord of the day"
+    static let quote = "\(date.convertToday())\nThought of the day"
+    static let event = "\(date.convertToday())\nThis day in history"
 }
 
 
