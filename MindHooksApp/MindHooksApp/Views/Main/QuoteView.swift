@@ -20,6 +20,7 @@ struct QuoteView: View {
                 AccentText(text: viewModel.quote)
                 DescriptionText(text: viewModel.author)
             }
+            .animation(.spring())
             .padding()
             
         }
