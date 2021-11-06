@@ -27,14 +27,14 @@ struct PurchaseView: View {
             Button {
                 
             } label: {
-                OnboardingButton(label: "Unlock current one")
+                OnboardingButton(label: "1 Month")
             }
             
             
             Button {
                 
             } label: {
-                OnboardingButton(label: "Unlock all")
+                OnboardingButton(label: "1 Year")
             }
             
             
@@ -44,10 +44,6 @@ struct PurchaseView: View {
                 CenteredLink(text: Descriptions.restore)
             }
             .padding()
-            
-            
-            NoteText(text: Descriptions.paymentDetails)
-                .padding()
             
         }
         .opacity(show ? 1 : 0)

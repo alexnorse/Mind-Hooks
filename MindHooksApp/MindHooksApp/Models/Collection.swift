@@ -12,7 +12,7 @@ struct Category: Codable, Identifiable {
     let category: String
     let artwork: String
     let description: String
-    let productId: String
+    let productId: String?
     let quotes: [CollectionQuote]
 }
 

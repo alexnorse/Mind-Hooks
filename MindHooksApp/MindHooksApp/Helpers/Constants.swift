@@ -38,14 +38,13 @@ enum PurchaseHeads {
 
 enum PurchaseDescriptions {
     static let first  = "Brilliant thoughts of the wisest and most outstanding people and cultures"
-    static let second = "Inspiration and enlightenment! You can buy a particular item or unlock all collections and future updates with our subscription"
+    static let second = "You can unlock all collections and future updates with our subscription (can be canceled at any time)"
 }
 
 
 enum Descriptions {
     static let eventLink      = "See more"
     static let restore        = "Restore purchases"
-    static let paymentDetails = "Subscription can be canceled at any time.\nDespite it, you'll keep all one-time purchased items."
 }
 
     
