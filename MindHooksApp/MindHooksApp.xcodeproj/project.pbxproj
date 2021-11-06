@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */; };
 		E619CC4726AD5C1E00579CFD /* MindHooksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */; };
 		E619CC5226AD5C1E00579CFD /* MindHooksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */; };
+		E6224AAD2736D0FF005669A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6224AAC2736D0FF005669A7 /* StoreKit.framework */; };
+		E6224AB02736E14B005669A7 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = E6224AAF2736E14B005669A7 /* Purchases */; };
 		E640C50A26BEF38D002C8438 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* Event.swift */; };
 		E640C50C26BEF484002C8438 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50B26BEF484002C8438 /* EventViewModel.swift */; };
 		E640C50E26BEF584002C8438 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50D26BEF584002C8438 /* EventView.swift */; };
@@ -116,6 +118,7 @@
 		E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindHooksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppUITests.swift; sourceTree = "<group>"; };
 		E619CC5326AD5C1E00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6224AAC2736D0FF005669A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E640C50926BEF38D002C8438 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E640C50B26BEF484002C8438 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		E640C50D26BEF584002C8438 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6224AAD2736D0FF005669A7 /* StoreKit.framework in Frameworks */,
+				E6224AB02736E14B005669A7 /* Purchases in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +338,7 @@
 		E669D0D526C4003900234E4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6224AAC2736D0FF005669A7 /* StoreKit.framework */,
 				E669D0D626C4003900234E4E /* WidgetKit.framework */,
 				E669D0D826C4003900234E4E /* SwiftUI.framework */,
 			);
@@ -396,6 +402,9 @@
 				E6C8437A26C96D820099B442 /* PBXTargetDependency */,
 			);
 			name = MindHooksApp;
+			packageProductDependencies = (
+				E6224AAF2736E14B005669A7 /* Purchases */,
+			);
 			productName = MindHooksApp;
 			productReference = E619CC3126AD5C1A00579CFD /* MindHooksApp.app */;
 			productType = "com.apple.product-type.application";
@@ -487,6 +496,9 @@
 				Base,
 			);
 			mainGroup = E619CC2826AD5C1A00579CFD;
+			packageReferences = (
+				E6224AAE2736E14B005669A7 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = E619CC3226AD5C1A00579CFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -974,6 +986,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6224AAE2736E14B005669A7 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.12.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6224AAF2736E14B005669A7 /* Purchases */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6224AAE2736E14B005669A7 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = Purchases;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E619CC2926AD5C1A00579CFD /* Project object */;
 }

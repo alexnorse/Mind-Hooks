@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import Purchases
 
 @main
 struct MindHooksAppApp: App {
-
+    
+    init() {
+        Purchases.debugLogsEnabled = true
+        Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe")
+    }
+    
     @AppStorage("isOnboarding") var isOnboarding = true
     
     var body: some Scene {
