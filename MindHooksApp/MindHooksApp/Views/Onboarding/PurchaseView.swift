@@ -28,7 +28,7 @@ struct PurchaseView: View {
             
             if viewModel.allaccess == false {
                 Button {
-                    viewModel.buyMonthlySubscription()
+//                    viewModel.buyMonthlySubscription()
                     presentationMode.wrappedValue.dismiss()
                 } label: {
                     OnboardingButton(label: "1 Month")
@@ -37,7 +37,7 @@ struct PurchaseView: View {
                 
             if viewModel.allaccess == false {
                 Button {
-                    viewModel.buyAnnualSubscription()
+//                    viewModel.buyAnnualSubscription()
                     presentationMode.wrappedValue.dismiss()
                 } label: {
                     OnboardingButton(label: "1 Year")

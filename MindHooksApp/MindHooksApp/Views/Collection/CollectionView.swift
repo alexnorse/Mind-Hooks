@@ -11,6 +11,7 @@ struct CollectionView: View {
     
     @StateObject var viewModel = CollectionViewModel()
     @StateObject var gridViewModel = CollectionGridViewModel()
+    @State private var showPurchaseView = false
     
     let columns: [GridItem] = [GridItem(.flexible())]
     
