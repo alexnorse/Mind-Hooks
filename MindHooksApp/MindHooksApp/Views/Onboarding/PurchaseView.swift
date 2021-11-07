@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PurchaseView: View {
     
+    @EnvironmentObject var viewModel: CollectionViewModel
     @State var show: Bool = false
     
     var body: some View {
@@ -23,11 +24,12 @@ struct PurchaseView: View {
                 PurchaseSecond()
             }
             
-            
-            Button {
-                
-            } label: {
-                OnboardingButton(label: "1 Month")
+            if viewModel.allaccess == false {
+                Button {
+                    
+                } label: {
+                    OnboardingButton(label: "1 Month")
+                }
             }
             
             
