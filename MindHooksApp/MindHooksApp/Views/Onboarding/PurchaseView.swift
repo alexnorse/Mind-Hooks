@@ -10,6 +10,7 @@ import SwiftUI
 struct PurchaseView: View {
     
     @EnvironmentObject var viewModel: CollectionViewModel
+    @Environment(\.presentationMode) var presentationMode
     @State var show: Bool = false
     
     var body: some View {
@@ -24,28 +25,24 @@ struct PurchaseView: View {
                 PurchaseSecond()
             }
             
+            
             if viewModel.allaccess == false {
                 Button {
-                    
+                    viewModel.buyMonthlySubscription()
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     OnboardingButton(label: "1 Month")
                 }
             }
-            
-            
-            Button {
                 
-            } label: {
-                OnboardingButton(label: "1 Year")
+            if viewModel.allaccess == false {
+                Button {
+                    viewModel.buyAnnualSubscription()
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    OnboardingButton(label: "1 Year")
+                }
             }
-            
-            
-            Button {
-                
-            } label: {
-                CenteredLink(text: Descriptions.restore)
-            }
-            .padding()
             
         }
         .opacity(show ? 1 : 0)

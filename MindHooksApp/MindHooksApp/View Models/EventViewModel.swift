@@ -12,7 +12,6 @@ final class EventViewModel: ObservableObject {
     @Published var year: String = ""
     @Published var description: String = ""
     @Published var link: String = ""
-    
     @Published var alertItem: Alerts?
     
     init () { getEvent() }

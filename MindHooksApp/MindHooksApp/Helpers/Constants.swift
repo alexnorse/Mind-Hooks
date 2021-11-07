@@ -11,8 +11,9 @@ var date = Date()
 
 
 enum subscriptionProductIds {
-    static let monthly = "mh_099_1m"
-    static let annual = "mh_799_1y"
+    static let entitlementName  = "allaccess"
+    static let monthly          = "mh_099_1m"
+    static let annual           = "mh_799_1y"
 }
 
 

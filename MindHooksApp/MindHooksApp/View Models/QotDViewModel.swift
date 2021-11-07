@@ -11,7 +11,6 @@ final class QotDViewModel: ObservableObject {
     
     @Published var quote: String = ""
     @Published var author: String = ""
-    
     @Published var alertItem: Alerts?
     
     init () { getQotD() }

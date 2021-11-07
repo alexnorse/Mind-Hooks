@@ -11,7 +11,6 @@ final class WordViewModel: ObservableObject {
     
     @Published var word: String = ""
     @Published var definition: String = ""
-    
     @Published var alertItem: Alerts?
     
     init () { getWord() }

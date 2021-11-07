@@ -16,20 +16,16 @@ class PurchaseService {
         var skProduct: SKProduct?
         
         Purchases.shared.products([productId!]) { products in
-            
             if !products.isEmpty {
                 skProduct = products[0]
             }
             
             Purchases.shared.purchaseProduct(skProduct!) { (transaction, purchaseInfo, error, userCancelled) in
-                
                 if error == nil && !userCancelled {
                     success()
                 }
             }
-            
         }
-        
     }
     
 }
