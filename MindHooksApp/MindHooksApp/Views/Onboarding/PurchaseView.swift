@@ -29,7 +29,7 @@ struct PurchaseView: View {
                 Button {
                     // viewModel.buyMonthlySubscription()
                 } label: {
-                    OnboardingButton(label: "1 Month")
+                    OnboardingButton(label: "Monthly subscription")
                 }
             }
             
@@ -38,7 +38,7 @@ struct PurchaseView: View {
                 Button {
                     // viewModel.buyAnnualSubscription()
                 } label: {
-                    OnboardingButton(label: "1 Year")
+                    OnboardingButton(label: "Annual subscription")
                 }
             }
             
