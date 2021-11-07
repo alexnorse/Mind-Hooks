@@ -12,9 +12,7 @@ class PurchaseService: ObservableObject {
     
     @Published var salePackages = [Purchases.Package]()
     
-    
     init() { addAvailablePackages() }
-    
     
     static func purchase(productId: String?, success: @escaping () -> Void) {
         guard productId != nil else { return }

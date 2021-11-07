@@ -19,6 +19,7 @@ final class CollectionViewModel: ObservableObject {
         checkActiveSubscriptions()
     }
     
+    
     func getCollection() {
         guard let path = Bundle.main.path(forResource: "content", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
