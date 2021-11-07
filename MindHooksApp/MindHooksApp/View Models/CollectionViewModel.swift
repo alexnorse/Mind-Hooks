@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Purchases
 
 final class CollectionViewModel: ObservableObject {
     
     @Published var categories = [Category]()
+    @Published var userPurchases = [String : Bool]()
     
     init() { getCollection() }
     
@@ -43,6 +45,17 @@ final class CollectionViewModel: ObservableObject {
             }
         }
         .resume()
+    }
+    
+    
+    func makePurchase(collection: Category) {
+        
+        PurchaseService.purchase(productId: collection.productId) {
+            if collection.productId != nil {
+                self.userPurchases[collection.productId!] = true
+            }
+        }
+        
     }
     
 }
