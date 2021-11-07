@@ -31,4 +31,12 @@ struct AlertContext {
     static let unableToComplete  = Alerts(title: Text("Connection Error 😔"),
                                           message: Text("Please, check your internet connection"),
                                           dismissButton: .default (Text("Ok")))
+    
+    static let purchaseSucceed  = Alerts(title: Text("Successful purchase 🎉"),
+                                          message: Text("Thank you!"),
+                                          dismissButton: .default (Text("Ok")))
+    
+    static let purchaseFailed  = Alerts(title: Text("Purchase failed 😔"),
+                                          message: Text("Please, try again or relaunch the App"),
+                                          dismissButton: .default (Text("Ok")))
 }

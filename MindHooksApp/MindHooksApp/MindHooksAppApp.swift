@@ -11,10 +11,7 @@ import Purchases
 @main
 struct MindHooksAppApp: App {
     
-    init() {
-        Purchases.debugLogsEnabled = true
-        Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe")
-    }
+    init() { setupRevenueCat() }
     
     @AppStorage("isOnboarding") var isOnboarding = true
     
@@ -27,4 +24,10 @@ struct MindHooksAppApp: App {
             }
         }
     }
+    
+    func setupRevenueCat() {
+        Purchases.debugLogsEnabled = true
+        Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe")
+    }
+    
 }
