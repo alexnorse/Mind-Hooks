@@ -9,8 +9,7 @@ import SwiftUI
 
 struct PurchaseView: View {
     
-    @EnvironmentObject var viewModel: CollectionViewModel
-    @Environment(\.presentationMode) var presentationMode
+    @StateObject var viewModel = CollectionViewModel()
     @State var show: Bool = false
     
     var body: some View {
@@ -28,21 +27,24 @@ struct PurchaseView: View {
             
             if viewModel.allaccess == false {
                 Button {
-//                    viewModel.buyMonthlySubscription()
-                    presentationMode.wrappedValue.dismiss()
+                    // viewModel.buyMonthlySubscription()
                 } label: {
                     OnboardingButton(label: "1 Month")
                 }
             }
-                
+            
+            
             if viewModel.allaccess == false {
                 Button {
-//                    viewModel.buyAnnualSubscription()
-                    presentationMode.wrappedValue.dismiss()
+                    // viewModel.buyAnnualSubscription()
                 } label: {
                     OnboardingButton(label: "1 Year")
                 }
             }
+            
+            
+            NoteText(text: PurchaseDescriptions.cancel)
+                .padding()
             
         }
         .opacity(show ? 1 : 0)
@@ -50,6 +52,7 @@ struct PurchaseView: View {
         .animation(Animation.easeOut(duration: 0.5).delay(0.3))
         .onAppear { self.show = true }
         .padding()
+        
     }
 }
 

@@ -46,7 +46,8 @@ enum PurchaseHeads {
 
 enum PurchaseDescriptions {
     static let first  = "Brilliant thoughts of the wisest and most outstanding people and cultures"
-    static let second = "You can unlock all collections and future updates with our subscription (can be canceled at any time)"
+    static let second = "You can unlock all collections and future updates with our subscription"
+    static let cancel = "Subscription can be canceled at any time"
 }
 
 
