@@ -74,5 +74,14 @@ final class CollectionViewModel: ObservableObject {
             self.allaccess = true
         }
     }
-
+    
+    
+    func restoreSubscription() {
+        Purchases.shared.restoreTransactions { info, error in
+            if info?.entitlements[subscriptionProductIds.entitlementName]?.isActive == true {
+                self.allaccess = true
+            }
+        }
+    }
+    
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct PurchaseView: View {
     
     @StateObject var viewModel = CollectionViewModel()
+    @StateObject var packages = PurchaseService()
     @State var show: Bool = false
     
     var body: some View {
@@ -27,19 +28,26 @@ struct PurchaseView: View {
             
             if viewModel.allaccess == false {
                 Button {
-                    // viewModel.buyMonthlySubscription()
+                // viewModel.buyMonthlySubscription()
                 } label: {
-                    OnboardingButton(label: "Monthly subscription")
+                    OnboardingButton(label: packages.monthlySubscription)
                 }
             }
             
             
             if viewModel.allaccess == false {
                 Button {
-                    // viewModel.buyAnnualSubscription()
+                // viewModel.buyAnnualSubscription()
                 } label: {
-                    OnboardingButton(label: "Annual subscription")
+                    OnboardingButton(label: packages.annualSubscription)
                 }
+            }
+            
+            
+            Button {
+                // viewModel.restoreSubscription()
+            } label: {
+                CenteredLink(text: "Restore subscription")
             }
             
             

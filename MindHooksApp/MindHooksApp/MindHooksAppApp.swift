@@ -26,8 +26,8 @@ struct MindHooksAppApp: App {
     }
     
     func setupRevenueCat() {
-        Purchases.debugLogsEnabled = true
-        Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe")
+        Purchases.logLevel = .debug
+        Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe", appUserID: nil, observerMode: true)
     }
     
 }
