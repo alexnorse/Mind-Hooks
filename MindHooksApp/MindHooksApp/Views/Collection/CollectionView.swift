@@ -11,7 +11,8 @@ struct CollectionView: View {
     
     @StateObject var viewModel = CollectionViewModel()
     @StateObject var gridViewModel = CollectionGridViewModel()
-    @State private var showPurchaseView = false
+    @State private var showingSheet = false
+    @ObservedObject var sheetNavigator = SheetNavigator()
     
     let columns: [GridItem] = [GridItem(.flexible())]
     
@@ -25,13 +26,17 @@ struct CollectionView: View {
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(viewModel.categories) { category in
                             CollectionCell(collection: category)
-                                .onTapGesture { gridViewModel.selectedCollection = category }
+                                .onTapGesture { gridViewModel.selectedCollection = category
+                                    showingSheet = true
+                                }
                         }
                         .listStyle(.plain)
                         .listRowInsets(.none)
-                        .navigationTitle("Collection")
-                        .sheet(isPresented: $gridViewModel.isShowingQuoteList) {
-                            QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample)
+                        .navigationTitle("Collections")
+                        .sheet(isPresented: $showingSheet) {
+                            sheetNavigator.destination.view(
+                                paywall: viewModel.allaccess ? QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample).toAnyView() : PurchaseView().toAnyView(),
+                                quotes: viewModel.allaccess ? QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample).toAnyView() : PurchaseView().toAnyView())
                         }
                     }
                     .padding()

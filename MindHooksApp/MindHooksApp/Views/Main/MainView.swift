@@ -43,7 +43,7 @@ struct MainView: View {
             CollectionView()
                 .tabItem {
                     Image(systemName: "book.circle.fill")
-                    Text("Collection") }
+                    Text("Collections") }
             
         }
 

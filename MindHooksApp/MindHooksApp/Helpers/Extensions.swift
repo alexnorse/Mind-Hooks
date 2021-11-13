@@ -35,3 +35,10 @@ extension Date {
         return formatter.string(from: self)
     }
 }
+
+
+extension View {
+    func toAnyView() -> AnyView {
+        AnyView(self)
+    }
+}
