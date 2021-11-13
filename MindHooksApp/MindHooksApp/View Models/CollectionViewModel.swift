@@ -11,8 +11,9 @@ import Purchases
 final class CollectionViewModel: ObservableObject {
     
     @Published var categories = [Category]()
-    @Published var allaccess = false
     @Published var alertItem: Alerts?
+    @Published var allaccess = false
+    
     
     init() {
         getCollection()

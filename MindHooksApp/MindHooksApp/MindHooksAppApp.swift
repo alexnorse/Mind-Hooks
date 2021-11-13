@@ -12,8 +12,8 @@ import Purchases
 struct MindHooksAppApp: App {
     
     init() { setupRevenueCat() }
-    
     @AppStorage("isOnboarding") var isOnboarding = true
+    
     
     var body: some Scene {
         WindowGroup {
@@ -25,9 +25,9 @@ struct MindHooksAppApp: App {
         }
     }
     
+    
     func setupRevenueCat() {
         Purchases.logLevel = .debug
         Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe", appUserID: nil, observerMode: true)
     }
-    
 }
