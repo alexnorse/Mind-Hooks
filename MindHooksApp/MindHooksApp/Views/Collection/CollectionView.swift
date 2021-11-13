@@ -16,7 +16,6 @@ struct CollectionView: View {
     
     let columns: [GridItem] = [GridItem(.flexible())]
     
-    
     var body: some View {
         
         ZStack {
