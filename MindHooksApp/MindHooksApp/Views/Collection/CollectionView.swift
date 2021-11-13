@@ -13,10 +13,8 @@ struct CollectionView: View {
     @StateObject var gridViewModel = CollectionGridViewModel()
     @State private var showPurchaseView = false
     
-    // check if allAccess = true - open QuoteList
-    // else - show Paywall
-    
     let columns: [GridItem] = [GridItem(.flexible())]
+    
     
     var body: some View {
         
@@ -45,6 +43,7 @@ struct CollectionView: View {
         
     }
 }
+
 
 struct CollectionView_Previews: PreviewProvider {
     static var previews: some View {

@@ -12,6 +12,7 @@ struct PurchaseView: View {
     @StateObject var viewModel = CollectionViewModel()
     @StateObject var package = PurchaseService()
     @State var show: Bool = false
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         
@@ -29,7 +30,7 @@ struct PurchaseView: View {
             if viewModel.allaccess == false {
                 Button {
                     viewModel.buyMonthlySubscription()
-                    // close Paywall after
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     OnboardingButton(label: package.monthlySubscription)
                 }
@@ -39,7 +40,7 @@ struct PurchaseView: View {
             if viewModel.allaccess == false {
                 Button {
                     viewModel.buyAnnualSubscription()
-                    // close Paywall after
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     OnboardingButton(label: package.annualSubscription)
                 }
