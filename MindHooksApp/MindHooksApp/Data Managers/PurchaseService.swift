@@ -36,8 +36,10 @@ class PurchaseService: ObservableObject {
     
     func getPackages() {
         Purchases.shared.offerings { offerings, error in
-            self.monthlySubscription = "\(String(describing: offerings?.current?.monthly)) Monthly"
-            self.annualSubscription = "\(String(describing: offerings?.current?.annual)) Annual"
+            if let packages = offerings?.current?.availablePackages {
+                self.monthlySubscription = "\(packages[0].localizedPriceString) Monthly"
+                self.annualSubscription = "\(packages[1].localizedPriceString) Annual"
+            }
         }
     }
     
