@@ -9,7 +9,7 @@ import SwiftUI
 
 class SheetNavigator: ObservableObject {
     
-    @Published var destination: Destination = .paywall
+    @Published var destination: Destination = .quotes
     
     
     enum Destination: CaseIterable {

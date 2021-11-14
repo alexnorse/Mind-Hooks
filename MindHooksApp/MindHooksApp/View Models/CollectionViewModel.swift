@@ -59,6 +59,11 @@ final class CollectionViewModel: ObservableObject {
             if info?.entitlements[subscriptionProductIds.entitlementName]?.isActive == true {
                 self.allaccess = true
             }
+            
+            if let err = error as NSError? {
+                print("Message: \(err.localizedDescription)")
+            }
+            
         }
     }
     
@@ -81,6 +86,10 @@ final class CollectionViewModel: ObservableObject {
         Purchases.shared.restoreTransactions { info, error in
             if info?.entitlements[subscriptionProductIds.entitlementName]?.isActive == true {
                 self.allaccess = true
+            }
+            
+            if let err = error as NSError? {
+                print("Message: \(err.localizedDescription)")
             }
         }
     }

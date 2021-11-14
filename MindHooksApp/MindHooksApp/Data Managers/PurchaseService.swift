@@ -26,8 +26,13 @@ class PurchaseService: ObservableObject {
             }
             
             Purchases.shared.purchaseProduct(skProduct!) { (transaction, purchaseInfo, error, userCancelled) in
+                
                 if error == nil && !userCancelled {
                     success()
+                }
+                
+                if let err = error as NSError? {
+                    print("Message: \(err.localizedDescription)")
                 }
             }
         }
@@ -39,6 +44,10 @@ class PurchaseService: ObservableObject {
             if let packages = offerings?.current?.availablePackages {
                 self.monthlySubscription = "\(packages[0].localizedPriceString) Monthly"
                 self.annualSubscription = "\(packages[1].localizedPriceString) Annual"
+            }
+            
+            if let err = error as NSError? {
+                print("Message: \(err.localizedDescription)")
             }
         }
     }
