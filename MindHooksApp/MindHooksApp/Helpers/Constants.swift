@@ -45,9 +45,12 @@ enum PurchaseHeads {
 
 
 enum PurchaseDescriptions {
-    static let first  = "Brilliant thoughts of the wisest and most outstanding people and cultures"
-    static let second = "You can unlock all collections and future updates with our subscription"
-    static let cancel = "Subscription can be canceled at any time"
+    static let first   = "Brilliant thoughts of the wisest and most outstanding people and cultures"
+    static let second  = "You can unlock all collections and future updates with our subscription"
+    static let restore = "Restore subscription"
+    static let cancel  = "No Commitment. Cancel Anytime."
+    static let privacy = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Privacy%20Policy"
+    static let terms   = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Terms%20%26%20Conditions"
 }
 
 

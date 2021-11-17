@@ -12,6 +12,7 @@ struct PurchaseView: View {
     @StateObject var viewModel = CollectionViewModel()
     @StateObject var package = PurchaseService()
     @State var show: Bool = false
+    @State private var showSafari: Bool = false
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -51,15 +52,16 @@ struct PurchaseView: View {
                 Button {
                     viewModel.restoreSubscription()
                 } label: {
-                    CenteredLink(text: "Restore subscription")
+                    OnboardingButton(label: PurchaseDescriptions.restore)
                 }
-                .padding()
             }
             
             
             NoteText(text: PurchaseDescriptions.cancel)
-                .padding()
+                .padding(20)
             
+            Link("Privacy Policy", destination: URL(string: PurchaseDescriptions.privacy)!)
+            Link("Terms & Conditions", destination: URL(string: PurchaseDescriptions.terms)!)
         }
         .opacity(show ? 1 : 0)
         .offset(y: show ? 0 : 20)
