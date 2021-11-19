@@ -2194,5 +2194,1465 @@
                 "source": "Seneca"
             }
         ]
+    },
+    {
+        "category": "Great authors",
+        "artwork": "literature",
+        "description": "Masters of the words in their element",
+        "quotes": [
+            {
+                "quote": "Whatever our souls are made of, his and mine are the same",
+                "source": "Emily Bronte"
+            },
+            {
+                "quote": "It matters not what someone is born, but what they grow to be",
+                "source": "J.K. Rowling"
+            },
+            {
+                "quote": "Not all those who wander are lost",
+                "source": "J R R Tolkein"
+            },
+            {
+                "quote": "You are a wonderful creation. You know more than you think you know, just as you know less than you want to know",
+                "source": "Oscar Wilde"
+            },
+            {
+                "quote": "I assure you that the world is not so amusing as something we imagined",
+                "source": "Pierre Choderlos de Laclos"
+            },
+            {
+                "quote": "One day I will find the right words, and they all will be simple",
+                "source": "Jack Kerouac"
+            },
+            {
+                "quote": "The author says one character's definition of a classic is any book he'd heard of before he was thirty",
+                "source": "Sinclair Lewis"
+            },
+            {
+                "quote": "There are years that ask questions and years that answer",
+                "source": "Zora Neale Hurston"
+            },
+            {
+                "quote": "Sometimes, I’ve believed as many as six impossible things before breakfast",
+                "source": "Lewis Carroll"
+            },
+            {
+                "quote": "The best teacher is experienced and not through someone's distorted point of view",
+                "source": "Jack Kerouac"
+            },
+            {
+                "quote": "Laugh as much as you choose, but you will not laugh me out of my opinion",
+                "source": "Jane Austen"
+            },
+            {
+                "quote": "Every atom of your flesh is dear to me as my own: In pain and sickness it would still be dear",
+                "source": "Sylvia Plath"
+            },
+            {
+                "quote": "I hope she'll be a fool -that's the best thing a girl can be in this world, a beautiful little fool",
+                "source": "F. Scott Fitzgerald"
+            },
+            {
+                "quote": "Time, which sees all things, has found you out",
+                "source": "Sophocles"
+            },
+            {
+                "quote": "They looked at each other, baffled, in love and hate",
+                "source": "William Golding"
+            },
+            {
+                "quote": "It’s funny. All one has to do is say something nobody understands and they’ll do practically anything you want them to",
+                "source": "J D Salinger"
+            },
+            {
+                "quote": "I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life",
+                "source": "F Scott Fitzgerald"
+            },
+            {
+                "quote": "Real courage is when you know you’re licked before you begin, but you begin anyway and see it through no matter what",
+                "source": "Harper Lee"
+            },
+            {
+                "quote": "A bear, however hard he tries, grows tubby without exercise",
+                "source": "A.A. Milne"
+            },
+            {
+                "quote": "The Answer to the ultimate question of Life, The Universe and Everything is…42!",
+                "source": "Douglas Adams"
+            },
+            {
+                "quote": "There is nothing in the world so irresistibly contagious as laughter and good humor",
+                "source": "Charles Dickens"
+            },
+            {
+                "quote": "Have a heart that never hardens, and a temper that never tires, and a touch that never hurts",
+                "source": "Charles Dickens"
+            },
+            {
+                "quote": "The pain of parting is nothing to the joy of meeting again",
+                "source": "Charles Dickens"
+            },
+            {
+                "quote": "I wish you to know that you have been the last dream of my soul",
+                "source": "Charles Dickens"
+            },
+            {
+                "quote": "Procrastination is the thief of time, collar him",
+                "source": "Charles Dickens"
+            },
+            {
+                "quote": "And, of course men know best about everything, except what women know better",
+                "source": "George Eliot"
+            },
+            {
+                "quote": "I gave my whole heart up, for him to hold",
+                "source": "Geoffrey Chaucer"
+            },
+            {
+                "quote": "If you loved someone, you loved him, and when you had nothing else to give, you still gave him love",
+                "source": "George Orwell"
+            },
+            {
+                "quote": "Moonlight drowns out all but the brightest stars",
+                "source": " J.R.R. Tolkein "
+            },
+            {
+                "quote": "What's the good of a home if you are never in it?",
+                "source": "George & Weedon Grossmith"
+            },
+            {
+                "quote": "All we have to decide is what to do with the time that is given us",
+                "source": "J.R.R. Tolkein"
+            },
+            {
+                "quote": "That is the one unforgivable sin in any society. Be different and be damned!",
+                "source": "Margaret Mitchell"
+            },
+            {
+                "quote": "Every man desires to live long, but no man wishes to be old",
+                "source": "Jonathan Swift"
+            },
+            {
+                "quote": "Here let dead poetry rise once more to life",
+                "source": "Dante Alighieri"
+            },
+            {
+                "quote": "Beware; for I am fearless, and therefore powerful",
+                "source": "Mary Shelley"
+            },
+            {
+                "quote": "Predominant options are generally the opinions of the generation that is vanishing",
+                "source": "Flora Rheta Schreiber"
+            },
+            {
+                "quote": "Mother is the name for God in the lips and hearts of little children",
+                "source": "William Makepeace Thackeray"
+            },
+            {
+                "quote": "It had already occurred to him that books were stuff, and that life was stupid",
+                "source": "George Eliot"
+            },
+            {
+                "quote": "The world is full of places to which I want to return",
+                "source": "Ford Madox Ford"
+            },
+            {
+                "quote": "I have laughed, in bitterness and agony of heart, at the contrast between what I seem and what I am!",
+                "source": "Nathaniel Hawthorne"
+            },
+            {
+                "quote": "I know not all that may be coming, but be it what it will, I'll go it laughing",
+                "source": "Herman Melville"
+            },
+            {
+                "quote": "Well, I must endure the presence of a few caterpillars if I wish to become acquainted with the butterflies",
+                "source": "Antoine de Saint-Exupéry"
+            },
+            {
+                "quote": "It's no use going back to yesterday, because I was a different person then",
+                "source": "Lewis Carroll"
+            },
+            {
+                "quote": "If you tell the truth you do not need a good memory!",
+                "source": "Mark Twain"
+            },
+            {
+                "quote": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife",
+                "source": "Jane Austen"
+            },
+            {
+                "quote": "It is the time you have wasted for your rose that makes your rose so important",
+                "source": "Antoine de Saint-Exupéry"
+            },
+            {
+                "quote": "I have got key to my castle in the air, but whether I can unlock the door remains to be seen",
+                "source": "Louisa May Alcott"
+            },
+            {
+                "quote": "Whatever happens to your body, your soul will survive, untouched..",
+                "source": "J.K. Rowling"
+            },
+            {
+                "quote": "Life is not always perfect. Like a road, it has many bends, ups and down, but that’s its beauty",
+                "source": "Amit Ray"
+            },
+            {
+                "quote": "Beauty is an enormous, unmerited gift given randomly, stupidly",
+                "source": "Khaled Hosseini "
+            },
+            {
+                "quote": "We are asleep until we fall in love!",
+                "source": "Leo Tolstoy"
+            },
+            {
+                "quote": "Top 15 Things Money Can’t Buy Time. Happiness. Inner Peace. Integrity. Love. Character. Manners. Health. Respect. Morals. Trust. Patience. Class. Common sense. Dignity",
+                "source": "Roy T. Bennett"
+            }
+        ]
+    },
+    {
+        "category": "Entrepreneur spirit",
+        "artwork": "business",
+        "description": "Drive business and motivation",
+        "quotes": [
+            {
+                "quote": "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+                "source": "Winston S. Churchill"
+            },
+            {
+                "quote": "It is better to fail in originality than to succeed in imitation.",
+                "source": "Herman Melville"
+            },
+            {
+                "quote": "The road to success and the road to failure are almost exactly the same. ",
+                "source": "Colin R. Davis"
+            },
+            {
+                "quote": "Success usually comes to those who are too busy to be looking for it. ",
+                "source": "Henry David Thoreau"
+            },
+            {
+                "quote": "Opportunities don't happen. You create them.",
+                "source": "Chris Grosser"
+            },
+            {
+                "quote": "Don't be afraid to give up the good to go for the great. ",
+                "source": "John D. Rockefeller"
+            },
+            {
+                "quote": "I find that the harder I work, the more luck I seem to have.",
+                "source": "Thomas Jefferson"
+            },
+            {
+                "quote": "There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed. ",
+                "source": "Ray Goforth"
+            },
+            {
+                "quote": "Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better. ",
+                "source": "Jim Rohn"
+            },
+            {
+                "quote": "Try not to become a man of success. Rather become a man of value. ",
+                "source": "Albert Einstein"
+            },
+            {
+                "quote": "Never give in except to convictions of honor and good sense. ",
+                "source": "Winston Churchill"
+            },
+            {
+                "quote": "Stop chasing the money and start chasing the passion. ",
+                "source": "Tony Hsieh"
+            },
+            {
+                "quote": "Success is walking from failure to failure with no loss of enthusiasm. ",
+                "source": "Winston Churchill"
+            },
+            {
+                "quote": "I owe my success to having listened respectfully to the very best advice, and then going away and doing the exact opposite. ",
+                "source": "G. K. Chesterton"
+            },
+            {
+                "quote": "Would you like me to give you a formula for success? It's quite simple, really: Double your rate of failure. You are thinking of failure as the enemy of success. But it isn't at all. You can be discouraged by failure or you can learn from it, so go ahead and make mistakes. Make all you can. Because remember that's where you will find success.",
+                "source": "Thomas J. Watson"
+            },
+            {
+                "quote": "If you are not willing to risk the usual, you will have to settle for the ordinary. ",
+                "source": "Jim Rohn"
+            },
+            {
+                "quote": "The ones who are crazy enough to think they can change the world, are the ones that do. ",
+                "source": "Anonymous"
+            },
+            {
+                "quote": "Do one thing every day that scares you. ",
+                "source": "Anonymous"
+            },
+            {
+                "quote": "All progress takes place outside the comfort zone. ",
+                "source": "Michael John Bobak"
+            },
+            {
+                "quote": "Don't let the fear of losing be greater than the excitement of winning. ",
+                "source": "Robert Kiyosaki"
+            },
+            {
+                "quote": "If you really look closely, most overnight successes took a long time. ",
+                "source": "Steve Jobs"
+            },
+            {
+                "quote": "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere. ",
+                "source": "Barack Obama"
+            },
+            {
+                "quote": "The only limit to our realization of tomorrow will be our doubts of today. ",
+                "source": "Franklin D. Roosevelt"
+            },
+            {
+                "quote": "Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved. ",
+                "source": "Helen Keller"
+            },
+            {
+                "quote": "The way to get started is to quit talking and begin doing. ",
+                "source": "Walt Disney"
+            },
+            {
+                "quote": "The successful warrior is the average man, with laser-like focus. ",
+                "source": "Bruce Lee"
+            },
+            {
+                "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure. ",
+                "source": "Colin Powell"
+            },
+            {
+                "quote": "Success seems to be connected with action. Successful people keep moving. They make mistakes, but they don't quit. ",
+                "source": "Conrad Hilton"
+            },
+            {
+                "quote": "If you really want to do something, you'll find a way. If you don't, you'll find an excuse. ",
+                "source": "Jim Rohn"
+            },
+            {
+                "quote": "I cannot give you the formula for success, but I can give you the formula for failure--It is: Try to please everybody. ",
+                "source": "Herbert Bayard Swope"
+            },
+            {
+                "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. ",
+                "source": "Albert Schweitzer"
+            },
+            {
+                "quote": "Success isn't just about what you accomplish in your life; it's about what you inspire others to do. ",
+                "source": "Unknown"
+            },
+            {
+                "quote": "Fall seven times and stand up eight. ",
+                "source": "Japanese Proverb"
+            },
+            {
+                "quote": "Some people dream of success while others wake up and work.",
+                "source": "Unknown"
+            },
+            {
+                "quote": "If you can dream it, you can do it. ",
+                "source": "Walt Disney"
+            },
+            {
+                "quote": "The difference between who you are and who you want to be is what you do. ",
+                "source": "Unknown"
+            },
+            {
+                "quote": "A successful man is one who can lay a firm foundation with the bricks that other throw at him. ",
+                "source": "David Brinkley"
+            },
+            {
+                "quote": "In order to succeed, your desire for success should be greater than your fear of failure. ",
+                "source": "Bill Cosby"
+            },
+            {
+                "quote": "In order to succeed, we must first believe that we can. ",
+                "source": "Nikos Kazantzakis"
+            },
+            {
+                "quote": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+                "source": "Thomas Edison"
+            },
+            {
+                "quote": "Don't be distracted by criticism. Remember--the only taste of success some people get is to take a bite out of you. ",
+                "source": "Zig Ziglar"
+            },
+            {
+                "quote": "The secret of success is to do the common thing uncommonly well. ",
+                "source": "John D. Rockefeller Jr."
+            },
+            {
+                "quote": "You know you are on the road to success if you would do your job, and not be paid for it. ",
+                "source": "Oprah Winfrey"
+            },
+            {
+                "quote": "The secret to success is to know something nobody else knows. ",
+                "source": "Aristotle Onassis"
+            },
+            {
+                "quote": "I failed my way to success. ",
+                "source": "Thomas Edison"
+            },
+            {
+                "quote": "I never dreamed about success, I worked for it. ",
+                "source": "Estee Lauder"
+            },
+            {
+                "quote": "I never did anything worth doing by accident, nor did any of my inventions come indirectly through accident, except the phonograph. No, when I have fully decided that a result is worth getting, I go about it, and make trial after trial, until it comes. ",
+                "source": "Thomas Edison"
+            },
+            {
+                "quote": "The only place where success comes before work is in the dictionary. ",
+                "source": "Vidal Sassoon"
+            },
+            {
+                "quote": "Keep on going, and the chances are that you will stumble on something, perhaps when you are least expecting it. I never heard of anyone ever stumbling on something sitting down. ",
+                "source": "Charles F. Kettering"
+            }
+        ]
+    },
+    {
+        "category": "Notable women",
+        "artwork": "women",
+        "description": "Empowering quotes from inspiring ladies",
+        "quotes": [
+            {
+                "quote": "To all the little girls who are watching this, never doubt that you are valuable and powerful, and deserving of every chance and opportunity in the world to pursue and achieve your own dreams. ",
+                "source": "Hillary Clinton"
+            },
+            {
+                "quote": "If you want something said, ask a man; if you want something done, ask a woman.",
+                "source": "Margaret Thatcher"
+            },
+            {
+                "quote": "I'm tough, ambitious, and I know exactly what I want. If that makes me a bitch, okay.",
+                "source": "Madonna"
+            },
+            {
+                "quote": "It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent. ",
+                "source": "Madeleine Albright"
+            },
+            {
+                "quote": "Feminism isn't about making women stronger. Women are already strong, it's about changing the way the world perceives that strength. ",
+                "source": "G.D. Anderson"
+            },
+            {
+                "quote": "I am a woman / Phenomenally / Phenomenal woman / That's me. ",
+                "source": "Maya Angelou"
+            },
+            {
+                "quote": "You don't have to be pretty. You don't owe prettiness to anyone. Not to your boyfriend/spouse/partner, not to your co-workers, especially not to random men on the street. You don't owe it to your mother, you don't owe it to your children, you don't owe it to civilization in general. Prettiness is not a rent you pay for occupying a space marked 'female.' ",
+                "source": "Erin McKean"
+            },
+            {
+                "quote": "A woman with a voice is, by definition, a strong woman. ",
+                "source": "Melinda Gates"
+            },
+            {
+                "quote": "A feminist is anyone who recognizes the equality and full humanity of women and men. ",
+                "source": "Gloria Steinem"
+            },
+            {
+                "quote": "There is no limit to what we, as women, can accomplish. ",
+                "source": "Michelle Obama"
+            },
+            {
+                "quote": "When a man gives his opinion, he's a man; when a woman gives her opinion, she's a bitch.",
+                "source": "Bette Davis"
+            },
+            {
+                "quote": "I always wanted to be a femme fatale. Even when I was a young girl, I never really wanted to be a girl. I wanted to be a woman. ",
+                "source": "Diane von Furstenberg"
+            },
+            {
+                "quote": "I am not free while any woman is unfree, even when her shackles are very different from my own. ",
+                "source": "Audre Lorde"
+            },
+            {
+                "quote": "When there are no ceilings, the sky's the limit. So let's keep going—let's keep going until every one of the 161 million women and girls across America has the opportunity she deserves to have. ",
+                "source": "Hillary Clinton"
+            },
+            {
+                "quote": "Women are leaders everywhere you look—from the CEO who runs a Fortune 500 company to the housewife who raises her children and heads her household. Our country was built by strong women, and we will continue to break down walls and defy stereotypes. ",
+                "source": "Nancy Pelosi"
+            },
+            {
+                "quote": "Words have power. TV has power. My pen has power. ",
+                "source": "Shonda Rhimes"
+            },
+            {
+                "quote": "We need women at all levels, including the top, to change the dynamic, reshape the conversation, to make sure women's voices are heard and heeded, not overlooked and ignored. ",
+                "source": "Sheryl Sandberg"
+            },
+            {
+                "quote": "Whether I am meant to or not, I challenge assumptions about women. I do make some people uncomfortable, which I'm well aware of, but that's just part of coming to grips with what I believe is still one of the most important pieces of unfinished business in human history—empowering women to be able to stand up for themselves. ",
+                "source": "Hillary Clinton"
+            },
+            {
+                "quote": "We need to reshape our own perception of how we view ourselves. We have to step up as women and take the lead. ",
+                "source": "Beyoncé"
+            },
+            {
+                "quote": "Women must learn to play the game as men do. ",
+                "source": "Eleanor Roosevelt"
+            },
+            {
+                "quote": "You could make a case that, along with the technological revolution, the most provocative upending destabilizing thrilling change in the course of human history is that we’re finally in it. … We're here now, women are in the world, and we will not be bullied. ",
+                "source": "Meryl Streep"
+            },
+            {
+                "quote": "No woman should be told she can't make decisions about her own body. When women's rights are under attack, we fight back. ",
+                "source": "Kamala Harris"
+            },
+            {
+                "quote": "Women will be hidden no more. We will not remain hidden figures. We have names. … It was woman that gave you Dr. Martin Luther King, Jr. It was woman that gave you Malcolm X. And according to the Bible, it was a woman that gave you Jesus. Don't you ever forget it. ",
+                "source": "Janelle Monáe"
+            },
+            {
+                "quote": "I am a woman with thoughts and questions and shit to say. I say if I'm beautiful. I say if I'm strong. You will not determine my story—I will. ",
+                "source": "Amy Schumer"
+            },
+            {
+                "quote": "For I conclude that the enemy is not lipstick, but guilt itself; we deserve lipstick, if we want it, AND free speech; we deserve to be sexual AND serious—or whatever we please. We are entitled to wear cowboy boots to our own revolution. ",
+                "source": "Naomi Wolf"
+            },
+            {
+                "quote": "I feel now that the time is come when even a woman or a child who can speak a word for freedom and humanity is bound to speak.",
+                "source": "Harriet Beecher Stowe"
+            },
+            {
+                "quote": "In the future, there will be no female leaders. There will just be leaders. ",
+                "source": "Sheryl Sandberg"
+            },
+            {
+                "quote": "Human rights are women's rights and women's rights are human rights, once and for all. ",
+                "source": "Hillary Clinton"
+            },
+            {
+                "quote": "Women's freedom is the sign of social freedom. ",
+                "source": "Rosa Luxemburg"
+            },
+            {
+                "quote": "Women’s speech—and the fact that we are now listening to it—has enraged men in a way that makes them determined to reëstablish the longstanding hierarchy of power in America. ... And yet this awful truth will not stop women from speaking, and I do not think that it will turn a movement into a moment. It has become clear that there is not nearly enough left to lose. ",
+                "source": "Jia Tolentino"
+            },
+            {
+                "quote": "They cannot stand that a refugee, a black woman, an immigrant, a Muslim, shows up in Congress thinking she's equal to them. But I say to them, 'How else did you expect me to show up?' ",
+                "source": "Ilhan Omar"
+            },
+            {
+                "quote": "Women have discovered that they cannot rely on men's chivalry to give them justice. ",
+                "source": "Helen Keller"
+            },
+            {
+                "quote": "Maybe it just boils down to: I'm a woman who's really into her career, so I'm obsessed with the craft of my work. … There's a romance in that for me.” ",
+                "source": "Mitski"
+            },
+            {
+                "quote": "In my opinion, the most exciting potential of women of color formations resides in the possibility of politicizing this identity—basing the identity on politics rather than the politics on identity. ",
+                "source": "Angela Davis"
+            },
+            {
+                "quote": "Freeing yourself was one thing, claiming ownership of that freed self was another. ",
+                "source": "Toni Morrison"
+            },
+            {
+                "quote": "I have sometimes thought that a woman's nature is like a great house full of rooms: there is the hall, through which everyone passes in going in and out; the drawingroom, where one receives formal visits; the sitting-room, where the members of the family come and go as they list; but beyond that, far beyond, are other rooms, the handles of whose doors perhaps are never turned; no one knows the way to them, no one knows whither they lead; and in the innermost room, the holy of holies, the soul sits alone and waits for a footstep that never comes. ",
+                "source": "Edith Wharton"
+            },
+            {
+                "quote": "Another world is not only possible, she is on her way. On a quiet day, I can hear her breathing. ",
+                "source": "Arundhati Roy"
+            },
+            {
+                "quote": "Very well,' I said angrily, 'Start the man, and I'll start the same day for some other newspaper and beat him.' ",
+                "source": "Nellie Bly"
+            },
+            {
+                "quote": "I hate to hear you talking so like a fine gentleman, and as if women were all fine ladies, instead of rational creatures. We none of us expect to be in smooth water all our days. ",
+                "source": "Jane Austen"
+            },
+            {
+                "quote": "Around the world there are countless examples of women rising, taking leadership, taking their destiny into their own hands, inspiring all of us. But women and girls are still the majority of the victims of war. They are over half of all refugees, and the vast majority of the victims of rape and other sexual and gender-based violence. ",
+                "source": "Angelina Jolie"
+            },
+            {
+                "quote": "That man over there says that women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere. Nobody ever helps me into carriages, or over mud-puddles, or gives me any best place! And ain't I a woman? ",
+                "source": "Sojourner Truth"
+            },
+            {
+                "quote": "More and more women are realizing that only collective strength and action will allow us to be free to fight for the kind of society that meets basic human needs.",
+                "source": "Roxanne Dunbar"
+            },
+            {
+                "quote": "Of all the nasty outcomes predicted for women's liberation … none was more alarming than the suggestion that women would eventually become just like men.",
+                "source": "Barbara Ehrenreich"
+            },
+            {
+                "quote": "By propagating women's nature as non-violent they are discouraging women from becoming fighters in the struggle for their own liberation and that of society.",
+                "source": "Anuradha Ghandy"
+            },
+            {
+                "quote": "I think transwomen, and transpeople in general, show everyone that you can define what it means to be a man or woman on your own terms. A lot of what feminism is about is moving outside of roles and moving outside of expectations of who and what you're supposed to be to live a more authentic life.",
+                "source": "Laverne Cox"
+            },
+            {
+                "quote": "Black women have had to develop a larger vision of our society than perhaps any other group. They have had to understand white men, white women, and black men. And they have had to understand themselves. When black women win victories, it is a boost for virtually every segment of society.",
+                "source": "Angela Davis"
+            },
+            {
+                "quote": "For women, then, poetry is not a luxury. It is a vital necessity of our existence. It forms the quality of the light within which we predicate our hopes and dreams toward survival and change, first made into language, then into idea, then into more tangible action.",
+                "source": "Audre Lorde"
+            },
+            {
+                "quote": "A revolutionary woman can't have no reactionary man.",
+                "source": "Assata Shakur"
+            },
+            {
+                "quote": "When a woman is assaulted, one of the first questions people ask is, Did you say no? This question assumes that the answer was always yes, and that it is her job to revoke the agreement. To defuse the bomb she was given. But why are they allowed to touch us until we physically fight them off? Why is the door open until we have to slam it shut?",
+                "source": "Chanel Miller"
+            },
+            {
+                "quote": "There is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
+                "source": "Virginia Woolf"
+            }
+        ]
+    },
+    {
+        "category": "Fiction characters",
+        "artwork": "fiction",
+        "description": "Fantasy experience to use in reality",
+        "quotes": [
+            {
+                "quote": "May the Force be with you.",
+                "source": "Star Wars"
+            },
+            {
+                "quote": "There's no place like home.",
+                "source": "The Wizard of Oz"
+            },
+            {
+                "quote": "I'm the king of the world!",
+                "source": "Titanic"
+            },
+            {
+                "quote": "Carpe diem. Seize the day, boys. Make your lives extraordinary.",
+                "source": "Dead Poets Society"
+            },
+            {
+                "quote": "Elementary, my dear Watson.",
+                "source": "The Adventures of Sherlock Holmes"
+            },
+            {
+                "quote": "It's alive! It's alive!",
+                "source": "Frankenstein"
+            },
+            {
+                "quote": "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
+                "source": "Forrest Gump"
+            },
+            {
+                "quote": "I'll be back.",
+                "source": "The Terminator"
+            },
+            {
+                "quote": "You're gonna need a bigger boat.",
+                "source": "Jaws"
+            },
+            {
+                "quote": "Here's looking at you, kid.",
+                "source": "Casablanca"
+            },
+            {
+                "quote": "My precious.",
+                "source": "The Lord of the Rings: Two Towers"
+            },
+            {
+                "quote": "Houston, we have a problem.",
+                "source": "Apollo 13"
+            },
+            {
+                "quote": "There's no crying in baseball!",
+                "source": "A League of Their Own"
+            },
+            {
+                "quote": "E.T. phone home.",
+                "source": "E.T. the Extra-Terrestrial"
+            },
+            {
+                "quote": "You can't handle the truth!",
+                "source": "A Few Good Men"
+            },
+            {
+                "quote": "A martini. Shaken, not stirred.",
+                "source": "Goldfinger"
+            },
+            {
+                "quote": "Life is a banquet, and most poor suckers are starving to death!",
+                "source": "Auntie Mame"
+            },
+            {
+                "quote": "If you build it, he will come.",
+                "source": "Field of Dreams"
+            },
+            {
+                "quote": "The stuff that dreams are made of.",
+                "source": "The Maltese Falcon"
+            },
+            {
+                "quote": "Keep your friends close, but your enemies closer.",
+                "source": "The Godfather Part II"
+            },
+            {
+                "quote": "I am your father.",
+                "source": "Star Wars Episode V: The Empire Strikes Back"
+            },
+            {
+                "quote": "Just keep swimming.",
+                "source": "Finding Nemo"
+            },
+            {
+                "quote": "Today, I consider myself the luckiest man on the face of the earth.",
+                "source": "The Pride of the Yankees"
+            },
+            {
+                "quote": "You is kind. You is smart. You is important.",
+                "source": "The Help"
+            },
+            {
+                "quote": "What we've got here is failure to communicate.",
+                "source": "Cool Hand Luke"
+            },
+            {
+                "quote": "Hasta la vista, baby.",
+                "source": "Terminator 2: Judgment Day"
+            },
+            {
+                "quote": "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am.",
+                "source": "On the Waterfront"
+            },
+            {
+                "quote": "You talking to me?",
+                "source": "Taxi Driver"
+            },
+            {
+                "quote": "Roads? Where we're going we don't need roads.",
+                "source": "Back to the Future"
+            },
+            {
+                "quote": "That'll do, pig. That'll do.",
+                "source": "Babe"
+            },
+            {
+                "quote": "I'm walking here! I'm walking here!",
+                "source": "Midnight Cowboy"
+            },
+            {
+                "quote": "Stella! Hey, Stella!",
+                "source": "A Streetcar Named Desire"
+            },
+            {
+                "quote": "Here's Johnny!",
+                "source": "The Shining"
+            },
+            {
+                "quote": "Rosebud.",
+                "source": "Citizen Kane"
+            },
+            {
+                "quote": "I'll have what she's having.",
+                "source": "When Harry Met Sally"
+            },
+            {
+                "quote": "Inconceivable!",
+                "source": "The Princess Bride"
+            },
+            {
+                "quote": "All right, Mr. DeMille, I'm ready for my close-up.",
+                "source": "Sunset Boulevard"
+            },
+            {
+                "quote": "Fasten your seatbelts. It's going to be a bumpy night.",
+                "source": "All About Eve"
+            },
+            {
+                "quote": "Nobody puts Baby in a corner.",
+                "source": "Dirty Dancing"
+            },
+            {
+                "quote": "Well, nobody's perfect.",
+                "source": "Some Like it Hot"
+            },
+            {
+                "quote": "Snap out of it!",
+                "source": "Moonstruck"
+            },
+            {
+                "quote": "To infinity and beyond!",
+                "source": "Toy Story"
+            },
+            {
+                "quote": "You’re killin’ me, Smalls.",
+                "source": "The Sandlot"
+            },
+            {
+                "quote": "Toto, I've a feeling we're not in Kansas anymore.",
+                "source": "The Wizard of Oz"
+            }
+        ]
+    },
+    {
+        "category": "Authority",
+        "artwork": "power",
+        "description": "What well-known people have said about the power",
+        "quotes": [
+            {
+                "quote": "The day the power of love overrules the love of power, the world will know peace. ",
+                "source": "Mahatma Gandhi"
+            },
+            {
+                "quote": "Nearly all men can stand adversity, but if you want to test a man's character, give him power. ",
+                "source": "Abraham Lincoln"
+            },
+            {
+                "quote": "Power does not corrupt. Fear corrupts. Perhaps the fear of a loss of power. ",
+                "source": "John Steinbeck"
+            },
+            {
+                "quote": "Washing one's hands of the conflict between the powerful and the powerless means to side with the powerful, not to be neutral. ",
+                "source": "Paulo Freire"
+            },
+            {
+                "quote": "The measure of a man is what he does with power. ",
+                "source": "Plato"
+            },
+            {
+                "quote": "Silence is the ultimate weapon of power. ",
+                "source": "Charles de Gaulle"
+            },
+            {
+                "quote": "It is said that power corrupts, but actually it's more true that power attracts the corruptible. The sane are usually attracted by other things than power. ",
+                "source": "David Brin"
+            },
+            {
+                "quote": "Ultimately, the only power to which man should aspire is that which he exercises over himself. ",
+                "source": "Elie Weisel"
+            },
+            {
+                "quote": "For the powerful, crimes are those that others commit. ",
+                "source": "Noam Chomsky"
+            },
+            {
+                "quote": "The object of power is power. ",
+                "source": "George Orwell"
+            },
+            {
+                "quote": "We know that no one ever seizes power with the intention of relinquishing it. ",
+                "source": "George Orwell"
+            },
+            {
+                "quote": "Power-lust is a weed that grows only in the vacant lots of an abandoned mind. ",
+                "source": "Ayn Rand"
+            },
+            {
+                "quote": "Knowledge is power. ",
+                "source": "Francis Bacon"
+            },
+            {
+                "quote": "In order to obtain and hold power, a man must love it. ",
+                "source": "Leo Tolstoy"
+            },
+            {
+                "quote": "The steps of power are often steps on sand. ",
+                "source": "Edward Counsel"
+            },
+            {
+                "quote": "Power is the ultimate aphrodisiac. ",
+                "source": "Henry Kissinger"
+            },
+            {
+                "quote": "One of the things about powerful people is they have the ability to make it look easy. ",
+                "source": "Ice-T"
+            },
+            {
+                "quote": "The greater the power, the more dangerous the abuse. ",
+                "source": "Edmund Burke"
+            },
+            {
+                "quote": "With great power there must also come great responsibility! ",
+                "source": "Stan Lee"
+            },
+            {
+                "quote": "Absolute power was not meant for man. ",
+                "source": "William E. Channing"
+            },
+            {
+                "quote": "To know the pains of power, we must go to those who have it; to know its pleasures, we must go to those who are seeking it: the pains of power are real, its pleasures imaginary. ",
+                "source": "Charles Caleb Colton"
+            },
+            {
+                "quote": "Mastering others is strength. Mastering yourself is true power. ",
+                "source": "Tao Te Ching"
+            },
+            {
+                "quote": "If you can abuse your power you have too much. ",
+                "source": "Marty Rubin"
+            },
+            {
+                "quote": "Do the thing and you will have the power. ",
+                "source": "Ralph Waldo Emerson"
+            },
+            {
+                "quote": "Power is not revealed by striking hard or often, but by striking true. ",
+                "source": "Honoré de Balzac"
+            },
+            {
+                "quote": "Power is a word the meaning of which we do not understand. ",
+                "source": "Leo Tolstoy"
+            },
+            {
+                "quote": "And power without compassion is the worst kind of evil there is. ",
+                "source": "E.J. Patten"
+            },
+            {
+                "quote": "Power lacks moral or principles. It only has interests. ",
+                "source": "Horacio Castellanos Moya"
+            },
+            {
+                "quote": "The most common way people give up their power is by thinking they don’t have any. ",
+                "source": "Alice Walker"
+            },
+            {
+                "quote": "Calmness is the cradle of power. ",
+                "source": "J.G. Holland"
+            },
+            {
+                "quote": "The great secret of power is never to will to do more than you can accomplish. ",
+                "source": "Henrik Ibsen"
+            },
+            {
+                "quote": "You see what power is holding someone else's fear in your hand and showing it to them. ",
+                "source": "Amy Tan"
+            },
+            {
+                "quote": "Being powerful is like being a lady. If you have to tell people you are, you aren't. ",
+                "source": "Margaret Thatcher"
+            },
+            {
+                "quote": "Power is when you have every justification to kill someone, and then you don’t. ",
+                "source": "Oskar Shindler"
+            },
+            {
+                "quote": "Don't trust children with edge tools. Don't trust man, great God, with more power than he has until he has learned to use that little better. What a hell we should make of the world if we could do what we would! ",
+                "source": "Ralph Waldo Emerson"
+            },
+            {
+                "quote": "Most powerful is he who has himself in his own power. ",
+                "source": "Seneca"
+            }
+        ]
+    },
+    {
+        "category": "Buddha quotes",
+        "artwork": "buddhism",
+        "description": "Ancient religion and modern philisophy",
+        "quotes": [
+            {
+                "quote": "If you knew what I know about the power of giving you would not let a single meal pass without sharing it in some way.",
+                "source": ""
+            },
+            {
+                "quote": "Learn this from water: loud splashes the brook but the oceans depth are calm.",
+                "source": ""
+            },
+            {
+                "quote": "I never see what has been done; I only see what remains to be done.",
+                "source": ""
+            },
+            {
+                "quote": "You only lose what you cling to.",
+                "source": ""
+            },
+            {
+                "quote": "The past is already gone, the future is not yet here. There’s only one moment for you to live.",
+                "source": ""
+            },
+            {
+                "quote": "The trouble is, you think you have time.",
+                "source": ""
+            },
+            {
+                "quote": "Your work is to discover your work and then with all your heart to give yourself to it.",
+                "source": ""
+            },
+            {
+                "quote": "Believe nothing, no matter where you read it, or who said it, no matter if I have said it, unless it agrees with your own reason and your own common sense.",
+                "source": ""
+            },
+            {
+                "quote": "The tongue like a sharp knife… Kills without drawing blood.",
+                "source": ""
+            },
+            {
+                "quote": "Teach this triple truth to all: A generous heart, kind speech, and a life of service and compassion are the things which renew humanity.",
+                "source": ""
+            },
+            {
+                "quote": "To abstain from lying is essentially wholesome.",
+                "source": ""
+            },
+            {
+                "quote": "Avoid evil deeds as a man who loves life avoids poison.",
+                "source": ""
+            },
+            {
+                "quote": "Holding onto anger is like drinking poison and expecting the other person to die.",
+                "source": ""
+            },
+            {
+                "quote": "What you think, you become. What you feel, you attract. What you imagine, you create.",
+                "source": ""
+            },
+            {
+                "quote": "There are only two mistakes one can make along the road to truth; not going all the way, and not starting.",
+                "source": ""
+            },
+            {
+                "quote": "No one saves us but ourselves. No one can and no one may. We ourselves must walk the path.",
+                "source": ""
+            },
+            {
+                "quote": "If a man’s thoughts are muddy, If he is reckless and full of deceit, How can he wear the yellow robe? Whoever is master of his own nature, Bright, clear and true, He may indeed wear the yellow robe.",
+                "source": ""
+            },
+            {
+                "quote": "Anger will never disappear so long as thoughts of resentment are cherished in the mind. Anger will disappear just as soon as thoughts of resentment are forgotten.",
+                "source": ""
+            },
+            {
+                "quote": "For soon the body is discarded, Then what does it feel? A useless log of wood, it lies on the ground, Then what does it know? Your worst enemy cannot harm you As much as your own thoughts, unguarded. But once mastered, No one can help you as much, Not even your father or your mother.",
+                "source": ""
+            },
+            {
+                "quote": "One should strive to understand what underlies sufferings and diseases – and aim for health and well-being while gaining in the path.",
+                "source": ""
+            },
+            {
+                "quote": "If you are quiet enough, you will hear the flow of the universe. You will feel its rhythm. Go with this flow. Happiness lies ahead. Meditation is key.",
+                "source": ""
+            },
+            {
+                "quote": "Peace comes from within. Do not seek it without.",
+                "source": ""
+            },
+            {
+                "quote": "Those who are free of resentful thoughts surely find peace.",
+                "source": ""
+            },
+            {
+                "quote": "There has to be evil so that good can prove its purity above it.",
+                "source": ""
+            },
+            {
+                "quote": "To conquer oneself is a greater task than conquering others.",
+                "source": ""
+            },
+            {
+                "quote": "The whole secret of existence is to have no fear. Never fear what will become of you, depend on no one. Only the moment you reject all help are you freed.",
+                "source": ""
+            },
+            {
+                "quote": "Everything that has a beginning has an ending. Make your peace with that and all will be well.",
+                "source": ""
+            },
+            {
+                "quote": "The root of suffering is attachment.",
+                "source": ""
+            },
+            {
+                "quote": "You cannot travel the path until you have become the path itself.",
+                "source": ""
+            },
+            {
+                "quote": "The only real failure in life is not to be true to the best one knows.",
+                "source": ""
+            },
+            {
+                "quote": "Purity or impurity depends on oneself. No one can purify another.",
+                "source": ""
+            },
+            {
+                "quote": "However many holy words you read, However many you speak, What good will they do you If you do not act on upon them?",
+                "source": ""
+            },
+            {
+                "quote": "If we could see the miracle of a single flower clearly, our whole life would change.",
+                "source": ""
+            },
+            {
+                "quote": "Those who have failed to work toward the truth have missed the purpose of living.",
+                "source": ""
+            },
+            {
+                "quote": "In separateness lies the world’s greatest misery; in compassion lies the world’s true strength.",
+                "source": ""
+            },
+            {
+                "quote": "If you find no one to support you on the spiritual path, walk alone. There is no companionship with the immature.",
+                "source": ""
+            },
+            {
+                "quote": "Work out your own salvation. Do not depend on others.",
+                "source": ""
+            },
+            {
+                "quote": "However many holy words you read, However many you speak, What good will they do you If you do not act on upon them?",
+                "source": ""
+            },
+            {
+                "quote": "All wrong-doing arises because of mind. If mind is transformed can wrong-doing remain?",
+                "source": ""
+            },
+            {
+                "quote": "It is a man’s own mind, not his enemy or foe, that lures him to evil ways.",
+                "source": ""
+            },
+            {
+                "quote": "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves.",
+                "source": ""
+            },
+            {
+                "quote": "There is nothing so disobedient as an undisciplined mind, and there is nothing so obedient as a disciplined mind.",
+                "source": ""
+            },
+            {
+                "quote": "Your worst enemy cannot harm you as much as your own unguarded thoughts.",
+                "source": ""
+            },
+            {
+                "quote": "You will not be punished for your anger, you will be punished by your anger.",
+                "source": ""
+            },
+            {
+                "quote": "Wear your ego like a loose fitting garment.",
+                "source": ""
+            },
+            {
+                "quote": "People with opinions just go around bothering one another.",
+                "source": ""
+            },
+            {
+                "quote": "Speak or act with an impure mind and trouble will follow you.",
+                "source": ""
+            },
+            {
+                "quote": "In the sky, there is no distinction of east and west; people create distinctions out of their own minds and then believe them to be true.",
+                "source": ""
+            },
+            {
+                "quote": "The secret of health for both mind and body is not to mourn for the past, worry about the future, or anticipate troubles, but to live in the present moment wisely and earnestly.",
+                "source": ""
+            },
+            {
+                "quote": "To keep the body in good health is a duty…otherwise we shall not be able to keep our mind strong and clear",
+                "source": ""
+            },
+            {
+                "quote": "There is nothing more dreadful than the habit of doubt. Doubt separates people. It is a poison that disintegrates friendships and breaks up pleasant relations. It is a thorn that irritates and hurts; it is a sword that kills.",
+                "source": ""
+            },
+            {
+                "quote": "If the problem can be solved why worry? If the problem cannot be solved worrying will do you no good.",
+                "source": ""
+            },
+            {
+                "quote": "Even death is not to be feared by one who has lived wisely.",
+                "source": ""
+            },
+            {
+                "quote": "A man is not called wise because he talks and talks again; but is he peaceful, loving and fearless then he is in truth called wise.",
+                "source": ""
+            },
+            {
+                "quote": "Even as a solid rock is unshaken by the wind, so are the wise unshaken by praise or blame.",
+                "source": ""
+            },
+            {
+                "quote": "It is better to travel well than to arrive.",
+                "source": ""
+            },
+            {
+                "quote": "A dog is not considered a good dog because he is a good barker. A man is not considered a good man because he is a good talker.",
+                "source": ""
+            },
+            {
+                "quote": "Remembering a wrong is like carrying a burden on the mind.",
+                "source": ""
+            },
+            {
+                "quote": "Every morning we are born again. What we do today is what matters most.",
+                "source": ""
+            },
+            {
+                "quote": "Nothing ever exists entirely alone; everything is in relation to everything else.",
+                "source": ""
+            },
+            {
+                "quote": "Nothing is permanent.",
+                "source": ""
+            },
+            {
+                "quote": "A jug fills drop by drop.",
+                "source": ""
+            },
+            {
+                "quote": "Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.",
+                "source": ""
+            },
+            {
+                "quote": "There isn’t enough darkness in all the world to snuff out the light of one little candle.",
+                "source": ""
+            },
+            {
+                "quote": "Imagine that every person in the world is enlightened but you. They are all your teachers, each doing just the right things to help you.",
+                "source": ""
+            }
+        ]
+    },
+    {
+        "category": "Art and artists",
+        "artwork": "artists",
+        "description": "When the creative people not only painting but saying",
+        "quotes": [
+            {
+                "quote": "Art is a line around your thoughts",
+                "source": "Gustav Klimt"
+            },
+            {
+                "quote": "To be an artist is to believe in life",
+                "source": "Henry Moore"
+            },
+            {
+                "quote": "Art evokes the mystery without which the world would not exist",
+                "source": "René Magritte"
+            },
+            {
+                "quote": "Art should be something that liberates your soul, provokes the imagination and encourages people to go further",
+                "source": "Keith Haring"
+            },
+            {
+                "quote": "The true use of art is, first, to cultivate the artist’s own spiritual nature",
+                "source": "George Inness"
+            },
+            {
+                "quote": "The principles of true art is not to portray, but to evoke",
+                "source": "Jerzy Kosinski"
+            },
+            {
+                "quote": "Great art picks up where nature ends",
+                "source": "Marc Chagall"
+            },
+            {
+                "quote": "The richness I achieve comes from nature, the source of my inspiration",
+                "source": "Claude Monet"
+            },
+            {
+                "quote": "If I could say it in words there would be no reason to paint",
+                "source": "Edward Hopper"
+            },
+            {
+                "quote": "I saw the angel in the marble and carved until i set him free",
+                "source": "Michelangelo"
+            },
+            {
+                "quote": "If the artist has outer and inner eyes for nature, nature rewards him by giving him inspiration",
+                "source": "Wassily Kandinsky"
+            },
+            {
+                "quote": "It is not so much where my motivation comes from but rather how it manages to survive",
+                "source": "Louise Bourgeois"
+            },
+            {
+                "quote": "You don’t take a photograph, you make it",
+                "source": "Ansel Adams"
+            },
+            {
+                "quote": "The works must be conceived with fire in the soul but executed with clinical coolness",
+                "source": "Joan Miró"
+            },
+            {
+                "quote": "To my mind one does not put oneself in place of the past, one only adds a new link",
+                "source": "Paul Cézanne"
+            },
+            {
+                "quote": "I shut my eyes in order to see",
+                "source": "Paul Gauguin"
+            },
+            {
+                "quote": "The main thing is to be moved, to love, to hope, to tremble, to live",
+                "source": "Auguste Rodin"
+            },
+            {
+                "quote": "Where the spirit does not work with the hand, there is no art",
+                "source": "Leonardo da Vinci"
+            },
+            {
+                "quote": "Creativity takes courage",
+                "source": "Henri Matisse"
+            },
+            {
+                "quote": "Every artist was first an amateur",
+                "source": "Ralph Waldo Emerson"
+            },
+            {
+                "quote": "I am independent! I can live alone and I love to work",
+                "source": "Mary Cassatt"
+            },
+            {
+                "quote": "Have no fear of perfection, you'll never reach it",
+                "source": "Salvador Dalí"
+            },
+            {
+                "quote": "We don’t make mistakes, just happy little accidents",
+                "source": "Bob Ross"
+            },
+            {
+                "quote": "If you hear a voice within you say ‘you cannot paint,' then by all means paint, and that voice will be silenced",
+                "source": "Vincent van Gogh"
+            },
+            {
+                "quote": "I want to make paintings that look as if they were made by a child",
+                "source": "Jean-Michel Basquiat"
+            },
+            {
+                "quote": "Painting is easy when you don’t know how, but very difficult when you do",
+                "source": "Edgar Degas"
+            }
+        ]
+    },
+    {
+        "category": "Hedonism",
+        "artwork": "hedonism",
+        "description": "A lifestyle and and pleasure approach",
+        "quotes": [
+            {
+                "quote": "Unless and until a man does not stop wasting his energy in seeking sensual pleasures, he will not be able to achieve anything substantial",
+                "source": "Sam Veda"
+            },
+            {
+                "quote": "The difference between egoistic hedonism and altruistic hedonism is but an adjective",
+                "source": "John Stack IV"
+            },
+            {
+                "quote": "He who on conviction does and pursues and chooses what is pleasant would be thought to be better than one who does so as a result not of calculation but of incontinence; for he is easier to cure since he may be persuaded to change his mind",
+                "source": "Aristotle"
+            },
+            {
+                "quote": "He that loves pleasure must for pleasure fall",
+                "source": "Christopher Marlowe"
+            },
+            {
+                "quote": "The desert is a spiritual place, we vaguely understand, and the sea the mere playground of our hedonism",
+                "source": "Tim Winton"
+            },
+            {
+                "quote": "You can live to be a hundred if you give up all the things that make you want to live to be a hundred",
+                "source": "Woody Allen"
+            },
+            {
+                "quote": "The chief part of a person`s happiness consists of pleasure",
+                "source": "Thomas More"
+            },
+            {
+                "quote": "Men first feel necessity, then look for utility, next attend to comfort, still later amuse themselves with pleasure, thence grow dissolute in luxury, and finally go mad and waste their substance",
+                "source": "Giambattista Vico"
+            },
+            {
+                "quote": "We know well that this truth risks being contradicted by the hedonism of the so-called well-off societies: Life is exalted as long as it`s pleasant, but one tends to not respect it any more when it is sick or damaged",
+                "source": "Pope Benedict XVI"
+            },
+            {
+                "quote": "Ah, make the most of what we yet may spend, Before we too into the Dust descend",
+                "source": "Omar Khayyam"
+            },
+            {
+                "quote": "It may well be that if mankind could draw up a hedonistic balance-sheet, the pleasures of mundane existence would turn out to be greater than its sufferings",
+                "source": "Arthur Balfour"
+            },
+            {
+                "quote": "I finally figured out the only reason to be alive is to enjoy it",
+                "source": "Rita Mae Brown"
+            },
+            {
+                "quote": "Stranger, here you do well to tarry; here our highest good is pleasure",
+                "source": "Epicurus"
+            },
+            {
+                "quote": "Pleasure is the only thing one should live for, nothing ages like happiness",
+                "source": "Oscar Wilde"
+            },
+            {
+                "quote": "Christian hedonists don`t discount suffering, they just don`t give up until they find the gain in loss",
+                "source": "Beth Moore"
+            },
+            {
+                "quote": "When enough is not enough, a Hedonist is born",
+                "source": "Sukant Ratnakar"
+            },
+            {
+                "quote": "Retirement requires the invention of a new hedonism, not a return to the hedonism of youth",
+                "source": "Mason Cooley"
+            },
+            {
+                "quote": "You can`t build marriage on a foundation of selfish hedonism, because that would be to promise people only roses, and marriage is also thorns",
+                "source": "Alan Keyes"
+            },
+            {
+                "quote": "We have had enough, once and for all, of Hedonism--the gloomy philosophy which says that Pleasure is the only good",
+                "source": "CS Lewis"
+            },
+            {
+                "quote": "We recognize pleasure as the first good innate in us, and from pleasure we begin every act of choice and avoidance, and to pleasure we return again, using the feeling as the standard by which we judge every good",
+                "source": "Epicurus"
+            },
+            {
+                "quote": "To a man of pleasure every moment appears to be lost, which partakes not of the vivacity of movement",
+                "source": "Joseph Addison"
+            },
+            {
+                "quote": "Life admits not of delays; when pleasure can be had, it is fit to catch it: every hour takes away part of the things that please us, and perhaps part of our disposition to be pleased",
+                "source": "Samuel Johnson"
+            },
+            {
+                "quote": "We are certainly in a common class with the beasts; every action of animal life is concerned with seeking bodily pleasure and avoiding pain",
+                "source": "Saint Augustine"
+            },
+            {
+                "quote": "Pleasure is a hedonistic reflex, a burning impulse to abandon rational thought altogether and immerse oneself in the moment",
+                "source": "Gene Wallenstein"
+            },
+            {
+                "quote": "Pleasure, like a kind of bait, is thrown before everything which is really bad, and easily allures greedy souls to the hook of perdition",
+                "source": "Epictetus"
+            },
+            {
+                "quote": "The moral cannibalism of all hedonist and altruist doctrines lies in the premise that the happiness of one man necessitates the injury of another",
+                "source": "Ayn Rand"
+            },
+            {
+                "quote": "Hedonism can be a rational response to a difficult life",
+                "source": "Phillip Lopate"
+            },
+            {
+                "quote": "Lust for possession and greed has ravaged the soul of humanity like a great cancer, metastasizing throughout society in the form of a nouveau post-human, consumer hedonism",
+                "source": "Bryant McGill"
+            },
+            {
+                "quote": "A man hath no better thing under the sun, than to eat, and to drink, and to be merry",
+                "source": "Unknown Author"
+            }
+        ]
     }
 ]
