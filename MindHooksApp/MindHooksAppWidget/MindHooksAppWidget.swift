@@ -90,7 +90,7 @@ struct MindHooksAppWidgetEntryView : View {
                     Image("hooksWhite")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: ImageSizes.onboarding, height: ImageSizes.onboarding)
+                        .frame(width: ImageSizes.widgetSmall, height: ImageSizes.widgetSmall)
                         .padding(-5)
                     Spacer()
                     WidgetBodyText(text: entry.quote.content)
@@ -105,7 +105,7 @@ struct MindHooksAppWidgetEntryView : View {
                     Image("hooksWhite")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 140, height: 140)
+                        .frame(width: ImageSizes.widgetMedium, height: ImageSizes.widgetMedium)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         WidgetBodyText(text: entry.quote.content)

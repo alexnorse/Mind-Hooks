@@ -85,6 +85,8 @@ enum UInumbers {
 
 
 enum ImageSizes {
-    static let onboarding: CGFloat = 40
-    static let collection: CGFloat = 80
+    static let widgetSmall: CGFloat  = 28
+    static let widgetMedium: CGFloat = 150
+    static let onboarding: CGFloat   = 40
+    static let collection: CGFloat   = 80
 }
