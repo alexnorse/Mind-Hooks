@@ -81,17 +81,4 @@ final class CollectionViewModel: ObservableObject {
         }
     }
     
-    
-    func restoreSubscription() {
-        Purchases.shared.restoreTransactions { info, error in
-            if info?.entitlements[subscriptionProductIds.entitlementName]?.isActive == true {
-                self.allaccess = true
-            }
-            
-            if let err = error as NSError? {
-                print("Message: \(err.localizedDescription)")
-            }
-        }
-    }
-    
 }

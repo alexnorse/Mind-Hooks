@@ -47,7 +47,6 @@ enum PurchaseHeads {
 enum PurchaseDescriptions {
     static let first   = "Get the most outstanding people's thoughts"
     static let second  = "Inspire your day and keep close the favorite quotes"
-    static let restore = "Restore subscription"
     static let cancel  = "No Commitment. Cancel Anytime."
     static let privacy = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Privacy%20Policy"
     static let terms   = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Terms%20%26%20Conditions"
@@ -56,7 +55,6 @@ enum PurchaseDescriptions {
 
 enum Descriptions {
     static let eventLink = "See more"
-    static let restore   = "Restore purchases"
 }
 
     

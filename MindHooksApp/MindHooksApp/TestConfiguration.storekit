@@ -1,5 +1,5 @@
 {
-  "identifier" : "9B359C11",
+  "identifier" : "F8B83A7C",
   "nonRenewingSubscriptions" : [
 
   ],
@@ -11,7 +11,7 @@
   },
   "subscriptionGroups" : [
     {
-      "id" : "BBD0EE31",
+      "id" : "650158FA",
       "localizations" : [
 
       ],
@@ -24,7 +24,7 @@
           "displayPrice" : "0.99",
           "familyShareable" : false,
           "groupNumber" : 1,
-          "internalID" : "63D5FAAC",
+          "internalID" : "67DE0C6E",
           "introductoryOffer" : null,
           "localizations" : [
             {
@@ -36,7 +36,7 @@
           "productID" : "mh_099_1m",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Mind Hooks monthly subscription",
-          "subscriptionGroupID" : "BBD0EE31",
+          "subscriptionGroupID" : "650158FA",
           "type" : "RecurringSubscription"
         },
         {
@@ -46,7 +46,7 @@
           "displayPrice" : "7.99",
           "familyShareable" : false,
           "groupNumber" : 1,
-          "internalID" : "59F901DA",
+          "internalID" : "203B3BBE",
           "introductoryOffer" : null,
           "localizations" : [
             {
@@ -58,7 +58,7 @@
           "productID" : "mh_799_1y",
           "recurringSubscriptionPeriod" : "P1Y",
           "referenceName" : "Mind Hooks annual subscription",
-          "subscriptionGroupID" : "BBD0EE31",
+          "subscriptionGroupID" : "650158FA",
           "type" : "RecurringSubscription"
         }
       ]

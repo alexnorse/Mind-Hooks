@@ -71,7 +71,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../../../../../../Library/Developer/Xcode/DerivedData/MindHooksApp-fjrmcnbivicdvoakbaxfomrqsuqd/SourcePackages/checkouts/purchases-ios/IntegrationTests/PurchaseTester/Configuration.storekit">
+         identifier = "../../MindHooksApp/TestConfiguration.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction

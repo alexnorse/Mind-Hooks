@@ -17,7 +17,7 @@ struct PurchaseView: View {
     
     var body: some View {
         
-        VStack(alignment: .center, spacing: 7) {
+        VStack(alignment: .center, spacing: 10) {
             
             OnboardingHeadline(text: "Get all features!")
                 .padding()
@@ -46,16 +46,7 @@ struct PurchaseView: View {
                     OnboardingButton(label: package.annualSubscription)
                 }
             }
-            
-            
-            if viewModel.allaccess == false {
-                Button {
-                    viewModel.restoreSubscription()
-                } label: {
-                    OnboardingButton(label: PurchaseDescriptions.restore)
-                }
-            }
-            
+
             
             NoteText(text: PurchaseDescriptions.cancel)
                 .padding(20)
