@@ -35,6 +35,7 @@
 		E6615F8E272D91D80058AE70 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F8D272D91D80058AE70 /* CollectionViewModel.swift */; };
 		E6615F90272D941E0058AE70 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F8F272D941E0058AE70 /* CollectionView.swift */; };
 		E6615F93272D948A0058AE70 /* QuoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F92272D948A0058AE70 /* QuoteList.swift */; };
+		E6708E6527524B5F00FD8194 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = E6708E6427524B5E00FD8194 /* StoreKitTestCertificate.cer */; };
 		E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */; };
 		E69E4DDD273532BC00BE83F9 /* CollectionGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E4DDC273532BC00BE83F9 /* CollectionGridViewModel.swift */; };
@@ -143,6 +144,8 @@
 		E6615F92272D948A0058AE70 /* QuoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteList.swift; sourceTree = "<group>"; };
 		E669D0D626C4003900234E4E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E669D0D826C4003900234E4E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E6708E63275249D800FD8194 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		E6708E6427524B5E00FD8194 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = StoreKitTestCertificate.cer; path = ../../../../../../Desktop/StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		E68CD74E26F0849200AFAD4C /* QotDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QotDViewModel.swift; sourceTree = "<group>"; };
 		E69E4DDC273532BC00BE83F9 /* CollectionGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGridViewModel.swift; sourceTree = "<group>"; };
 		E6A54A36272E89DF0007F225 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */,
+				E6708E63275249D800FD8194 /* Configuration.storekit */,
+				E6708E6427524B5E00FD8194 /* StoreKitTestCertificate.cer */,
 				E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */,
 				E619CC3826AD5C1D00579CFD /* Assets.xcassets */,
 				E619CC3D26AD5C1D00579CFD /* Info.plist */,
@@ -526,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6708E6527524B5F00FD8194 /* StoreKitTestCertificate.cer in Resources */,
 				E6B0B0B426B05360003C722F /* LaunchScreen.storyboard in Resources */,
 				E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */,
 				E619CC3926AD5C1D00579CFD /* Assets.xcassets in Resources */,
