@@ -39,14 +39,14 @@ enum OnboardingDescriptions {
 
 
 enum PurchaseHeads {
-    static let first  = "What collections are the?"
-    static let second = "What I get for my payment?"
+    static let first  = "Unlock Collections"
+    static let second = "Read and save"
 }
 
 
 enum PurchaseDescriptions {
-    static let first   = "Brilliant thoughts of the wisest and most outstanding people and cultures"
-    static let second  = "You can unlock all collections and future updates with our subscription"
+    static let first   = "Get the most outstanding people's thoughts"
+    static let second  = "Inspire your day and keep close the favorite quotes"
     static let restore = "Restore subscription"
     static let cancel  = "No Commitment. Cancel Anytime."
     static let privacy = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Privacy%20Policy"
@@ -55,8 +55,8 @@ enum PurchaseDescriptions {
 
 
 enum Descriptions {
-    static let eventLink      = "See more"
-    static let restore        = "Restore purchases"
+    static let eventLink = "See more"
+    static let restore   = "Restore purchases"
 }
 
     

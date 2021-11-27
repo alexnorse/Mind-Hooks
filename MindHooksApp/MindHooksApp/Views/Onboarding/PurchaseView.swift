@@ -17,9 +17,9 @@ struct PurchaseView: View {
     
     var body: some View {
         
-        VStack(alignment: .center, spacing: 10) {
+        VStack(alignment: .center, spacing: 7) {
             
-            OnboardingHeadline(text: "Unlock Collections")
+            OnboardingHeadline(text: "Get all features!")
                 .padding()
             
             VStack(spacing: -UInumbers.spacing) {
@@ -67,7 +67,7 @@ struct PurchaseView: View {
         .offset(y: show ? 0 : 20)
         .animation(Animation.easeOut(duration: 0.5).delay(0.3))
         .onAppear { self.show = true }
-        .padding()
+        .padding(25)
         
     }
 }
