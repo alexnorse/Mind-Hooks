@@ -16,8 +16,7 @@ struct PurchaseView: View {
         if viewModel.allaccess == false {
             Paywall()
         } else {
-            OnboardingHeadline(text: "Thanks!")
-                .padding()
+           ThanksView()
         }
     }
     

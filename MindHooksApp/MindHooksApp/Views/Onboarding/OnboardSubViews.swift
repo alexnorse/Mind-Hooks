@@ -17,6 +17,7 @@ struct OnboardSubViews: View {
             OnboardingThird()
             PurchaseFirst()
             PurchaseSecond()
+            PurchaseSuccess()
         }
         
     }
@@ -104,6 +105,24 @@ struct PurchaseSecond: View {
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: PurchaseHeads.second)
                 DescriptionText(text: PurchaseDescriptions.second)
+            }
+            .padding()
+        }
+        .padding()
+        
+    }
+}
+
+
+struct PurchaseSuccess: View {
+    var body: some View {
+        
+        HStack(spacing: UInumbers.spacing) {
+            OnboardingImage(name: "checkmark.circle.fill")
+            
+            VStack(alignment: .leading, spacing: 3) {
+                OnboardingBold(text: PurchaseHeads.success)
+                DescriptionText(text: PurchaseDescriptions.success)
             }
             .padding()
         }

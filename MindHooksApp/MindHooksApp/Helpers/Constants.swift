@@ -39,14 +39,16 @@ enum OnboardingDescriptions {
 
 
 enum PurchaseHeads {
-    static let first  = "Unlock Collections"
-    static let second = "Read and save"
+    static let first   = "Unlock Collections"
+    static let second  = "Read and save"
+    static let success = "Thank you!"
 }
 
 
 enum PurchaseDescriptions {
     static let first   = "Get the most outstanding people's thoughts"
     static let second  = "Inspire your day and keep close the favorite quotes"
+    static let success = "We wish you nice reading! If this view is not hiding automatically, just relaunch the App, please."
     static let cancel  = "No Commitment. Cancel Anytime."
     static let privacy = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Privacy%20Policy"
     static let terms   = "https://github.com/alexnorse/SupportRepo/blob/main/Mind%20Hooks%20Terms%20%26%20Conditions"
