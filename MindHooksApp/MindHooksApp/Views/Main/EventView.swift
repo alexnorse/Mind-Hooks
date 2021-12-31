@@ -25,9 +25,8 @@ struct EventView: View {
                 
                 LinkText(text: Descriptions.eventLink)
                     .onTapGesture { showSafari.toggle() }
-                    .fullScreenCover(isPresented: $showSafari,
-                                     content: { SFSafariViewWrapper(
-                                        url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
+                    .sheet(isPresented: $showSafari, content: {
+                        SFSafariViewWrapper(url: (URL(string: viewModel.link) ?? URL(string:URLs.wikiURL)!)) })
             }
             .animation(.spring())
             .padding()
