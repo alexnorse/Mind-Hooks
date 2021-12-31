@@ -16,6 +16,7 @@ class SheetNavigator: ObservableObject {
         case paywall
         case quotes
         
+        
         @ViewBuilder
         func view(paywall: AnyView, quotes: AnyView) -> some View {
              switch self {

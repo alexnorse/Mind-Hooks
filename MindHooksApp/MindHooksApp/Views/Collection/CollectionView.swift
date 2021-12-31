@@ -32,11 +32,12 @@ struct CollectionView: View {
                         .listStyle(.plain)
                         .listRowInsets(.none)
                         .navigationTitle("Collections")
-                        .sheet(isPresented: $showingSheet) {
-                            sheetNavigator.destination.view(
-                                paywall: viewModel.allaccess ? QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample).toAnyView() : PurchaseView().toAnyView(),
-                                quotes: viewModel.allaccess ? QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample).toAnyView() : PurchaseView().toAnyView())
-                        }
+                        .sheet(isPresented: $showingSheet) { sheetNavigator.destination.view(
+                            
+                            paywall: viewModel.allaccess ? QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample).toAnyView() : PurchaseView().toAnyView(),
+                            
+                            quotes: viewModel.allaccess ? QuoteList(collection: gridViewModel.selectedCollection ?? MockCollection.sample).toAnyView() : PurchaseView().toAnyView()
+                        )}
                     }
                     .padding()
                     
