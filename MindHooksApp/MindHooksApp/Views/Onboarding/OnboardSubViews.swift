@@ -10,7 +10,6 @@ import SwiftUI
 struct OnboardSubViews: View {
     
     var body: some View {
-        
         VStack {
             OnboardingFirst()
             OnboardingSecond()
@@ -19,14 +18,13 @@ struct OnboardSubViews: View {
             PurchaseSecond()
             PurchaseSuccess()
         }
-        
     }
 }
 
 
 struct OnboardingFirst: View {
-    var body: some View {
-        
+    
+     var body: some View {
         HStack(spacing: UInumbers.spacing) {
             OnboardingImage(name: "cloud.sun.fill")
             
@@ -37,14 +35,13 @@ struct OnboardingFirst: View {
             .padding()
         }
         .padding()
-        
     }
 }
 
 
 struct OnboardingSecond: View {
-    var body: some View {
-        
+    
+     var body: some View {
         HStack(spacing: UInumbers.spacing) {
             OnboardingImage(name: "bolt.fill")
             
@@ -55,14 +52,13 @@ struct OnboardingSecond: View {
             .padding()
         }
         .padding()
-        
     }
 }
 
 
 struct OnboardingThird: View {
-    var body: some View {
-        
+    
+     var body: some View {
         HStack(spacing: UInumbers.spacing) {
             OnboardingImage(name: "quote.closing")
             
@@ -73,14 +69,13 @@ struct OnboardingThird: View {
             .padding()
         }
         .padding()
-        
     }
 }
 
 
 struct PurchaseFirst: View {
-    var body: some View {
-        
+   
+     var body: some View {
         HStack(spacing: UInumbers.spacing) {
             OnboardingImage(name: "books.vertical.fill")
             
@@ -91,14 +86,13 @@ struct PurchaseFirst: View {
             .padding()
         }
         .padding()
-        
     }
 }
 
 
 struct PurchaseSecond: View {
-    var body: some View {
-        
+    
+     var body: some View {
         HStack(spacing: UInumbers.spacing) {
             OnboardingImage(name: "book.fill")
             
@@ -109,14 +103,13 @@ struct PurchaseSecond: View {
             .padding()
         }
         .padding()
-        
     }
 }
 
 
 struct PurchaseSuccess: View {
-    var body: some View {
-        
+    
+     var body: some View {
         HStack(spacing: UInumbers.spacing) {
             OnboardingImage(name: "checkmark.circle.fill")
             
@@ -127,7 +120,6 @@ struct PurchaseSuccess: View {
             .padding()
         }
         .padding()
-        
     }
 }
 

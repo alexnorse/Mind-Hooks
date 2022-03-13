@@ -14,7 +14,6 @@ struct EventView: View {
     @State private var showSafari: Bool = false
     
     var body: some View {
-        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading, spacing: UInumbers.spacing) {

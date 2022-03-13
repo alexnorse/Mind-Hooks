@@ -13,7 +13,6 @@ struct OnboardingView: View {
     @State var show: Bool = false
     
     var body: some View {
-        
         VStack(alignment: .center, spacing: UInumbers.spacing - 10) {
             
             OnboardingHeadline(text: "Welcome!")

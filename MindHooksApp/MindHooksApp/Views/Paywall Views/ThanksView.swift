@@ -12,7 +12,6 @@ struct ThanksView: View {
     @State var show: Bool = false
     
     var body: some View {
-        
         VStack(alignment: .center) {
             PurchaseSuccess()
         }
@@ -21,7 +20,6 @@ struct ThanksView: View {
         .animation(Animation.easeOut(duration: 0.5).delay(0.3))
         .onAppear { self.show = true }
         .padding(25)
-        
     }
 }
 

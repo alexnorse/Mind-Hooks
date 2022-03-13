@@ -26,7 +26,6 @@ struct MockCollection {
     static let sample = Category(category: "Sample category",
                                  artwork: "",
                                  description: "Lorem ipsum",
-//                                 productId: "",
                                  quotes: [CollectionQuote(quote: "Non est ad astra mollis e terris via", source: "Seneca")])
     
     static let sampleQuote = CollectionQuote(quote: "Non est ad astra mollis e terris via", source: "Seneca")

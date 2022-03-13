@@ -291,6 +291,7 @@
 				E6C1CE3B272EDE2C00808529 /* Onboarding */,
 				E6B0B0B226B048B1003C722F /* Main */,
 				E6615F91272D94540058AE70 /* Collection */,
+				E6B2E210277F493300ACB374 /* Paywall Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +375,7 @@
 		E6B2E210277F493300ACB374 /* Paywall Views */ = {
 			isa = PBXGroup;
 			children = (
+				E6A54A38272E89F70007F225 /* PurchaseView.swift */,
 				E6B2E20E277F47EA00ACB374 /* Paywall.swift */,
 				E6B2E211277F496C00ACB374 /* ThanksView.swift */,
 			);
@@ -385,8 +387,6 @@
 			children = (
 				E6A54A36272E89DF0007F225 /* OnboardingView.swift */,
 				E6C1CE3C272EDEDA00808529 /* OnboardSubViews.swift */,
-				E6A54A38272E89F70007F225 /* PurchaseView.swift */,
-				E6B2E210277F493300ACB374 /* Paywall Views */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";

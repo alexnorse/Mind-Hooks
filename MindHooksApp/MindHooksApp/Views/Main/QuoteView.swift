@@ -12,7 +12,6 @@ struct QuoteView: View {
     @StateObject var viewModel = QotDViewModel()
     
     var body: some View {
-        
         ZStack(alignment: .leading)  {
             
             VStack(alignment: .leading, spacing: UInumbers.spacing)  {

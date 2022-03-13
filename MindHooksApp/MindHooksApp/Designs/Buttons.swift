@@ -10,19 +10,16 @@ import SwiftUI
 struct Buttons: View {
     
     var body: some View {
-        
         VStack {
             OnboardingButton(label: "Get started")
             LinkText(text: "See more")
             CenteredLink(text: "See more")
         }
-        
     }
 }
 
 
 struct OnboardingButton: View {
-    
     var label: String
     
     var body: some View {
@@ -39,7 +36,6 @@ struct OnboardingButton: View {
 
 
 struct LinkText: View {
-    
     var text: String
     
     var body: some View {
@@ -53,7 +49,6 @@ struct LinkText: View {
 
 
 struct CenteredLink: View {
-    
     var text: String
     
     var body: some View {

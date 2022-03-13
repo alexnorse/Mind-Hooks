@@ -10,7 +10,6 @@ import SwiftUI
 struct TextViews: View {
     
     var body: some View {
-        
         VStack(spacing: 20) {
             CategoryText(text: "Quote of the day")
             AccentText(text: "Lorem Ipsum")
@@ -23,13 +22,12 @@ struct TextViews: View {
             WidgetNoteText(text: "Da Vinci")
         }
         .padding()
-        
+
     }
 }
 
 
 struct CategoryText: View {
-    
     var text: String
     
     var body: some View {
@@ -45,7 +43,6 @@ struct CategoryText: View {
 
 
 struct AccentText: View {
-    
     var text: String
     
     var body: some View {
@@ -59,7 +56,6 @@ struct AccentText: View {
 
 
 struct DescriptionText: View {
-    
     var text: String
     
     var body: some View {
@@ -72,7 +68,6 @@ struct DescriptionText: View {
 
 
 struct DescriptionBold: View {
-    
     var text: String
     
     var body: some View {
@@ -85,7 +80,6 @@ struct DescriptionBold: View {
 
 
 struct OnboardingHeadline: View {
-    
     var text: String
     
     var body: some View {
@@ -99,7 +93,6 @@ struct OnboardingHeadline: View {
 
 
 struct OnboardingBold: View {
-    
     var text: String
     
     var body: some View {
@@ -112,7 +105,6 @@ struct OnboardingBold: View {
 
 
 struct NoteText: View {
-    
     var text: String
     
     var body: some View {
@@ -127,7 +119,6 @@ struct NoteText: View {
 
 
 struct WidgetBodyText: View {
-    
     var text: String
     
     var body: some View {
@@ -142,7 +133,6 @@ struct WidgetBodyText: View {
 
 
 struct WidgetNoteText: View {
-    
     var text: String
     
     var body: some View {

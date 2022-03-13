@@ -10,7 +10,6 @@ import UIKit
 final class NetworkCall {
     
     static let shared = NetworkCall()
-    
     let qotdURL     = URLs.dailyQuoteAPI
     let wordURL     = "\(URLs.wordAPI)wordOfTheDay?date=\(Day.today.yyyyMMdd())&api_key=\(URLs.wordAPIKey)"
     let eventURL    = URLs.eventAPI

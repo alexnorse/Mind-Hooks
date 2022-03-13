@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct CollectionCell: View {
-    
     let collection: Category
     
     var body: some View {
-        
         HStack(spacing: 7) {
             CollectionImage(name: collection.artwork)
                 .shadow(color: .gray, radius: 10, x: 5, y: 5)

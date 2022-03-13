@@ -12,9 +12,7 @@ struct MainView: View {
     @State private var currentTab = 0
     
     var body: some View {
-        
         TabView {
-            
             TabView(selection: $currentTab, content: {
                 QuoteView()
                     .tag(0)
@@ -44,9 +42,7 @@ struct MainView: View {
                 .tabItem {
                     Image(systemName: "book.circle.fill")
                     Text("Collections") }
-            
         }
-
     }
 }
 

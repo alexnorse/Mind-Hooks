@@ -10,22 +10,19 @@ import SwiftUI
 struct ImageViews: View {
     
     var body: some View {
-        
         VStack {
             CollectionImage(name: "hooksOrange")
             OnboardingImage(name: "swift")
             LogoSmall(name: "hooksOrange")
         }
-        
     }
 }
 
+
 struct CollectionImage: View {
-    
     var name: String
     
     var body: some View {
-        
         Image(name)
             .resizable()
             .scaledToFit()
@@ -36,11 +33,9 @@ struct CollectionImage: View {
 
 
 struct OnboardingImage: View {
-    
     var name: String
     
     var body: some View {
-        
         Image(systemName: name)
             .resizable()
             .scaledToFit()
@@ -51,11 +46,9 @@ struct OnboardingImage: View {
 
 
 struct LogoSmall: View {
-    
     var name: String
     
-    var body: some View {
-        
+    var body: some View { 
         Image(name)
             .resizable()
             .scaledToFit()

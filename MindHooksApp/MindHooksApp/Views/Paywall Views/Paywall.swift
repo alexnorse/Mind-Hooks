@@ -16,17 +16,14 @@ struct Paywall: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        
         VStack(alignment: .center, spacing: 10) {
             OnboardingHeadline(text: "Get all features!")
                 .padding()
-            
             
             VStack(spacing: -UInumbers.spacing) {
                 PurchaseFirst()
                 PurchaseSecond()
             }
-            
             
             Button {
                 viewModel.buyMonthlySubscription()
@@ -35,7 +32,6 @@ struct Paywall: View {
                 OnboardingButton(label: package.monthlySubscription)
             }
             
-            
             Button {
                 viewModel.buyAnnualSubscription()
                 presentationMode.wrappedValue.dismiss()
@@ -43,10 +39,8 @@ struct Paywall: View {
                 OnboardingButton(label: package.annualSubscription)
             }
             
-            
             NoteText(text: PurchaseDescriptions.cancel)
                 .padding(20)
-            
             
             Link("Privacy Policy", destination: URL(string: PurchaseDescriptions.privacy)!)
             Link("Terms & Conditions", destination: URL(string: PurchaseDescriptions.terms)!)

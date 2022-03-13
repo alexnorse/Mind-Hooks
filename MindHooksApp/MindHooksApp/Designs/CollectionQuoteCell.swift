@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct CollectionQuoteCell: View {
-    
     let collection: CollectionQuote
     
     var body: some View {
-        
         VStack(alignment: .leading, spacing: 10) {
             LogoSmall(name: "hooksOrange")
             DescriptionText(text: collection.quote)

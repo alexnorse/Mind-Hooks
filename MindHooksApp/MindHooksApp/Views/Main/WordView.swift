@@ -13,7 +13,6 @@ struct WordView: View {
     @StateObject var viewModel = WordViewModel()
     
     var body: some View {
-        
         ZStack(alignment: .leading) {
             
             VStack(alignment: .leading, spacing: UInumbers.spacing) {

@@ -12,9 +12,7 @@ struct QuoteList: View {
     let collection: Category
     
     var body: some View {
-        
         ZStack {
-            
             List(collection.quotes) { category in
                 CollectionQuoteCell(collection: category)
             }

@@ -17,11 +17,9 @@ struct CollectionView: View {
     let columns: [GridItem] = [GridItem(.flexible())]
     
     var body: some View {
-        
         ZStack {
             NavigationView {
                 ScrollView {
-                    
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(viewModel.categories) { category in
                             CollectionCell(collection: category)
@@ -40,12 +38,10 @@ struct CollectionView: View {
                         )}
                     }
                     .padding()
-                    
                 }
             }
         }
         .onAppear { viewModel.getCollection() }
-        
     }
 }
 

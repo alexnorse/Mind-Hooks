@@ -12,14 +12,12 @@ struct PurchaseView: View {
     @StateObject var viewModel = CollectionViewModel()
     
     var body: some View {
-        
         if viewModel.allaccess == false {
             Paywall()
         } else {
            ThanksView()
         }
     }
-    
 }
 
 
