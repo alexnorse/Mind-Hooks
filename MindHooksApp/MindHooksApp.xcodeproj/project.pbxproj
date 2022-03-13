@@ -27,7 +27,12 @@
 		E64DA5B626AEB73300061284 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B526AEB73300061284 /* Quote.swift */; };
 		E64DA5BD26AEBC7F00061284 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E64DA5BF26AEBCC100061284 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
-		E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
+		E64DA5C126AED48D00061284 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* API.swift */; };
+		E658942427DDDCF100643364 /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942327DDDCF100643364 /* WidgetModel.swift */; };
+		E658942627DDDCFE00643364 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942527DDDCFE00643364 /* Provider.swift */; };
+		E658942827DDDD0800643364 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942727DDDD0800643364 /* WidgetView.swift */; };
+		E658942A27DDDD1400643364 /* SmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942927DDDD1400643364 /* SmallView.swift */; };
+		E658942C27DDDD1D00643364 /* MediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942B27DDDD1D00643364 /* MediumView.swift */; };
 		E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F87272D853D0058AE70 /* CollectionCell.swift */; };
 		E6615F8A272D854F0058AE70 /* CollectionQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */; };
 		E6615F8C272D90AF0058AE70 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F8B272D90AF0058AE70 /* Collection.swift */; };
@@ -54,7 +59,7 @@
 		E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */; };
 		E6C8437726C96D820099B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C8437626C96D820099B442 /* Assets.xcassets */; };
 		E6C8437B26C96D820099B442 /* MindHooksAppWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6C8437026C96D7E0099B442 /* MindHooksAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E6C8437F26C96E090099B442 /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* NetworkCall.swift */; };
+		E6C8437F26C96E090099B442 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* API.swift */; };
 		E6C8438126C96E090099B442 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AF26AEAACA00061284 /* TextViews.swift */; };
 		E6C8438226C96E090099B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
 		E6C8438326C96E090099B442 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED826B0129900905DE1 /* QuoteView.swift */; };
@@ -136,7 +141,12 @@
 		E64DA5B526AEB73300061284 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		E64DA5BC26AEBC7F00061284 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		E64DA5BE26AEBCC100061284 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
-		E64DA5C026AED48D00061284 /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		E64DA5C026AED48D00061284 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E658942327DDDCF100643364 /* WidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModel.swift; sourceTree = "<group>"; };
+		E658942527DDDCFE00643364 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		E658942727DDDD0800643364 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		E658942927DDDD1400643364 /* SmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallView.swift; sourceTree = "<group>"; };
+		E658942B27DDDD1D00643364 /* MediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumView.swift; sourceTree = "<group>"; };
 		E6615F87272D853D0058AE70 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionQuoteCell.swift; sourceTree = "<group>"; };
 		E6615F8B272D90AF0058AE70 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
@@ -240,7 +250,7 @@
 				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5A826AEA64A00061284 /* Views */,
 				E64DA5C226AEDEB300061284 /* View Models */,
-				E64DA5A926AEA65500061284 /* Data Managers */,
+				E64DA5A926AEA65500061284 /* Managers */,
 				E64DA5B926AEB78600061284 /* Helpers */,
 				E6D0E0A9271C62BB00C99CA6 /* Data */,
 				E619CC3A26AD5C1D00579CFD /* Preview Content */,
@@ -296,15 +306,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E64DA5A926AEA65500061284 /* Data Managers */ = {
+		E64DA5A926AEA65500061284 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				E64DA5C026AED48D00061284 /* NetworkCall.swift */,
+				E64DA5C026AED48D00061284 /* API.swift */,
 				E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */,
 				E64AD8242737EBB6004E0BE4 /* PurchaseService.swift */,
 				E6E294AC273FD30000677B95 /* SheetNavigator.swift */,
 			);
-			path = "Data Managers";
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		E64DA5AA26AEA68300061284 /* Designs */ = {
@@ -340,6 +350,16 @@
 				E69E4DDC273532BC00BE83F9 /* CollectionGridViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E658942D27DDDD5700643364 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E658942727DDDD0800643364 /* WidgetView.swift */,
+				E658942927DDDD1400643364 /* SmallView.swift */,
+				E658942B27DDDD1D00643364 /* MediumView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E6615F91272D94540058AE70 /* Collection */ = {
@@ -395,6 +415,9 @@
 			isa = PBXGroup;
 			children = (
 				E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */,
+				E658942327DDDCF100643364 /* WidgetModel.swift */,
+				E658942527DDDCFE00643364 /* Provider.swift */,
+				E658942D27DDDD5700643364 /* View */,
 				E6C8437626C96D820099B442 /* Assets.xcassets */,
 				E6C8437826C96D820099B442 /* Info.plist */,
 			);
@@ -599,7 +622,7 @@
 				E6C1CE3D272EDEDA00808529 /* OnboardSubViews.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Extensions.swift in Sources */,
 				E68CD74F26F0849200AFAD4C /* QotDViewModel.swift in Sources */,
-				E64DA5C126AED48D00061284 /* NetworkCall.swift in Sources */,
+				E64DA5C126AED48D00061284 /* API.swift in Sources */,
 				E6E294AD273FD30000677B95 /* SheetNavigator.swift in Sources */,
 				E6615F8C272D90AF0058AE70 /* Collection.swift in Sources */,
 				E640C50A26BEF38D002C8438 /* Event.swift in Sources */,
@@ -637,20 +660,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C843B126C97AE90099B442 /* SFSafariViewWrapper.swift in Sources */,
+				E658942427DDDCF100643364 /* WidgetModel.swift in Sources */,
+				E658942627DDDCFE00643364 /* Provider.swift in Sources */,
 				E6C8438726C96E090099B442 /* Event.swift in Sources */,
 				E6C8438326C96E090099B442 /* QuoteView.swift in Sources */,
 				E6C8438126C96E090099B442 /* TextViews.swift in Sources */,
+				E658942827DDDD0800643364 /* WidgetView.swift in Sources */,
 				E6C8439126C96E090099B442 /* Errors.swift in Sources */,
 				E6C8438A26C96E090099B442 /* Word.swift in Sources */,
 				E6C8438F26C96E090099B442 /* Extensions.swift in Sources */,
-				E6C8437F26C96E090099B442 /* NetworkCall.swift in Sources */,
+				E6C8437F26C96E090099B442 /* API.swift in Sources */,
 				E6C8438526C96E090099B442 /* Constants.swift in Sources */,
 				E6C8438426C96E090099B442 /* Alerts.swift in Sources */,
 				E68CD75026F0856900AFAD4C /* QotDViewModel.swift in Sources */,
 				E6C8438B26C96E090099B442 /* EventViewModel.swift in Sources */,
+				E658942C27DDDD1D00643364 /* MediumView.swift in Sources */,
 				E6C8438626C96E090099B442 /* WordViewModel.swift in Sources */,
 				E6C8438D26C96E090099B442 /* Quote.swift in Sources */,
 				E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */,
+				E658942A27DDDD1400643364 /* SmallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

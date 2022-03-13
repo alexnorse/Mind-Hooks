@@ -16,7 +16,7 @@ final class QotDViewModel: ObservableObject {
     init () { getQotD() }
     
     func getQotD() {
-        NetworkCall.shared.getQotD { [weak self] result in
+        API.shared.getQotD { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.sync {
