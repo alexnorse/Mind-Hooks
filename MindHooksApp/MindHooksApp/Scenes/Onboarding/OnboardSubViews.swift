@@ -14,9 +14,6 @@ struct OnboardSubViews: View {
             OnboardingFirst()
             OnboardingSecond()
             OnboardingThird()
-            PurchaseFirst()
-            PurchaseSecond()
-            PurchaseSuccess()
         }
     }
 }
@@ -65,57 +62,6 @@ struct OnboardingThird: View {
             VStack(alignment: .leading, spacing: 3) {
                 OnboardingBold(text: OnboardingHeads.third)
                 DescriptionText(text: OnboardingDescriptions.third)
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-
-struct PurchaseFirst: View {
-   
-     var body: some View {
-        HStack(spacing: UInumbers.spacing) {
-            OnboardingImage(name: "books.vertical.fill")
-            
-            VStack(alignment: .leading, spacing: 3) {
-                OnboardingBold(text: PurchaseHeads.first)
-                DescriptionText(text: PurchaseDescriptions.first)
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-
-struct PurchaseSecond: View {
-    
-     var body: some View {
-        HStack(spacing: UInumbers.spacing) {
-            OnboardingImage(name: "book.fill")
-            
-            VStack(alignment: .leading, spacing: 3) {
-                OnboardingBold(text: PurchaseHeads.second)
-                DescriptionText(text: PurchaseDescriptions.second)
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-
-struct PurchaseSuccess: View {
-    
-     var body: some View {
-        HStack(spacing: UInumbers.spacing) {
-            OnboardingImage(name: "checkmark.circle.fill")
-            
-            VStack(alignment: .leading, spacing: 3) {
-                OnboardingBold(text: PurchaseHeads.success)
-                DescriptionText(text: PurchaseDescriptions.success)
             }
             .padding()
         }

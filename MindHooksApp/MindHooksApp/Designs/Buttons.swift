@@ -11,9 +11,9 @@ struct Buttons: View {
     
     var body: some View {
         VStack {
-            OnboardingButton(label: "Get started")
-            LinkText(text: "See more")
-            CenteredLink(text: "See more")
+            OnboardingButton(label: "Button")
+            LinkText(text: "Button")
+            CenteredLink(text: "Button")
         }
     }
 }

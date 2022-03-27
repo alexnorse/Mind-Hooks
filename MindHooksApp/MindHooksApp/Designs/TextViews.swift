@@ -11,15 +11,15 @@ struct TextViews: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            CategoryText(text: "Quote of the day")
+            CategoryText(text: "Lorem Ipsum")
             AccentText(text: "Lorem Ipsum")
-            DescriptionText(text: "E. Hemingway")
-            DescriptionBold(text: "E. Hemingway")
-            OnboardingHeadline(text: "Welcome")
-            OnboardingBold(text: "Drive your mind")
-            NoteText(text: "Note line")
+            DescriptionText(text: "Lorem Ipsum")
+            DescriptionBold(text: "Lorem Ipsum")
+            OnboardingHeadline(text: "Lorem Ipsum")
+            OnboardingBold(text: "Lorem Ipsum")
+            NoteText(text: "Lorem Ipsum")
             WidgetBodyText(text: "Lorem Ipsum")
-            WidgetNoteText(text: "Da Vinci")
+            WidgetNoteText(text: "Lorem Ipsum")
         }
         .padding()
 
