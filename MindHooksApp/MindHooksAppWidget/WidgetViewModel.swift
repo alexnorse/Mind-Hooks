@@ -1,30 +1,28 @@
 //
-//  QotDViewModel.swift
+//  WidgetViewModel.swift
 //  MindHooksApp
 //
-//  Created by Alexandr L. on 9/14/21.
+//  Created by Alexandr on 3/27/22.
 //
 
 import SwiftUI
 
-final class QotDViewModel: ObservableObject {
+final class WidgetViewModel: ObservableObject {
      
-     @Published var quote: String = ""
-     @Published var author: String = ""
+     @Published var quote: Quote?
      @Published var alertItem: Alerts?
      
      init () { getQuote() }
      
      func getQuote() {
-          API.shared.fetchQuote { [weak self] result in
+          API.shared.fetchWidget { [weak self] result in
                guard let self = self else { return }
                
                DispatchQueue.main.sync {
                     switch result {
                          
                     case.success(let quote):
-                         self.quote = quote.quoteBody
-                         self.author = quote.quoteAuthor
+                         self.quote = quote
                          
                     case.failure(let error):
                          switch error {
@@ -45,4 +43,3 @@ final class QotDViewModel: ObservableObject {
           }
      }
 }
-
