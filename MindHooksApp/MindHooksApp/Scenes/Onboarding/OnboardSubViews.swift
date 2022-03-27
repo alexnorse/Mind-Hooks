@@ -7,71 +7,53 @@
 
 import SwiftUI
 
-struct OnboardSubViews: View {
-    
-    var body: some View {
-        VStack {
-            OnboardingFirst()
-            OnboardingSecond()
-            OnboardingThird()
-        }
-    }
+enum Onboarding: CaseIterable {
+     case first
+     case second
+     case third
 }
 
-
-struct OnboardingFirst: View {
-    
+struct OnboardingSub: View {
+     var number: Onboarding
+     
      var body: some View {
-        HStack(spacing: UInumbers.spacing) {
-            OnboardingImage(name: "cloud.sun.fill")
-            
-            VStack(alignment: .leading, spacing: 3) {
-                OnboardingBold(text: OnboardingHeads.first)
-                DescriptionText(text: OnboardingDescriptions.first)
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-
-struct OnboardingSecond: View {
-    
-     var body: some View {
-        HStack(spacing: UInumbers.spacing) {
-            OnboardingImage(name: "bolt.fill")
-            
-            VStack(alignment: .leading, spacing: 3) {
-                OnboardingBold(text: OnboardingHeads.second)
-                DescriptionText(text: OnboardingDescriptions.second)
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-
-struct OnboardingThird: View {
-    
-     var body: some View {
-        HStack(spacing: UInumbers.spacing) {
-            OnboardingImage(name: "quote.closing")
-            
-            VStack(alignment: .leading, spacing: 3) {
-                OnboardingBold(text: OnboardingHeads.third)
-                DescriptionText(text: OnboardingDescriptions.third)
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-
-struct OnboardSubViews_Previews: PreviewProvider {
-    static var previews: some View {
-        OnboardSubViews()
-    }
+          
+          switch number {
+          case .first:
+               HStack(spacing: UInumbers.spacing) {
+                    OnboardingImage(name: "cloud.sun.fill")
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                         OnboardingBold(text: OnboardingHeads.first)
+                         DescriptionText(text: OnboardingDescriptions.first)
+                    }
+                    .padding()
+               }
+               .padding()
+               
+          case .second:
+               HStack(spacing: UInumbers.spacing) {
+                    OnboardingImage(name: "bolt.fill")
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                         OnboardingBold(text: OnboardingHeads.second)
+                         DescriptionText(text: OnboardingDescriptions.second)
+                    }
+                    .padding()
+               }
+               .padding()
+               
+          case .third:
+               HStack(spacing: UInumbers.spacing) {
+                    OnboardingImage(name: "quote.closing")
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                         OnboardingBold(text: OnboardingHeads.third)
+                         DescriptionText(text: OnboardingDescriptions.third)
+                    }
+                    .padding()
+               }
+               .padding()
+          }
+     }
 }
