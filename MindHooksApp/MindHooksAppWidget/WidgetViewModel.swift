@@ -12,9 +12,9 @@ final class WidgetViewModel: ObservableObject {
      @Published var quote: Quote?
      @Published var alertItem: Alerts?
      
-     init () { getQuote() }
+     init () { getWidget() }
      
-     func getQuote() {
+     func getWidget() {
           API.shared.fetchWidget { [weak self] result in
                guard let self = self else { return }
                

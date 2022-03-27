@@ -12,18 +12,22 @@ struct MediumView : View {
      var entry: ModelEntry
      
      var body: some View {
-          HStack {
-               Image("hooksWhite")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: ImageSizes.widgetMedium, height: ImageSizes.widgetMedium)
+          ZStack(alignment: .center) {
+               Color("Orange")
                
-               VStack(alignment: .leading, spacing: 5) {
-                    WidgetBodyText(text: entry.quote.content)
-                    WidgetNoteText(text: entry.quote.author)
+               HStack {
+                    Image("hooksWhite")
+                         .resizable()
+                         .scaledToFit()
+                         .frame(width: ImageSizes.widgetMedium, height: ImageSizes.widgetMedium)
+                    
+                    VStack(alignment: .leading, spacing: 5) {
+                         WidgetBodyText(text: entry.quote.content)
+                         WidgetNoteText(text: entry.quote.author)
+                    }
                }
+               .padding(.all)
           }
-          .padding(.all)
      }
 }
 
