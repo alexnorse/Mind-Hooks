@@ -17,7 +17,7 @@ final class EventViewModel: ObservableObject {
     init () { getEvent() }
     
     func getEvent() {
-        API.shared.getEvent { [weak self] result in
+        API.shared.fetchEvent { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.sync {

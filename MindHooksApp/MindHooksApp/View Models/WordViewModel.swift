@@ -16,7 +16,7 @@ final class WordViewModel: ObservableObject {
     init () { getWord() }
     
     func getWord() {
-        API.shared.getWord { [weak self] result in
+        API.shared.fetchWord { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.sync {
