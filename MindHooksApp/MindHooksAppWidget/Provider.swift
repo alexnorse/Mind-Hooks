@@ -18,16 +18,21 @@ struct Provider: TimelineProvider {
      
      
      func getSnapshot(in context: Context, completion: @escaping (ModelEntry) -> ()) {
-          let entry = ModelEntry(date: Date(), quote: Quote.placeholderQuote)
-          completion(entry)
+          Task {
+               let date = Date()
+               let entry = ModelEntry(date: date, quote: viewModel.quote ?? Quote.placeholderQuote)
+               completion(entry)
+          }
      }
      
      
      func getTimeline(in context: Context, completion: @escaping (Timeline<ModelEntry>) -> ()) {
-          let date = Date()
-          let data = ModelEntry(date: date, quote: viewModel.quote ?? Quote.placeholderQuote)
-          let nextUpdate = Calendar.current.date(byAdding: .hour, value: 6, to: date)
-          let timeline = Timeline(entries: [data], policy: .after(nextUpdate!))
-          completion(timeline)
+          Task {
+               let date = Date()
+               let data = ModelEntry(date: date, quote: viewModel.quote ?? Quote.placeholderQuote)
+               let nextUpdate = Calendar.current.date(byAdding: .hour, value: 6, to: date)
+               let timeline = Timeline(entries: [data], policy: .after(nextUpdate!))
+               completion(timeline)
+          }
      }
 }

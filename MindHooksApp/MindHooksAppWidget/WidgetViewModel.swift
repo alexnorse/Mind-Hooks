@@ -18,7 +18,7 @@ final class WidgetViewModel: ObservableObject {
           API.shared.fetchWidget { [weak self] result in
                guard let self = self else { return }
                
-               DispatchQueue.main.sync {
+               DispatchQueue.main.async {
                     switch result {
                          
                     case.success(let quote):
