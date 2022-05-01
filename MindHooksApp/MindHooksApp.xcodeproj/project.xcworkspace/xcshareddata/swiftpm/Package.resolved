@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/RevenueCat/purchases-ios.git",
       "state" : {
-        "revision" : "12e5ee43bfe3ccdf74cbd9746afd98301a277040",
-        "version" : "3.12.8"
+        "revision" : "afc44aa3ee7d35cb19760d63d13f4dabe58a89a4",
+        "version" : "3.14.2"
       }
     }
   ],

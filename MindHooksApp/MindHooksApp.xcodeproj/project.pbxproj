@@ -57,6 +57,7 @@
 		E6BA5DA927F09FE4004D5CC8 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* EventModel.swift */; };
 		E6C1CE3A272ED90700808529 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1CE39272ED90700808529 /* ImageViews.swift */; };
 		E6C1CE3D272EDEDA00808529 /* OnboardSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1CE3C272EDEDA00808529 /* OnboardSubViews.swift */; };
+		E6C5286E281EC81400BB288E /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942527DDDCFE00643364 /* Provider.swift */; };
 		E6C8437126C96D7E0099B442 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E669D0D626C4003900234E4E /* WidgetKit.framework */; };
 		E6C8437226C96D7E0099B442 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E669D0D826C4003900234E4E /* SwiftUI.framework */; };
 		E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */; };
@@ -615,6 +616,7 @@
 				E649AED926B0129900905DE1 /* QuoteView.swift in Sources */,
 				E64AD8252737EBB7004E0BE4 /* PurchaseService.swift in Sources */,
 				E6615F93272D948A0058AE70 /* QuoteList.swift in Sources */,
+				E6C5286E281EC81400BB288E /* Provider.swift in Sources */,
 				E6615F90272D941E0058AE70 /* CollectionView.swift in Sources */,
 				E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */,
 				E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */,
