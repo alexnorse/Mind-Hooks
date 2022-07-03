@@ -23,6 +23,11 @@ platform :ios do
 
   desc "App export"
   lane :export_app do
-    gym()
+    gym(
+      project: "MindHooksApp.xcodeproj",
+      scheme: "MindHooksApp",
+      clean: true,
+      output_name: "ReleaseApp.ipa"
+    )
   end
 end
