@@ -37,12 +37,10 @@ struct MainView: View {
                     Image(systemName: "calendar.circle.fill")
                     Text("Today") }
                
-               #if MindHooksApp
                CollectionView()
                .tabItem {
                     Image(systemName: "book.circle.fill")
                     Text("Collections") }
-               #endif
           }
      }
 }

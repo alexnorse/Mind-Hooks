@@ -6,16 +6,12 @@
 //
 
 import SwiftUI
-#if MindHooksApp
 import Purchases
-#endif
 
 @main
 struct MindHooksAppApp: App {
      
-     #if MindHooksApp
      init() { setupRevenueCat() }
-     #endif
      
      @AppStorage("isOnboarding") var isOnboarding = true
      
@@ -29,10 +25,8 @@ struct MindHooksAppApp: App {
           }
      }
      
-     #if MindHooksApp
      func setupRevenueCat() {
           Purchases.logLevel = .debug
           Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe", appUserID: nil, observerMode: true)
      }
-     #endif
 }
