@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@main
 struct MindHooks_LightApp: App {
     var body: some Scene {
         WindowGroup {

@@ -6,28 +6,33 @@
 //
 
 import SwiftUI
+#if MindHooksAppApp
 import Purchases
+#endif
 
 @main
 struct MindHooksAppApp: App {
-    
-    init() { setupRevenueCat() }
-    @AppStorage("isOnboarding") var isOnboarding = true
-    
-    
-    var body: some Scene {
-        WindowGroup {
-            if isOnboarding {
-                OnboardingView()
-            } else {
-                MainView()
-            }
-        }
-    }
-    
-    
-    func setupRevenueCat() {
-        Purchases.logLevel = .debug
-        Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe", appUserID: nil, observerMode: true)
-    }
+     
+     #if MindHooksAppApp
+     init() { setupRevenueCat() }
+     #endif
+     
+     @AppStorage("isOnboarding") var isOnboarding = true
+     
+     var body: some Scene {
+          WindowGroup {
+               if isOnboarding {
+                    OnboardingView()
+               } else {
+                    MainView()
+               }
+          }
+     }
+     
+     #if MindHooksAppApp
+     func setupRevenueCat() {
+          Purchases.logLevel = .debug
+          Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe", appUserID: nil, observerMode: true)
+     }
+     #endif
 }

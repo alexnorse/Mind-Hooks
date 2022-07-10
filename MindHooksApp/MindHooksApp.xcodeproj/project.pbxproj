@@ -73,9 +73,7 @@
 		E6B67D7F287ADCA5003B78F1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* API.swift */; };
 		E6B67D80287ADCAD003B78F1 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AF26AEAACA00061284 /* TextViews.swift */; };
 		E6B67D81287ADCAD003B78F1 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1CE39272ED90700808529 /* ImageViews.swift */; };
-		E6B67D82287ADCAD003B78F1 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F87272D853D0058AE70 /* CollectionCell.swift */; };
 		E6B67D83287ADCAD003B78F1 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A3A272E8F650007F225 /* Buttons.swift */; };
-		E6B67D84287ADCAD003B78F1 /* CollectionQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */; };
 		E6B67D85287ADCB3003B78F1 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
 		E6B67D86287ADCB3003B78F1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E6B67D87287ADCB3003B78F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
@@ -765,9 +763,7 @@
 				E6B67D67287ADBD1003B78F1 /* ContentView.swift in Sources */,
 				E6B67D78287ADC8F003B78F1 /* EventModel.swift in Sources */,
 				E6B67D74287ADC8F003B78F1 /* QuoteViewModel.swift in Sources */,
-				E6B67D84287ADCAD003B78F1 /* CollectionQuoteCell.swift in Sources */,
 				E6B67D76287ADC8F003B78F1 /* WordView.swift in Sources */,
-				E6B67D82287ADCAD003B78F1 /* CollectionCell.swift in Sources */,
 				E6B67D72287ADC78003B78F1 /* MainView.swift in Sources */,
 				E6B67D7D287ADC8F003B78F1 /* EventViewModel.swift in Sources */,
 				E6B67D89287ADCD9003B78F1 /* MindHooksAppApp.swift in Sources */,
@@ -971,6 +967,7 @@
 				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1100,6 +1097,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -1111,9 +1110,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexnorse.MindHooks-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1132,6 +1131,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -1144,7 +1145,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
