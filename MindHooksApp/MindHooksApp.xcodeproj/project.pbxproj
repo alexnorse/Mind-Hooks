@@ -51,6 +51,36 @@
 		E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
 		E6B2E20F277F47EB00ACB374 /* Paywall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2E20E277F47EA00ACB374 /* Paywall.swift */; };
 		E6B2E212277F496C00ACB374 /* ThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2E211277F496C00ACB374 /* ThanksView.swift */; };
+		E6B67D65287ADBD1003B78F1 /* MindHooks_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B67D64287ADBD1003B78F1 /* MindHooks_LightApp.swift */; };
+		E6B67D67287ADBD1003B78F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B67D66287ADBD1003B78F1 /* ContentView.swift */; };
+		E6B67D69287ADBD3003B78F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B67D68287ADBD3003B78F1 /* Assets.xcassets */; };
+		E6B67D6C287ADBD3003B78F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B67D6B287ADBD3003B78F1 /* Preview Assets.xcassets */; };
+		E6B67D70287ADC56003B78F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
+		E6B67D71287ADC6B003B78F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
+		E6B67D72287ADC78003B78F1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3626AD5C1A00579CFD /* MainView.swift */; };
+		E6B67D73287ADC8F003B78F1 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* WordModel.swift */; };
+		E6B67D74287ADC8F003B78F1 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QuoteViewModel.swift */; };
+		E6B67D75287ADC8F003B78F1 /* OnboardSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1CE3C272EDEDA00808529 /* OnboardSubViews.swift */; };
+		E6B67D76287ADC8F003B78F1 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED626B0126F00905DE1 /* WordView.swift */; };
+		E6B67D77287ADC8F003B78F1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A36272E89DF0007F225 /* OnboardingView.swift */; };
+		E6B67D78287ADC8F003B78F1 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* EventModel.swift */; };
+		E6B67D79287ADC8F003B78F1 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50D26BEF584002C8438 /* EventView.swift */; };
+		E6B67D7A287ADC8F003B78F1 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B02E1326B980F6006B45F7 /* WordViewModel.swift */; };
+		E6B67D7B287ADC8F003B78F1 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649AED826B0129900905DE1 /* QuoteView.swift */; };
+		E6B67D7C287ADC8F003B78F1 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B526AEB73300061284 /* QuoteModel.swift */; };
+		E6B67D7D287ADC8F003B78F1 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50B26BEF484002C8438 /* EventViewModel.swift */; };
+		E6B67D7E287ADCA5003B78F1 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
+		E6B67D7F287ADCA5003B78F1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5C026AED48D00061284 /* API.swift */; };
+		E6B67D80287ADCAD003B78F1 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AF26AEAACA00061284 /* TextViews.swift */; };
+		E6B67D81287ADCAD003B78F1 /* ImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1CE39272ED90700808529 /* ImageViews.swift */; };
+		E6B67D82287ADCAD003B78F1 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F87272D853D0058AE70 /* CollectionCell.swift */; };
+		E6B67D83287ADCAD003B78F1 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A54A3A272E8F650007F225 /* Buttons.swift */; };
+		E6B67D84287ADCAD003B78F1 /* CollectionQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */; };
+		E6B67D85287ADCB3003B78F1 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
+		E6B67D86287ADCB3003B78F1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
+		E6B67D87287ADCB3003B78F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
+		E6B67D88287ADCB3003B78F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Extensions.swift */; };
+		E6B67D89287ADCD9003B78F1 /* MindHooksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */; };
 		E6BA5DA327F09CA4004D5CC8 /* PaywallSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA5DA227F09CA4004D5CC8 /* PaywallSubViews.swift */; };
 		E6BA5DA727F09FB3004D5CC8 /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942327DDDCF100643364 /* WidgetModel.swift */; };
 		E6BA5DA827F09FD7004D5CC8 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* WordModel.swift */; };
@@ -168,6 +198,11 @@
 		E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		E6B2E20E277F47EA00ACB374 /* Paywall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paywall.swift; sourceTree = "<group>"; };
 		E6B2E211277F496C00ACB374 /* ThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksView.swift; sourceTree = "<group>"; };
+		E6B67D62287ADBD1003B78F1 /* MindHooks Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindHooks Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B67D64287ADBD1003B78F1 /* MindHooks_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooks_LightApp.swift; sourceTree = "<group>"; };
+		E6B67D66287ADBD1003B78F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6B67D68287ADBD3003B78F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6B67D6B287ADBD3003B78F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6BA5DA227F09CA4004D5CC8 /* PaywallSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallSubViews.swift; sourceTree = "<group>"; };
 		E6C1CE39272ED90700808529 /* ImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
 		E6C1CE3C272EDEDA00808529 /* OnboardSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSubViews.swift; sourceTree = "<group>"; };
@@ -204,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6B67D5F287ADBD1003B78F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6C8436D26C96D7E0099B442 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +265,7 @@
 				E6C8437326C96D7E0099B442 /* MindHooksAppWidget */,
 				E619CC4526AD5C1E00579CFD /* MindHooksAppTests */,
 				E619CC5026AD5C1E00579CFD /* MindHooksAppUITests */,
+				E6B67D63287ADBD1003B78F1 /* MindHooks Light */,
 				E669D0D526C4003900234E4E /* Frameworks */,
 				E619CC3226AD5C1A00579CFD /* Products */,
 			);
@@ -235,6 +278,7 @@
 				E619CC4226AD5C1E00579CFD /* MindHooksAppTests.xctest */,
 				E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */,
 				E6C8437026C96D7E0099B442 /* MindHooksAppWidgetExtension.appex */,
+				E6B67D62287ADBD1003B78F1 /* MindHooks Light.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,6 +419,25 @@
 			path = Paywall;
 			sourceTree = "<group>";
 		};
+		E6B67D63287ADBD1003B78F1 /* MindHooks Light */ = {
+			isa = PBXGroup;
+			children = (
+				E6B67D64287ADBD1003B78F1 /* MindHooks_LightApp.swift */,
+				E6B67D66287ADBD1003B78F1 /* ContentView.swift */,
+				E6B67D68287ADBD3003B78F1 /* Assets.xcassets */,
+				E6B67D6A287ADBD3003B78F1 /* Preview Content */,
+			);
+			path = "MindHooks Light";
+			sourceTree = "<group>";
+		};
+		E6B67D6A287ADBD3003B78F1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E6B67D6B287ADBD3003B78F1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		E6BA5DA427F09D75004D5CC8 /* Quote */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,6 +560,23 @@
 			productReference = E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E6B67D61287ADBD1003B78F1 /* MindHooks Light */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B67D6F287ADBD3003B78F1 /* Build configuration list for PBXNativeTarget "MindHooks Light" */;
+			buildPhases = (
+				E6B67D5E287ADBD1003B78F1 /* Sources */,
+				E6B67D5F287ADBD1003B78F1 /* Frameworks */,
+				E6B67D60287ADBD1003B78F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MindHooks Light";
+			productName = "MindHooks Light";
+			productReference = E6B67D62287ADBD1003B78F1 /* MindHooks Light.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E6C8436F26C96D7E0099B442 /* MindHooksAppWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6C8437E26C96D820099B442 /* Build configuration list for PBXNativeTarget "MindHooksAppWidgetExtension" */;
@@ -520,7 +600,7 @@
 		E619CC2926AD5C1A00579CFD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					E619CC3026AD5C1A00579CFD = {
@@ -533,6 +613,9 @@
 					E619CC4C26AD5C1E00579CFD = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = E619CC3026AD5C1A00579CFD;
+					};
+					E6B67D61287ADBD1003B78F1 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 					E6C8436F26C96D7E0099B442 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -556,9 +639,10 @@
 			projectRoot = "";
 			targets = (
 				E619CC3026AD5C1A00579CFD /* MindHooksApp */,
+				E6B67D61287ADBD1003B78F1 /* MindHooks Light */,
+				E6C8436F26C96D7E0099B442 /* MindHooksAppWidgetExtension */,
 				E619CC4126AD5C1E00579CFD /* MindHooksAppTests */,
 				E619CC4C26AD5C1E00579CFD /* MindHooksAppUITests */,
-				E6C8436F26C96D7E0099B442 /* MindHooksAppWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -587,6 +671,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B67D60287ADBD1003B78F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B67D6C287ADBD3003B78F1 /* Preview Assets.xcassets in Resources */,
+				E6B67D71287ADC6B003B78F1 /* LaunchScreen.storyboard in Resources */,
+				E6B67D70287ADC56003B78F1 /* Assets.xcassets in Resources */,
+				E6B67D69287ADBD3003B78F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +755,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				E619CC5226AD5C1E00579CFD /* MindHooksAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B67D5E287ADBD1003B78F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B67D67287ADBD1003B78F1 /* ContentView.swift in Sources */,
+				E6B67D78287ADC8F003B78F1 /* EventModel.swift in Sources */,
+				E6B67D74287ADC8F003B78F1 /* QuoteViewModel.swift in Sources */,
+				E6B67D84287ADCAD003B78F1 /* CollectionQuoteCell.swift in Sources */,
+				E6B67D76287ADC8F003B78F1 /* WordView.swift in Sources */,
+				E6B67D82287ADCAD003B78F1 /* CollectionCell.swift in Sources */,
+				E6B67D72287ADC78003B78F1 /* MainView.swift in Sources */,
+				E6B67D7D287ADC8F003B78F1 /* EventViewModel.swift in Sources */,
+				E6B67D89287ADCD9003B78F1 /* MindHooksAppApp.swift in Sources */,
+				E6B67D75287ADC8F003B78F1 /* OnboardSubViews.swift in Sources */,
+				E6B67D80287ADCAD003B78F1 /* TextViews.swift in Sources */,
+				E6B67D7A287ADC8F003B78F1 /* WordViewModel.swift in Sources */,
+				E6B67D7B287ADC8F003B78F1 /* QuoteView.swift in Sources */,
+				E6B67D77287ADC8F003B78F1 /* OnboardingView.swift in Sources */,
+				E6B67D65287ADBD1003B78F1 /* MindHooks_LightApp.swift in Sources */,
+				E6B67D73287ADC8F003B78F1 /* WordModel.swift in Sources */,
+				E6B67D79287ADC8F003B78F1 /* EventView.swift in Sources */,
+				E6B67D83287ADCAD003B78F1 /* Buttons.swift in Sources */,
+				E6B67D81287ADCAD003B78F1 /* ImageViews.swift in Sources */,
+				E6B67D86287ADCB3003B78F1 /* Errors.swift in Sources */,
+				E6B67D7E287ADCA5003B78F1 /* SFSafariViewWrapper.swift in Sources */,
+				E6B67D88287ADCB3003B78F1 /* Extensions.swift in Sources */,
+				E6B67D7F287ADCA5003B78F1 /* API.swift in Sources */,
+				E6B67D85287ADCB3003B78F1 /* Alerts.swift in Sources */,
+				E6B67D7C287ADC8F003B78F1 /* QuoteModel.swift in Sources */,
+				E6B67D87287ADCB3003B78F1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -957,6 +1085,69 @@
 			};
 			name = Release;
 		};
+		E6B67D6D287ADBD3003B78F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MindHooks Light/Preview Content\"";
+				DEVELOPMENT_TEAM = F8RY8W2DY6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexnorse.MindHooks-Light";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6B67D6E287ADBD3003B78F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MindHooks Light/Preview Content\"";
+				DEVELOPMENT_TEAM = F8RY8W2DY6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexnorse.MindHooks-Light";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E6C8437C26C96D820099B442 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1038,6 +1229,15 @@
 			buildConfigurations = (
 				E619CC5D26AD5C1E00579CFD /* Debug */,
 				E619CC5E26AD5C1E00579CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B67D6F287ADBD3003B78F1 /* Build configuration list for PBXNativeTarget "MindHooks Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B67D6D287ADBD3003B78F1 /* Debug */,
+				E6B67D6E287ADBD3003B78F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
