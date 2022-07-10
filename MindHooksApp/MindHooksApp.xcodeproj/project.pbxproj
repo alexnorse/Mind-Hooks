@@ -11,8 +11,6 @@
 		E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3626AD5C1A00579CFD /* MainView.swift */; };
 		E619CC3926AD5C1D00579CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
 		E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */; };
-		E619CC4726AD5C1E00579CFD /* MindHooksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */; };
-		E619CC5226AD5C1E00579CFD /* MindHooksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */; };
 		E6224AAD2736D0FF005669A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6224AAC2736D0FF005669A7 /* StoreKit.framework */; };
 		E6224AB02736E14B005669A7 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = E6224AAF2736E14B005669A7 /* Purchases */; };
 		E640C50A26BEF38D002C8438 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640C50926BEF38D002C8438 /* EventModel.swift */; };
@@ -51,13 +49,10 @@
 		E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
 		E6B2E20F277F47EB00ACB374 /* Paywall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2E20E277F47EA00ACB374 /* Paywall.swift */; };
 		E6B2E212277F496C00ACB374 /* ThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2E211277F496C00ACB374 /* ThanksView.swift */; };
-		E6B67D65287ADBD1003B78F1 /* MindHooks_LightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B67D64287ADBD1003B78F1 /* MindHooks_LightApp.swift */; };
-		E6B67D67287ADBD1003B78F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B67D66287ADBD1003B78F1 /* ContentView.swift */; };
 		E6B67D69287ADBD3003B78F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B67D68287ADBD3003B78F1 /* Assets.xcassets */; };
 		E6B67D6C287ADBD3003B78F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6B67D6B287ADBD3003B78F1 /* Preview Assets.xcassets */; };
 		E6B67D70287ADC56003B78F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
 		E6B67D71287ADC6B003B78F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */; };
-		E6B67D72287ADC78003B78F1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3626AD5C1A00579CFD /* MainView.swift */; };
 		E6B67D73287ADC8F003B78F1 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* WordModel.swift */; };
 		E6B67D74287ADC8F003B78F1 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CD74E26F0849200AFAD4C /* QuoteViewModel.swift */; };
 		E6B67D75287ADC8F003B78F1 /* OnboardSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1CE3C272EDEDA00808529 /* OnboardSubViews.swift */; };
@@ -79,6 +74,7 @@
 		E6B67D87287ADCB3003B78F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
 		E6B67D88287ADCB3003B78F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Extensions.swift */; };
 		E6B67D89287ADCD9003B78F1 /* MindHooksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */; };
+		E6B67D8C287AE87E003B78F1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619CC3626AD5C1A00579CFD /* MainView.swift */; };
 		E6BA5DA327F09CA4004D5CC8 /* PaywallSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA5DA227F09CA4004D5CC8 /* PaywallSubViews.swift */; };
 		E6BA5DA727F09FB3004D5CC8 /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942327DDDCF100643364 /* WidgetModel.swift */; };
 		E6BA5DA827F09FD7004D5CC8 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* WordModel.swift */; };
@@ -106,20 +102,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E619CC4326AD5C1E00579CFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E619CC2926AD5C1A00579CFD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E619CC3026AD5C1A00579CFD;
-			remoteInfo = MindHooksApp;
-		};
-		E619CC4E26AD5C1E00579CFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E619CC2926AD5C1A00579CFD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E619CC3026AD5C1A00579CFD;
-			remoteInfo = MindHooksApp;
-		};
 		E6C8437926C96D820099B442 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E619CC2926AD5C1A00579CFD /* Project object */;
@@ -150,12 +132,6 @@
 		E619CC3826AD5C1D00579CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E619CC3D26AD5C1D00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E619CC4226AD5C1E00579CFD /* MindHooksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindHooksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppTests.swift; sourceTree = "<group>"; };
-		E619CC4826AD5C1E00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindHooksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooksAppUITests.swift; sourceTree = "<group>"; };
-		E619CC5326AD5C1E00579CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6224AAC2736D0FF005669A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E640C50926BEF38D002C8438 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		E640C50B26BEF484002C8438 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
@@ -196,9 +172,7 @@
 		E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		E6B2E20E277F47EA00ACB374 /* Paywall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paywall.swift; sourceTree = "<group>"; };
 		E6B2E211277F496C00ACB374 /* ThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksView.swift; sourceTree = "<group>"; };
-		E6B67D62287ADBD1003B78F1 /* MindHooks Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MindHooks Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6B67D64287ADBD1003B78F1 /* MindHooks_LightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindHooks_LightApp.swift; sourceTree = "<group>"; };
-		E6B67D66287ADBD1003B78F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E6B67D62287ADBD1003B78F1 /* Mind Hooks Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mind Hooks Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B67D68287ADBD3003B78F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6B67D6B287ADBD3003B78F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6BA5DA227F09CA4004D5CC8 /* PaywallSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallSubViews.swift; sourceTree = "<group>"; };
@@ -220,20 +194,6 @@
 			files = (
 				E6224AAD2736D0FF005669A7 /* StoreKit.framework in Frameworks */,
 				E6224AB02736E14B005669A7 /* Purchases in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E619CC3F26AD5C1E00579CFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E619CC4A26AD5C1E00579CFD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +221,6 @@
 			children = (
 				E619CC3326AD5C1A00579CFD /* MindHooksApp */,
 				E6C8437326C96D7E0099B442 /* MindHooksAppWidget */,
-				E619CC4526AD5C1E00579CFD /* MindHooksAppTests */,
-				E619CC5026AD5C1E00579CFD /* MindHooksAppUITests */,
 				E6B67D63287ADBD1003B78F1 /* MindHooks Light */,
 				E669D0D526C4003900234E4E /* Frameworks */,
 				E619CC3226AD5C1A00579CFD /* Products */,
@@ -273,10 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				E619CC3126AD5C1A00579CFD /* MindHooksApp.app */,
-				E619CC4226AD5C1E00579CFD /* MindHooksAppTests.xctest */,
-				E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */,
 				E6C8437026C96D7E0099B442 /* MindHooksAppWidgetExtension.appex */,
-				E6B67D62287ADBD1003B78F1 /* MindHooks Light.app */,
+				E6B67D62287ADBD1003B78F1 /* Mind Hooks Light.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,24 +262,6 @@
 				E619CC3B26AD5C1D00579CFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E619CC4526AD5C1E00579CFD /* MindHooksAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				E619CC4626AD5C1E00579CFD /* MindHooksAppTests.swift */,
-				E619CC4826AD5C1E00579CFD /* Info.plist */,
-			);
-			path = MindHooksAppTests;
-			sourceTree = "<group>";
-		};
-		E619CC5026AD5C1E00579CFD /* MindHooksAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E619CC5126AD5C1E00579CFD /* MindHooksAppUITests.swift */,
-				E619CC5326AD5C1E00579CFD /* Info.plist */,
-			);
-			path = MindHooksAppUITests;
 			sourceTree = "<group>";
 		};
 		E64DA5A826AEA64A00061284 /* Scenes */ = {
@@ -420,8 +358,6 @@
 		E6B67D63287ADBD1003B78F1 /* MindHooks Light */ = {
 			isa = PBXGroup;
 			children = (
-				E6B67D64287ADBD1003B78F1 /* MindHooks_LightApp.swift */,
-				E6B67D66287ADBD1003B78F1 /* ContentView.swift */,
 				E6B67D68287ADBD3003B78F1 /* Assets.xcassets */,
 				E6B67D6A287ADBD3003B78F1 /* Preview Content */,
 			);
@@ -522,42 +458,6 @@
 			productReference = E619CC3126AD5C1A00579CFD /* MindHooksApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E619CC4126AD5C1E00579CFD /* MindHooksAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E619CC5926AD5C1E00579CFD /* Build configuration list for PBXNativeTarget "MindHooksAppTests" */;
-			buildPhases = (
-				E619CC3E26AD5C1E00579CFD /* Sources */,
-				E619CC3F26AD5C1E00579CFD /* Frameworks */,
-				E619CC4026AD5C1E00579CFD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E619CC4426AD5C1E00579CFD /* PBXTargetDependency */,
-			);
-			name = MindHooksAppTests;
-			productName = MindHooksAppTests;
-			productReference = E619CC4226AD5C1E00579CFD /* MindHooksAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E619CC4C26AD5C1E00579CFD /* MindHooksAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E619CC5C26AD5C1E00579CFD /* Build configuration list for PBXNativeTarget "MindHooksAppUITests" */;
-			buildPhases = (
-				E619CC4926AD5C1E00579CFD /* Sources */,
-				E619CC4A26AD5C1E00579CFD /* Frameworks */,
-				E619CC4B26AD5C1E00579CFD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E619CC4F26AD5C1E00579CFD /* PBXTargetDependency */,
-			);
-			name = MindHooksAppUITests;
-			productName = MindHooksAppUITests;
-			productReference = E619CC4D26AD5C1E00579CFD /* MindHooksAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		E6B67D61287ADBD1003B78F1 /* MindHooks Light */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6B67D6F287ADBD3003B78F1 /* Build configuration list for PBXNativeTarget "MindHooks Light" */;
@@ -572,7 +472,7 @@
 			);
 			name = "MindHooks Light";
 			productName = "MindHooks Light";
-			productReference = E6B67D62287ADBD1003B78F1 /* MindHooks Light.app */;
+			productReference = E6B67D62287ADBD1003B78F1 /* Mind Hooks Light.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E6C8436F26C96D7E0099B442 /* MindHooksAppWidgetExtension */ = {
@@ -604,14 +504,6 @@
 					E619CC3026AD5C1A00579CFD = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					E619CC4126AD5C1E00579CFD = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = E619CC3026AD5C1A00579CFD;
-					};
-					E619CC4C26AD5C1E00579CFD = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = E619CC3026AD5C1A00579CFD;
-					};
 					E6B67D61287ADBD1003B78F1 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -639,8 +531,6 @@
 				E619CC3026AD5C1A00579CFD /* MindHooksApp */,
 				E6B67D61287ADBD1003B78F1 /* MindHooks Light */,
 				E6C8436F26C96D7E0099B442 /* MindHooksAppWidgetExtension */,
-				E619CC4126AD5C1E00579CFD /* MindHooksAppTests */,
-				E619CC4C26AD5C1E00579CFD /* MindHooksAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -655,20 +545,6 @@
 				E619CC3C26AD5C1D00579CFD /* Preview Assets.xcassets in Resources */,
 				E619CC3926AD5C1D00579CFD /* Assets.xcassets in Resources */,
 				E6D0E0AB271C62D500C99CA6 /* content.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E619CC4026AD5C1E00579CFD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E619CC4B26AD5C1E00579CFD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,39 +616,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E619CC3E26AD5C1E00579CFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E619CC4726AD5C1E00579CFD /* MindHooksAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E619CC4926AD5C1E00579CFD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E619CC5226AD5C1E00579CFD /* MindHooksAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6B67D5E287ADBD1003B78F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B67D67287ADBD1003B78F1 /* ContentView.swift in Sources */,
 				E6B67D78287ADC8F003B78F1 /* EventModel.swift in Sources */,
 				E6B67D74287ADC8F003B78F1 /* QuoteViewModel.swift in Sources */,
 				E6B67D76287ADC8F003B78F1 /* WordView.swift in Sources */,
-				E6B67D72287ADC78003B78F1 /* MainView.swift in Sources */,
 				E6B67D7D287ADC8F003B78F1 /* EventViewModel.swift in Sources */,
 				E6B67D89287ADCD9003B78F1 /* MindHooksAppApp.swift in Sources */,
 				E6B67D75287ADC8F003B78F1 /* OnboardSubViews.swift in Sources */,
 				E6B67D80287ADCAD003B78F1 /* TextViews.swift in Sources */,
+				E6B67D8C287AE87E003B78F1 /* MainView.swift in Sources */,
 				E6B67D7A287ADC8F003B78F1 /* WordViewModel.swift in Sources */,
 				E6B67D7B287ADC8F003B78F1 /* QuoteView.swift in Sources */,
 				E6B67D77287ADC8F003B78F1 /* OnboardingView.swift in Sources */,
-				E6B67D65287ADBD1003B78F1 /* MindHooks_LightApp.swift in Sources */,
 				E6B67D73287ADC8F003B78F1 /* WordModel.swift in Sources */,
 				E6B67D79287ADC8F003B78F1 /* EventView.swift in Sources */,
 				E6B67D83287ADCAD003B78F1 /* Buttons.swift in Sources */,
@@ -813,16 +671,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E619CC4426AD5C1E00579CFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E619CC3026AD5C1A00579CFD /* MindHooksApp */;
-			targetProxy = E619CC4326AD5C1E00579CFD /* PBXContainerItemProxy */;
-		};
-		E619CC4F26AD5C1E00579CFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E619CC3026AD5C1A00579CFD /* MindHooksApp */;
-			targetProxy = E619CC4E26AD5C1E00579CFD /* PBXContainerItemProxy */;
-		};
 		E6C8437A26C96D820099B442 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E6C8436F26C96D7E0099B442 /* MindHooksAppWidgetExtension */;
@@ -998,90 +846,6 @@
 			};
 			name = Release;
 		};
-		E619CC5A26AD5C1E00579CFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8RY8W2DY6;
-				INFOPLIST_FILE = MindHooksAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindHooksApp.app/MindHooksApp";
-			};
-			name = Debug;
-		};
-		E619CC5B26AD5C1E00579CFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8RY8W2DY6;
-				INFOPLIST_FILE = MindHooksAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindHooksApp.app/MindHooksApp";
-			};
-			name = Release;
-		};
-		E619CC5D26AD5C1E00579CFD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8RY8W2DY6;
-				INFOPLIST_FILE = MindHooksAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MindHooksApp;
-			};
-			name = Debug;
-		};
-		E619CC5E26AD5C1E00579CFD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8RY8W2DY6;
-				INFOPLIST_FILE = MindHooksAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MindHooksApp;
-			};
-			name = Release;
-		};
 		E6B67D6D287ADBD3003B78F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1108,7 +872,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexnorse.MindHooks-Light";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mind Hooks Light";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
@@ -1142,7 +906,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexnorse.MindHooks-Light";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mind Hooks Light";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1212,24 +976,6 @@
 			buildConfigurations = (
 				E619CC5726AD5C1E00579CFD /* Debug */,
 				E619CC5826AD5C1E00579CFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E619CC5926AD5C1E00579CFD /* Build configuration list for PBXNativeTarget "MindHooksAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E619CC5A26AD5C1E00579CFD /* Debug */,
-				E619CC5B26AD5C1E00579CFD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E619CC5C26AD5C1E00579CFD /* Build configuration list for PBXNativeTarget "MindHooksAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E619CC5D26AD5C1E00579CFD /* Debug */,
-				E619CC5E26AD5C1E00579CFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

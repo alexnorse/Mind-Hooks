@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-#if MindHooksAppApp
+#if MindHooksApp
 import Purchases
 #endif
 
 @main
 struct MindHooksAppApp: App {
      
-     #if MindHooksAppApp
+     #if MindHooksApp
      init() { setupRevenueCat() }
      #endif
      
@@ -29,7 +29,7 @@ struct MindHooksAppApp: App {
           }
      }
      
-     #if MindHooksAppApp
+     #if MindHooksApp
      func setupRevenueCat() {
           Purchases.logLevel = .debug
           Purchases.configure(withAPIKey: "mwVwRpeBdJvymGtpUDNtgqaLIfcDhcSe", appUserID: nil, observerMode: true)

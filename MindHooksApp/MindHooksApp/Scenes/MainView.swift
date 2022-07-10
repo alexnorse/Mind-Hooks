@@ -37,7 +37,7 @@ struct MainView: View {
                     Image(systemName: "calendar.circle.fill")
                     Text("Today") }
                
-               #if MindHooksAppApp
+               #if MindHooksApp
                CollectionView()
                .tabItem {
                     Image(systemName: "book.circle.fill")
