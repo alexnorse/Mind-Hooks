@@ -1,5 +1,5 @@
 //
-//  SmallView.swift
+//  WidgetView.swift
 //  MindHooksAppWidgetExtension
 //
 //  Created by Alexandr on 3/13/22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WidgetKit
 
-struct SmallView : View {
+struct MindHooksAppWidgetEntryView : View {
      var entry: ModelEntry
      
      var body: some View {

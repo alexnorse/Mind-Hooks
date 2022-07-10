@@ -29,8 +29,6 @@
 		E658942427DDDCF100643364 /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942327DDDCF100643364 /* WidgetModel.swift */; };
 		E658942627DDDCFE00643364 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942527DDDCFE00643364 /* Provider.swift */; };
 		E658942827DDDD0800643364 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942727DDDD0800643364 /* WidgetView.swift */; };
-		E658942A27DDDD1400643364 /* SmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942927DDDD1400643364 /* SmallView.swift */; };
-		E658942C27DDDD1D00643364 /* MediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942B27DDDD1D00643364 /* MediumView.swift */; };
 		E6615F88272D853D0058AE70 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F87272D853D0058AE70 /* CollectionCell.swift */; };
 		E6615F8A272D854F0058AE70 /* CollectionQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */; };
 		E6615F8C272D90AF0058AE70 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6615F8B272D90AF0058AE70 /* CollectionModel.swift */; };
@@ -123,8 +121,6 @@
 		E658942327DDDCF100643364 /* WidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModel.swift; sourceTree = "<group>"; };
 		E658942527DDDCFE00643364 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		E658942727DDDD0800643364 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
-		E658942927DDDD1400643364 /* SmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallView.swift; sourceTree = "<group>"; };
-		E658942B27DDDD1D00643364 /* MediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumView.swift; sourceTree = "<group>"; };
 		E6615F87272D853D0058AE70 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		E6615F89272D854F0058AE70 /* CollectionQuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionQuoteCell.swift; sourceTree = "<group>"; };
 		E6615F8B272D90AF0058AE70 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
@@ -274,16 +270,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		E658942D27DDDD5700643364 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E658942727DDDD0800643364 /* WidgetView.swift */,
-				E658942927DDDD1400643364 /* SmallView.swift */,
-				E658942B27DDDD1D00643364 /* MediumView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E6615F91272D94540058AE70 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,7 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */,
-				E658942D27DDDD5700643364 /* View */,
+				E658942727DDDD0800643364 /* WidgetView.swift */,
 				E658942327DDDCF100643364 /* WidgetModel.swift */,
 				E658942527DDDCFE00643364 /* Provider.swift */,
 				E6B67D91287B002B003B78F1 /* WidgetService.swift */,
@@ -544,11 +530,9 @@
 				E6C8437F26C96E090099B442 /* API.swift in Sources */,
 				E6C8438526C96E090099B442 /* Constants.swift in Sources */,
 				E6C8438426C96E090099B442 /* Alerts.swift in Sources */,
-				E658942C27DDDD1D00643364 /* MediumView.swift in Sources */,
 				E6C8438D26C96E090099B442 /* QuoteModel.swift in Sources */,
 				E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */,
 				E6BA5DA927F09FE4004D5CC8 /* EventModel.swift in Sources */,
-				E658942A27DDDD1400643364 /* SmallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +680,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
@@ -722,7 +706,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.3;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

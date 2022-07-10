@@ -17,7 +17,7 @@ struct MindHooksAppWidget: Widget {
             MindHooksAppWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Mind Hooks")
-        .description("Random quote")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .description("Random quotes")
+        .supportedFamilies([.systemSmall])
     }
 }

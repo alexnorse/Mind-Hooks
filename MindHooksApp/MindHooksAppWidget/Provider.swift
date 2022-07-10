@@ -33,7 +33,7 @@ struct Provider: TimelineProvider {
                do {
                     let quote = try await WidgetService.shared.fetchWidget()
                     let entry = ModelEntry(date: .now, quote: quote)
-                    let nextUpdate = Calendar.current.date(byAdding: .hour, value: 6, to: date)
+                    let nextUpdate = Calendar.current.date(byAdding: .hour, value: 4, to: date)
                     let timeline = Timeline(entries: [entry], policy: .after(nextUpdate ?? .now))
                     completion(timeline)
                } catch {
