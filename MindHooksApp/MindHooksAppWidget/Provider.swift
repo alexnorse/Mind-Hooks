@@ -9,30 +9,38 @@ import SwiftUI
 import WidgetKit
 
 struct Provider: TimelineProvider {
-     
-     @StateObject var viewModel = WidgetViewModel()
-     
+
      func placeholder(in context: Context) -> ModelEntry {
-          ModelEntry(date: Date(), quote: Quote.placeholderQuote)
+          ModelEntry(date: .now, quote: Quote.placeholderQuote)
      }
      
      
      func getSnapshot(in context: Context, completion: @escaping (ModelEntry) -> ()) {
           Task {
-               let date = Date()
-               let entry = ModelEntry(date: date, quote: viewModel.quote ?? Quote.placeholderQuote)
-               completion(entry)
+               do {
+                    let quote = try await WidgetService.shared.fetchWidget()
+                    let entry = ModelEntry(date: .now, quote: quote)
+                    completion(entry)
+               } catch {
+                    completion(ModelEntry(date: .now, quote: Quote.placeholderQuote))
+               }
           }
      }
      
      
      func getTimeline(in context: Context, completion: @escaping (Timeline<ModelEntry>) -> ()) {
           Task {
-               let date = Date()
-               let data = ModelEntry(date: date, quote: viewModel.quote ?? Quote.placeholderQuote)
-               let nextUpdate = Calendar.current.date(byAdding: .hour, value: 6, to: date)
-               let timeline = Timeline(entries: [data], policy: .after(nextUpdate!))
-               completion(timeline)
+               do {
+                    let quote = try await WidgetService.shared.fetchWidget()
+                    let entry = ModelEntry(date: .now, quote: quote)
+                    let nextUpdate = Calendar.current.date(byAdding: .hour, value: 6, to: date)
+                    let timeline = Timeline(entries: [entry], policy: .after(nextUpdate ?? .now))
+                    completion(timeline)
+               } catch {
+                    let entry = ModelEntry(date: .now, quote: Quote.placeholderQuote)
+                    let timeline = Timeline(entries: [entry], policy: .after(.now.advanced(by: 60 * 60 * 30)))
+                    completion(timeline)
+               }
           }
      }
 }

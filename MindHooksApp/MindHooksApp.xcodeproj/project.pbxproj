@@ -49,6 +49,8 @@
 		E6B15D2726C912FC00E31D72 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */; };
 		E6B2E20F277F47EB00ACB374 /* Paywall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2E20E277F47EA00ACB374 /* Paywall.swift */; };
 		E6B2E212277F496C00ACB374 /* ThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B2E211277F496C00ACB374 /* ThanksView.swift */; };
+		E6B67D92287B002B003B78F1 /* WidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B67D91287B002B003B78F1 /* WidgetService.swift */; };
+		E6B67D93287B002B003B78F1 /* WidgetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B67D91287B002B003B78F1 /* WidgetService.swift */; };
 		E6BA5DA327F09CA4004D5CC8 /* PaywallSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA5DA227F09CA4004D5CC8 /* PaywallSubViews.swift */; };
 		E6BA5DA727F09FB3004D5CC8 /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658942327DDDCF100643364 /* WidgetModel.swift */; };
 		E6BA5DA827F09FD7004D5CC8 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B326AEB72000061284 /* WordModel.swift */; };
@@ -71,8 +73,6 @@
 		E6C8439126C96E090099B442 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
 		E6D0E0AB271C62D500C99CA6 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = E6D0E0AA271C62D500C99CA6 /* content.json */; };
 		E6E294AD273FD30000677B95 /* SheetNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E294AC273FD30000677B95 /* SheetNavigator.swift */; };
-		E6FBD08B27F0855B0083EAB1 /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FBD08A27F0855B0083EAB1 /* WidgetViewModel.swift */; };
-		E6FBD08C27F0855B0083EAB1 /* WidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FBD08A27F0855B0083EAB1 /* WidgetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +146,7 @@
 		E6B15D2626C912FC00E31D72 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		E6B2E20E277F47EA00ACB374 /* Paywall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paywall.swift; sourceTree = "<group>"; };
 		E6B2E211277F496C00ACB374 /* ThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksView.swift; sourceTree = "<group>"; };
+		E6B67D91287B002B003B78F1 /* WidgetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetService.swift; sourceTree = "<group>"; };
 		E6BA5DA227F09CA4004D5CC8 /* PaywallSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallSubViews.swift; sourceTree = "<group>"; };
 		E6C1CE39272ED90700808529 /* ImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViews.swift; sourceTree = "<group>"; };
 		E6C1CE3C272EDEDA00808529 /* OnboardSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardSubViews.swift; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		E6C8437826C96D820099B442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6D0E0AA271C62D500C99CA6 /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		E6E294AC273FD30000677B95 /* SheetNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigator.swift; sourceTree = "<group>"; };
-		E6FBD08A27F0855B0083EAB1 /* WidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,8 +362,8 @@
 				E6C8437426C96D7E0099B442 /* MindHooksAppWidget.swift */,
 				E658942D27DDDD5700643364 /* View */,
 				E658942327DDDCF100643364 /* WidgetModel.swift */,
-				E6FBD08A27F0855B0083EAB1 /* WidgetViewModel.swift */,
 				E658942527DDDCFE00643364 /* Provider.swift */,
+				E6B67D91287B002B003B78F1 /* WidgetService.swift */,
 				E6C8437626C96D820099B442 /* Assets.xcassets */,
 				E6C8437826C96D820099B442 /* Info.plist */,
 			);
@@ -509,13 +509,13 @@
 				E6C1CE3D272EDEDA00808529 /* OnboardSubViews.swift in Sources */,
 				E6AC9C8426B16DA1000D1586 /* Extensions.swift in Sources */,
 				E68CD74F26F0849200AFAD4C /* QuoteViewModel.swift in Sources */,
+				E6B67D92287B002B003B78F1 /* WidgetService.swift in Sources */,
 				E64DA5C126AED48D00061284 /* API.swift in Sources */,
 				E6E294AD273FD30000677B95 /* SheetNavigator.swift in Sources */,
 				E6BA5DA727F09FB3004D5CC8 /* WidgetModel.swift in Sources */,
 				E6615F8C272D90AF0058AE70 /* CollectionModel.swift in Sources */,
 				E640C50A26BEF38D002C8438 /* EventModel.swift in Sources */,
 				E69E4DDD273532BC00BE83F9 /* CollectionGridViewModel.swift in Sources */,
-				E6FBD08B27F0855B0083EAB1 /* WidgetViewModel.swift in Sources */,
 				E619CC3726AD5C1A00579CFD /* MainView.swift in Sources */,
 				E64DA5B026AEAACA00061284 /* TextViews.swift in Sources */,
 				E6A54A37272E89E00007F225 /* OnboardingView.swift in Sources */,
@@ -539,13 +539,13 @@
 				E658942827DDDD0800643364 /* WidgetView.swift in Sources */,
 				E6BA5DA827F09FD7004D5CC8 /* WordModel.swift in Sources */,
 				E6C8439126C96E090099B442 /* Errors.swift in Sources */,
+				E6B67D93287B002B003B78F1 /* WidgetService.swift in Sources */,
 				E6C8438F26C96E090099B442 /* Extensions.swift in Sources */,
 				E6C8437F26C96E090099B442 /* API.swift in Sources */,
 				E6C8438526C96E090099B442 /* Constants.swift in Sources */,
 				E6C8438426C96E090099B442 /* Alerts.swift in Sources */,
 				E658942C27DDDD1D00643364 /* MediumView.swift in Sources */,
 				E6C8438D26C96E090099B442 /* QuoteModel.swift in Sources */,
-				E6FBD08C27F0855B0083EAB1 /* WidgetViewModel.swift in Sources */,
 				E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */,
 				E6BA5DA927F09FE4004D5CC8 /* EventModel.swift in Sources */,
 				E658942A27DDDD1400643364 /* SmallView.swift in Sources */,
@@ -614,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -669,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -691,7 +691,7 @@
 				DEVELOPMENT_TEAM = F8RY8W2DY6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MindHooksApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,7 +717,7 @@
 				DEVELOPMENT_TEAM = F8RY8W2DY6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MindHooksApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -725,6 +725,7 @@
 				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -748,6 +749,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksApp.MindHooksAppWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -771,6 +773,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexander-Lobanov.MindHooksApp.MindHooksAppWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

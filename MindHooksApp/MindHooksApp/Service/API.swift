@@ -5,7 +5,7 @@
 //  Created by Alexandr L. on 7/26/21.
 //
 
-import UIKit
+import Foundation
 
 final class API {
      static let shared = API()
@@ -14,7 +14,7 @@ final class API {
      private init() {}
      
      
-     func fetch<T: Decodable>(from url: String, completion: @escaping (Result<T, MHErrors>) -> Void) {
+     private func fetch<T: Decodable>(from url: String, completion: @escaping (Result<T, MHErrors>) -> Void) {
           guard let endpoint = URL(string: url) else {
                completion(.failure(.invalidURL))
                return
@@ -66,11 +66,4 @@ final class API {
           let result: () = API.shared.fetch(from: url, completion: completion)
           return result
      }
-     
-     func fetchWidget(completion: @escaping (Result<Quote, MHErrors>) -> Void) {
-          let url = URLs.quoteAPI
-          let result: () = API.shared.fetch(from: url, completion: completion)
-          return result
-     }
-
 }

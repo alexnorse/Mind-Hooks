@@ -21,16 +21,3 @@ struct MindHooksAppWidget: Widget {
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
-
-
-struct MindHooksAppWidget_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            MindHooksAppWidgetEntryView(entry: ModelEntry(date: Date(), quote: Quote.placeholderQuote))
-                .previewContext(WidgetPreviewContext(family: .systemSmall))
-            
-            MindHooksAppWidgetEntryView(entry: ModelEntry(date: Date(), quote: Quote.placeholderQuote))
-                .previewContext(WidgetPreviewContext(family: .systemMedium))
-        }
-    }
-}
