@@ -27,7 +27,8 @@ platform :ios do
       project: "MindHooksApp.xcodeproj",
       scheme: "MindHooksApp",
       clean: true,
-      output_name: "ReleaseApp.ipa"
+      export_xcargs: "-allowProvisioningUpdates",
+      output_name: "MindHooksApp.ipa"
     )
   end
 end

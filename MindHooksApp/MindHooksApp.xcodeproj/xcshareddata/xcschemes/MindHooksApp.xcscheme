@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E619CC4126AD5C1E00579CFD"
-               BuildableName = "MindHooksAppTests.xctest"
-               BlueprintName = "MindHooksAppTests"
-               ReferencedContainer = "container:MindHooksApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E619CC4C26AD5C1E00579CFD"
-               BuildableName = "MindHooksAppUITests.xctest"
-               BlueprintName = "MindHooksAppUITests"
-               ReferencedContainer = "container:MindHooksApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
