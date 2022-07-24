@@ -89,6 +89,3 @@ enum ImageSizes {
      static let onboarding: CGFloat   = 40
      static let collection: CGFloat   = 80
 }
-
-
-
