@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WordView: View {
     
-    @StateObject var viewModel = WordViewModel()
+    @StateObject var viewModel = WordViewModel(api: API.shared)
     
     var body: some View {
         ZStack(alignment: .leading) {

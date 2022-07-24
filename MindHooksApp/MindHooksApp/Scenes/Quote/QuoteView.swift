@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuoteView: View {
     
-    @StateObject var viewModel = QuoteViewModel()
+     @StateObject var viewModel = QuoteViewModel(api: API.shared)
     
     var body: some View {
         ZStack(alignment: .leading)  {

@@ -11,8 +11,6 @@ final class API {
      static let shared = API()
      private let wordURL = "\(URLs.wordAPI)wordOfTheDay?date=\(Day.today.yyyyMMdd())&api_key=\(URLs.wordAPIKey)"
      
-     private init() {}
-     
      
      private func fetch<T: Decodable>(from url: String, completion: @escaping (Result<T, MHErrors>) -> Void) {
           guard let endpoint = URL(string: url) else {
@@ -51,19 +49,19 @@ final class API {
      
      func fetchQuote(completion: @escaping (Result<DailyQuote, MHErrors>) -> Void) {
           let url = URLs.dailyQuoteAPI
-          let result: () = API.shared.fetch(from: url, completion: completion)
+          let result: () = fetch(from: url, completion: completion)
           return result
      }
      
      func fetchWord(completion: @escaping (Result<Word, MHErrors>) -> Void) {
           let url = wordURL
-          let result: () = API.shared.fetch(from: url, completion: completion)
+          let result: () = fetch(from: url, completion: completion)
           return result
      }
      
      func fetchEvent(completion: @escaping (Result<Event, MHErrors>) -> Void) {
           let url = URLs.eventAPI
-          let result: () = API.shared.fetch(from: url, completion: completion)
+          let result: () = fetch(from: url, completion: completion)
           return result
      }
 }

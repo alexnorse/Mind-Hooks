@@ -10,7 +10,7 @@ import SafariServices
 
 struct EventView: View {
     
-    @StateObject var viewModel = EventViewModel()
+    @StateObject var viewModel = EventViewModel(api: API.shared)
     @State private var showSafari: Bool = false
     
     var body: some View {

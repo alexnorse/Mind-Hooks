@@ -13,10 +13,16 @@ final class QuoteViewModel: ObservableObject {
      @Published var author: String = ""
      @Published var alertItem: Alerts?
      
-     init () { getQuote() }
+     private var api: API
+     
+     init (api: API) {
+          self.api = api
+          getQuote()
+     }
+     
      
      func getQuote() {
-          API.shared.fetchQuote { [weak self] result in
+          api.fetchQuote { [weak self] result in
                guard let self = self else { return }
                
                DispatchQueue.main.async {
