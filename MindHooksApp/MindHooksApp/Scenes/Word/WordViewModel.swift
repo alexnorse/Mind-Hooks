@@ -22,7 +22,7 @@ final class WordViewModel: ObservableObject {
      
      
      func getWord() {
-          API.shared.fetchWord { [weak self] result in
+          api.fetchWord { [weak self] result in
                guard let self = self else { return }
                
                DispatchQueue.main.async {
