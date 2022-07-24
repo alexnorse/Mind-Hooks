@@ -8,9 +8,8 @@
 import Foundation
 
 final class API {
-     static let shared = API()
-     private let wordURL = "\(URLs.wordAPI)wordOfTheDay?date=\(Day.today.yyyyMMdd())&api_key=\(URLs.wordAPIKey)"
      
+     static let shared = API()
      
      private func fetch<T: Decodable>(from url: String, completion: @escaping (Result<T, MHErrors>) -> Void) {
           guard let endpoint = URL(string: url) else {
@@ -54,7 +53,7 @@ final class API {
      }
      
      func fetchWord(completion: @escaping (Result<Word, MHErrors>) -> Void) {
-          let url = wordURL
+          let url = URLs.wordURL
           let result: () = fetch(from: url, completion: completion)
           return result
      }
