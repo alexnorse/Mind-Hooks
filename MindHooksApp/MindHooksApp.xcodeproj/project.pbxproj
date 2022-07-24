@@ -65,7 +65,6 @@
 		E6C8438126C96E090099B442 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5AF26AEAACA00061284 /* TextViews.swift */; };
 		E6C8438226C96E090099B442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619CC3826AD5C1D00579CFD /* Assets.xcassets */; };
 		E6C8438426C96E090099B442 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BE26AEBCC100061284 /* Alerts.swift */; };
-		E6C8438526C96E090099B442 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B126AEAE9C00061284 /* Constants.swift */; };
 		E6C8438D26C96E090099B442 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5B526AEB73300061284 /* QuoteModel.swift */; };
 		E6C8438F26C96E090099B442 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC9C8326B16DA1000D1586 /* Extensions.swift */; };
 		E6C8439126C96E090099B442 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64DA5BC26AEBC7F00061284 /* Errors.swift */; };
@@ -199,8 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				E619CC3426AD5C1A00579CFD /* MindHooksAppApp.swift */,
-				E6708E6827524EEA00FD8194 /* TestConfiguration.storekit */,
-				E6708E6927524F5A00FD8194 /* StoreKitTestCertificate.cer */,
 				E6B0B0B326B05360003C722F /* LaunchScreen.storyboard */,
 				E619CC3826AD5C1D00579CFD /* Assets.xcassets */,
 				E619CC3D26AD5C1D00579CFD /* Info.plist */,
@@ -208,7 +205,7 @@
 				E64DA5A926AEA65500061284 /* Service */,
 				E64DA5AA26AEA68300061284 /* Designs */,
 				E64DA5B926AEB78600061284 /* Helpers */,
-				E6D0E0A9271C62BB00C99CA6 /* Data */,
+				E6D0E0A9271C62BB00C99CA6 /* PData */,
 				E619CC3A26AD5C1D00579CFD /* Preview Content */,
 			);
 			path = MindHooksApp;
@@ -262,7 +259,6 @@
 		E64DA5B926AEB78600061284 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E64DA5B126AEAE9C00061284 /* Constants.swift */,
 				E64DA5BC26AEBC7F00061284 /* Errors.swift */,
 				E64DA5BE26AEBCC100061284 /* Alerts.swift */,
 				E6AC9C8326B16DA1000D1586 /* Extensions.swift */,
@@ -356,12 +352,15 @@
 			path = MindHooksAppWidget;
 			sourceTree = "<group>";
 		};
-		E6D0E0A9271C62BB00C99CA6 /* Data */ = {
+		E6D0E0A9271C62BB00C99CA6 /* PData */ = {
 			isa = PBXGroup;
 			children = (
+				E6708E6827524EEA00FD8194 /* TestConfiguration.storekit */,
+				E6708E6927524F5A00FD8194 /* StoreKitTestCertificate.cer */,
+				E64DA5B126AEAE9C00061284 /* Constants.swift */,
 				E6D0E0AA271C62D500C99CA6 /* content.json */,
 			);
-			path = Data;
+			path = PData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,7 +527,6 @@
 				E6B67D93287B002B003B78F1 /* WidgetService.swift in Sources */,
 				E6C8438F26C96E090099B442 /* Extensions.swift in Sources */,
 				E6C8437F26C96E090099B442 /* API.swift in Sources */,
-				E6C8438526C96E090099B442 /* Constants.swift in Sources */,
 				E6C8438426C96E090099B442 /* Alerts.swift in Sources */,
 				E6C8438D26C96E090099B442 /* QuoteModel.swift in Sources */,
 				E6C8437526C96D7E0099B442 /* MindHooksAppWidget.swift in Sources */,
